@@ -368,5 +368,24 @@
 \flushbottom
 
 
-
+\usepackage{verbatim}
 %%%% Custom packages
+\newcommand{\detailtexcount}[1]{%
+  \immediate\write18{texcount -merge -sum -q #1.tex output.bbl > #1.wcdetail }%
+  %\verbatiminput{#1.wcdetail}%
+}
+
+\newcommand{\quickwordcount}[1]{%
+  \immediate\write18{texcount -1 -sum -merge -q #1.tex output.bbl > #1-words.sum }%
+  \input{#1-words.sum} words
+}
+
+\newcommand{\sectionwordcount}[1]{%
+    \immediate\write18{texcount -1 -merge -sub=chapter  #1.tex output.bbl > #1-words.sum}%
+    \input{#1-words.sum}
+}
+
+\newcommand{\quickcharcount}[1]{%
+  \immediate\write18{texcount -1 -sum -merge -char -q #1.tex output.bbl > #1-chars.sum }%
+  \input{#1-chars.sum} characters (not including spaces)%
+}
