@@ -1,0 +1,168 @@
+% **************************************************************************************************************
+% A PhD thesis suitable for submission at the University of Sussex
+%
+% Copyright (c) 2018 Martin Jung
+% 
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE. 
+%
+% **************************************************************************************************************
+
+
+% Document class via KOMA script
+%\documentclass[oneside,openright,titlepage,numbers=noenddot,headinclude,a4paper,%1headlines,% letterpaper 
+%                footinclude=true,cleardoublepage=empty,abstractoff, % <--- obsolete, remove (todo)
+%                BCOR=5mm,paper=a4,fontsize=11pt,
+%                english,%
+%                ]{scrreprt}
+\documentclass[a4paper,11pt,twoside]{memoir}
+
+\newcommand{\myTitle}{Material, Embodied, and Spatial Relations in Augmented Reality \xspace}
+\newcommand{\mySubtitle}{An exploration of AR as a medium for musical performance and experience \xspace}
+\newcommand{\myKeywords}{things, I, have, done, or, wish, I, had, done \xspace}
+\newcommand{\myDegree}{\xspace}
+\newcommand{\myName}{Sam Bilbow\xspace}
+\newcommand{\myNameLink}{https://profiles.sussex.ac.uk/p376006-sam-bilbow}
+\newcommand{\myFirstSupervisor}{Dr. Chris Kiefer\xspace}
+\newcommand{\mySecondSupervisor}{Dr. C\'ecile Chevalier\xspace}
+\newcommand{\myThirdSupervisor}{Prof. Jamie Ward\xspace}
+\newcommand{\myFaculty}{School of Media, Arts and Humanities\xspace}
+\newcommand{\myDepartment}{Department of Music\xspace}
+\newcommand{\myCenter}{Experimental Music Technologies Lab\xspace}
+\newcommand{\myUni}{University of Sussex\xspace}
+\newcommand{\myLocation}{Brighton, UK\xspace}
+\newcommand{\myTime}{\today \xspace}
+\newcommand{\myVersion}{version 1.0\xspace}
+
+
+
+% Load all settings and packages
+\input{settings}
+% \usepackage{fontspec}
+% \usepackage{lipsum}
+% \setmainfont{Inter}
+% **************************************************************************************************************
+%---------------------------------------------------
+% BEGIN DOCUMENT
+%---------------------------------------------------
+
+\begin{document}
+%\frenchspacing
+%\raggedbottom
+%\pagenumbering{roman}
+%\pagestyle{plain}
+
+\makeatletter
+\renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
+\makeatother
+\pagestyle{custom}% Set page style to custom
+\chapterstyle{hansen} % Set chapter style
+
+%---------------------------------------------------
+% PREAMBLE: roman page numbering i, ii, iii, ...
+%---------------------------------------------------
+\begingroup
+  \frontmatter
+  \pagenumbering{none}
+  \clearpage\input{front/Titlepage.tex} % Title page
+  \clearpage\input{front/Dedication.tex} % Dedication page
+  \clearpage\input{front/Acknowledgments.tex} % Acknowledgements page
+  \clearpage\input{front/Declaration.tex} % Declaration
+  \clearpage\input{front/Abstract.tex} % Abstract page
+\endgroup
+
+%\begingroup
+  %\frontmatter
+  %\pagenumbering{roman}
+  %\clearpage\input{front/Titlepage} % Title page
+  %\clearpage\input{front/Dedication} % Dedication page
+  %\clearpage\input{front/Acknowledgments} % Acknowledgements page
+  %\clearpage\input{front/Declaration} % Declaration
+  %\clearpage\input{front/Abstract} % Abstract page
+%\endgroup
+
+%TC:incbib
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:macro \citeyearpar [option:text,text]
+%TC:group table 0 1
+%TC:group tabular 1 1
+
+%---------------------------------------------------
+% TABLE OF CONTENTS, LISTS OF TABLES & FIGURES
+%---------------------------------------------------
+
+\begingroup
+  \newpage  
+  \setlength{\parskip}{0pt} % To restore distance between Chapters, sections and subsections in the table of contents
+  \pdfbookmark[0]{Contents}{contents_bookmark}
+  \pagestyle{custom}% Set page style to custom
+  \chapterstyle{hansen} % Set chapter style
+  \setcounter{tocdepth}{2}
+  \tableofcontents* % as per in memoir class 
+\endgroup
+
+%---------------------------------------------------
+% MAIN THESIS TEXT: arabic page numbering 1, 2, 3, ...
+% THESIS CONTENT - CHAPTERS
+%---------------------------------------------------
+
+\mainmatter
+\pagenumbering{arabic} %Start official numbering here
+%\setcounter{page}{90} % Manual adjustment if necessary
+
+% Modify the header style
+%\pagestyle{scrheadings}
+
+\begingroup
+  \input{content/1_Introduction.tex}  
+  \input{content/2_Literature_Review.tex}
+  \input{content/3_Theoretical_Framework.tex}  
+  \input{content/4_Methodology.tex}  
+  \input{content/5_area.tex}  
+  \input{content/6_polaris.tex}  
+  \input{content/7_Performances.tex}  
+  \input{content/8_Discussion.tex}  
+  \input{content/9_Conclusion.tex}  
+\endgroup
+
+%---------------------------------------------------
+% APPENDICES
+%---------------------------------------------------
+\appendix
+\begingroup
+  \input{appendix/A_area.tex}
+  \input{appendix/B_polaris.tex}
+  \input{appendix/C_performance.tex}
+\endgroup
+\backmatter
+%\input{front/Acronyms.tex}
+
+%---------------------------------------------------
+% BIBLIOGRAPHY
+%---------------------------------------------------
+\clearpage
+\phantomsection
+\bibliography{References}
+%\clearpage\input{front/Colophon}
+
+%---------------------------------------------------
+% END DOCUMENT
+%---------------------------------------------------
+\end{document}
