@@ -79,23 +79,15 @@
 %---------------------------------------------------
 \begingroup
   \frontmatter
-  \pagenumbering{none}
+  \pagenumbering{roman}
   \clearpage\input{front/Titlepage.tex} % Title page
   \clearpage\input{front/Dedication.tex} % Dedication page
   \clearpage\input{front/Acknowledgments.tex} % Acknowledgements page
   \clearpage\input{front/Declaration.tex} % Declaration
   \clearpage\input{front/Abstract.tex} % Abstract page
+  %\clearpage\input{front/Acronyms.tex}
+  %\clearpage\input{front/Colophon}
 \endgroup
-
-%\begingroup
-  %\frontmatter
-  %\pagenumbering{roman}
-  %\clearpage\input{front/Titlepage} % Title page
-  %\clearpage\input{front/Dedication} % Dedication page
-  %\clearpage\input{front/Acknowledgments} % Acknowledgements page
-  %\clearpage\input{front/Declaration} % Declaration
-  %\clearpage\input{front/Abstract} % Abstract page
-%\endgroup
 
 %TC:incbib
 %TC:macro \cite [option:text,text]
@@ -115,13 +107,12 @@
   \pdfbookmark[0]{Contents}{contents_bookmark}
   \pagestyle{custom}% Set page style to custom
   \chapterstyle{hansen} % Set chapter style
-  \setcounter{tocdepth}{2}
+  \setcounter{tocdepth}{1}
   \tableofcontents* % as per in memoir class 
 \endgroup
 
 %---------------------------------------------------
-% MAIN THESIS TEXT: arabic page numbering 1, 2, 3, ...
-% THESIS CONTENT - CHAPTERS
+% MAIN THESIS TEXT
 %---------------------------------------------------
 \mainmatter
 \pagenumbering{arabic} %Start official numbering here
@@ -139,7 +130,7 @@
   \input{content/6_polaris.tex}  
   \input{content/7_Performances.tex}  
   \input{content/8_Discussion.tex}  
-  \input{content/9_Conclusion.tex}  
+  \input{content/9_Conclusion.tex}
 \endgroup
 
 %---------------------------------------------------
@@ -154,7 +145,6 @@
 \endgroup
 \backmatter
 %TC:endignore
-%\input{front/Acronyms.tex}
 
 %---------------------------------------------------
 % BIBLIOGRAPHY
@@ -162,26 +152,20 @@
 \clearpage
 \phantomsection
 \bibliography{References}
-%\clearpage\input{front/Colophon}
-
 
 % Don't count these!
 %TC:ignore
-\detailtexcount{main}
-\quickwordcount{main}
-\sectionwordcount{main}
-%Front Matter:
-%Abstract: 
-%\quickwordcount{content/1_Introduction}
-%\quickwordcount{content/2_Literature_Review}
-%\quickwordcount{content/3_Theoretical_Framework}
-%\quickwordcount{content/4_Methodology}
-%\quickwordcount{content/5_area}
-%\quickwordcount{content/6_polaris}
-%\quickwordcount{content/7_Performances}
-%\quickwordcount{content/8_Discussion}
-%\quickwordcount{content/9_Conclusion}
-%Bibliography:
+Word Count \\
+\quickwordcount{content/1_Introduction}{Introduction} \\
+\quickwordcount{content/2_Literature_Review}{Literature Review} \\
+\quickwordcount{content/3_Theoretical_Framework}{Theoretical Framework} \\
+\quickwordcount{content/4_Methodology}{Methodology} \\
+\quickwordcount{content/5_area}{area\textasciitilde} \\
+\quickwordcount{content/6_polaris}{polaris\textasciitilde} \\
+\quickwordcount{content/7_Performances}{Performances} \\
+\quickwordcount{content/8_Discussion}{Discussion} \\
+\quickwordcount{content/9_Conclusion}{Conclusion} \\
+\quickwordcount{main}{Total}
 %TC:endignore
 %---------------------------------------------------
 % END DOCUMENT
