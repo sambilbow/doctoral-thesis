@@ -48,6 +48,7 @@
 \usepackage{wrapfig} % figures wrapped in text
 \usepackage{lineno} % Line Numbers 
 \usepackage{epigraph} % For epigraphs in front of chapters
+\usepackage{microtype}
 
 % Provides a linked \doi{#1} that links doi:#1 to http://dx.doi.org/#1
 % To change the text before the DOI, adjust this command   %\renewcommand\doitext{doi:}
@@ -377,5 +378,8 @@
 
 \newcommand{\quickwordcount}[2]{%
   \immediate\write18{texcount -1 -sum -merge -q #1.tex output.bbl > #1-words.sum }%
-  \input{#1-words.sum} \hrulefill #2
+  \input{#1-words.sum} \hrulefill \xspace #2
 }
+
+\vbadness 10001
+\hbadness 10001
