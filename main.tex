@@ -45,10 +45,73 @@
 \newcommand{\myDepartment}{Department of Music\xspace}
 \newcommand{\myCenter}{Experimental Music Technologies Lab\xspace}
 \newcommand{\myUni}{University of Sussex\xspace}
+\newcommand{\myCourse}{Music Technologies\xspace}
 \newcommand{\myLocation}{Brighton, UK\xspace}
 \newcommand{\myTime}{\today \xspace}
 \newcommand{\myVersion}{version 1.0\xspace}
 
+%% Research Questions
+\newcommand{\RQgenealogy}{\item[1. ] What is AR's genealogy, historical context, its contemporary forms, trends, exceptions, and definitions?}
+\newcommand{\RQgenealogysub}{
+\begin{enumerate}
+    \item When did AR begin as a technology?
+    \item From which disciplines did AR begin?
+    \item What forms does AR take today?
+    \item Why is AR interesting and important today?
+    \item What definition of AR is appropriate for the arts?
+\end{enumerate}
+}
+
+
+\newcommand{\RQtheory}{\item[2. ] What theoretical underpinnings can we use to explicate AR experiences within an artistic context?}
+
+
+\newcommand{\RQmedium}{\item[3. ] What are AR's boundaries and affordances as a medium, are there problems it poses artists and musicians?}
+\newcommand{\RQmediumsub}{
+\begin{enumerate}
+    \item What does augmentation mean in AR, is this too restrictive a term?
+    \item What realities are typically augmented by AR?
+    \item What is the relationship between virtual and real content in AR?
+    \item Does AR tend towards an aesthetic?
+\end{enumerate}
+}
+
+
+\newcommand{\RQexperience}{\item[4. ] What is the resultant experience for participants and audiences (or `immersants') of an artistic AR experience?}
+\newcommand{\RQexperiencesub}{
+\begin{enumerate}
+    \item What is reality for immersants of such experiences?
+    \item What does it mean for AR to modulate the sensory experience of an immersant?
+    \item Do AR immersants engage with physical and digital `space' in novel ways?
+\end{enumerate}
+}
+
+
+
+\newcommand{\RQfuture}{\item[5. ] What might a future corpus of artistic AR experiences and digital music instruments look, sound, and feel like?}
+
+
+
+\newcommand{\RQall}{
+\enumerate
+\RQgenealogy
+\RQtheory
+\RQmedium
+\RQexperience
+\RQfuture
+}
+
+\newcommand{\RQallsub}{
+\enumerate
+\RQgenealogy
+\RQgenealogysub
+\RQtheory
+\RQmedium
+\RQmediumsub
+\RQexperience
+\RQexperiencesub
+\RQfuture
+}
 
 
 % Load all settings and packages
@@ -89,13 +152,21 @@
   %\clearpage\input{front/Colophon}
 \endgroup
 
+
+%---------------------------------------------------
+% TEXCOUNT: includes etc.
+%---------------------------------------------------
 %TC:incbib
+
 %TC:macro \cite [option:text,text]
 %TC:macro \citep [option:text,text]
 %TC:macro \citet [option:text,text]
 %TC:macro \citeyearpar [option:text,text]
+
 %TC:group table 0 1
 %TC:group tabular 1 1
+
+
 
 %---------------------------------------------------
 % TABLE OF CONTENTS, LISTS OF TABLES & FIGURES

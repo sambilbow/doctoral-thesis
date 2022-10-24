@@ -189,7 +189,7 @@
     %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
     pdftitle={\myTitle},%
     pdfauthor={\textcopyright\ \myName, \myUni, \myFaculty},%
-    pdfsubject={},%
+    pdfsubject={\myCourse},%
     pdfkeywords={\myKeywords},%
     pdfcreator={pdfLaTeX},%
     pdfproducer={LaTeX}%
@@ -379,6 +379,11 @@
 \newcommand{\quickwordcount}[2]{%
   \immediate\write18{texcount -1 -sum -merge -q #1.tex output.bbl > #1-words.sum }%
   \input{#1-words.sum} \hrulefill \xspace #2
+}
+
+\newcommand{\totalwordcount}[1]{%
+  \immediate\write18{texcount -1 -sum -merge -q #1.tex output.bbl > #1-words.sum }%
+  \input{#1-words.sum}
 }
 
 \vbadness 10001
