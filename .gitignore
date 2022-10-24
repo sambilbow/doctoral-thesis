@@ -36,3 +36,6 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+*.fls
+*.fdb_latexmk
