@@ -143,11 +143,11 @@
 \begingroup
   \frontmatter
   \pagenumbering{roman}
-  \clearpage\input{content/00-front/titlepage.tex} % Title page
-  \clearpage\input{content/00-front/dedication.tex} % Dedication page
-  \clearpage\input{content/00-front/acknowledgements.tex} % Acknowledgements page
-  \clearpage\input{content/00-front/declaration.tex} % Declaration
-  \clearpage\input{content/00-front/abstract.tex} % Abstract page
+  \clearpage\input{content/00-front-titlepage.tex} % Title page
+  \clearpage\input{content/00-front-dedication.tex} % Dedication page
+  \clearpage\input{content/00-front-acks.tex} % Acknowledgements page
+  \clearpage\input{content/00-front-declaration.tex} % Declaration
+  \clearpage\input{content/00-front-abstract.tex} % Abstract page
   %\clearpage\input{content/00-front/acronyms.tex}
   %\clearpage\input{content/00-front/colophon}
 \endgroup
@@ -193,15 +193,15 @@
 %\pagestyle{scrheadings}
 
 \begingroup
-  \input{content/01-intro.tex} 
-  \input{content/02-review.tex}
-  \input{content/03-theory.tex}
-  \input{content/04-method.tex}
-  \input{content/05-area.tex}
-  \input{content/06-polaris.tex}
-  \input{content/07-rosehill.tex}
-  \input{content/08-discussion.tex}
-  \input{content/09-conclusion.tex}
+  \input{content/01-chap-intro.tex} 
+  \input{content/02-chap-review.tex}
+  \input{content/03-chap-theory.tex}
+  \input{content/04-chap-method.tex}
+  \input{content/05-chap-area.tex}
+  \input{content/06-chap-polaris.tex}
+  \input{content/07-chap-rosehill.tex}
+  \input{content/08-chap-discussion.tex}
+  \input{content/09-chap-conclusion.tex}
 \endgroup
 
 %---------------------------------------------------
@@ -210,9 +210,9 @@
 %TC:ignore
 \appendix
 \begingroup
-  \input{content/10-appendix/area.tex}
-  \input{content/10-appendix/polaris.tex}
-  \input{content/10-appendix/rosehill.tex}
+  \input{content/10-appendix-a.tex}
+  \input{content/10-appendix-b.tex}
+  \input{content/10-appendix-c.tex}
 \endgroup
 \backmatter
 %TC:endignore
@@ -222,7 +222,7 @@
 %---------------------------------------------------
 \clearpage
 \phantomsection
-\bibliography{bibliography.bib}
+\bibliography{citations.bib}
 
 % Don't count these!
 %TC:ignore
