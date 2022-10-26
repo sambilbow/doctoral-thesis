@@ -1,1 +1,0 @@
-END { system('cp', 'output.bbl', 'main.bbl'); }

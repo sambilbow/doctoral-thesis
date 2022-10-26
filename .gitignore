@@ -43,3 +43,4 @@ main.pdf
 *.fdb_latexmk
 *.code-workspace
 .vscode/*
+.DS_Store

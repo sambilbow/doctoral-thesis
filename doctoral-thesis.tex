@@ -1,0 +1,245 @@
+% **************************************************************************************************************
+% A PhD thesis suitable for submission at the University of Sussex
+%
+% Copyright (c) 2018 Martin Jung
+% 
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE. 
+%
+% **************************************************************************************************************
+
+
+% Document class via KOMA script
+%\documentclass[oneside,openright,titlepage,numbers=noenddot,headinclude,a4paper,%1headlines,% letterpaper 
+%                footinclude=true,cleardoublepage=empty,abstractoff, % <--- obsolete, remove (todo)
+%                BCOR=5mm,paper=a4,fontsize=11pt,
+%                english,%
+%                ]{scrreprt}
+\documentclass[a4paper,11pt,twoside]{memoir}
+
+\newcommand{\myTitle}{Material, Embodied, and Spatial Relations in Augmented Reality \xspace}
+\newcommand{\mySubtitle}{An exploration of AR as a medium for musical performance and experience \xspace}
+\newcommand{\myKeywords}{things, I, have, done, or, wish, I, had, done \xspace}
+\newcommand{\myDegree}{\xspace}
+\newcommand{\myName}{Sam Bilbow\xspace}
+\newcommand{\myNameLink}{https://profiles.sussex.ac.uk/p376006-sam-bilbow}
+\newcommand{\myFirstSupervisor}{Dr. Chris Kiefer\xspace}
+\newcommand{\mySecondSupervisor}{Dr. C\'ecile Chevalier\xspace}
+\newcommand{\myThirdSupervisor}{Prof. Jamie Ward\xspace}
+\newcommand{\myFaculty}{School of Media, Arts and Humanities\xspace}
+\newcommand{\myDepartment}{Department of Music\xspace}
+\newcommand{\myCenter}{Experimental Music Technologies Lab\xspace}
+\newcommand{\myUni}{University of Sussex\xspace}
+\newcommand{\myCourse}{Music Technologies\xspace}
+\newcommand{\myLocation}{Brighton, UK\xspace}
+\newcommand{\myTime}{\today \xspace}
+\newcommand{\myVersion}{version 1.0\xspace}
+
+%% Research Questions
+\newcommand{\RQgenealogy}{\item[1. ] What is AR's genealogy, historical context, its contemporary forms, trends, exceptions, and definitions?}
+\newcommand{\RQgenealogysub}{
+\begin{enumerate}
+    \item When did AR begin as a technology?
+    \item From which disciplines did AR begin?
+    \item What forms does AR take today?
+    \item Why is AR interesting and important today?
+    \item What definition of AR is appropriate for the arts?
+\end{enumerate}
+}
+
+
+\newcommand{\RQtheory}{\item[2. ] What theoretical underpinnings can we use to explicate AR experiences within an artistic context?}
+
+
+\newcommand{\RQmedium}{\item[3. ] What are AR's boundaries and affordances as a medium, are there problems it poses artists and musicians?}
+\newcommand{\RQmediumsub}{
+\begin{enumerate}
+    \item What does augmentation mean in AR, is this too restrictive a term?
+    \item What realities are typically augmented by AR?
+    \item What is the relationship between virtual and real content in AR?
+    \item Does AR tend towards an aesthetic?
+\end{enumerate}
+}
+
+
+\newcommand{\RQexperience}{\item[4. ] What is the resultant experience for participants and audiences (or `immersants') of an artistic AR experience?}
+\newcommand{\RQexperiencesub}{
+\begin{enumerate}
+    \item What is reality for immersants of such experiences?
+    \item What does it mean for AR to modulate the sensory experience of an immersant?
+    \item Do AR immersants engage with physical and digital `space' in novel ways?
+\end{enumerate}
+}
+
+
+
+\newcommand{\RQfuture}{\item[5. ] What might a future corpus of artistic AR experiences and digital music instruments look, sound, and feel like?}
+
+
+
+\newcommand{\RQall}{
+\enumerate
+\RQgenealogy
+\RQtheory
+\RQmedium
+\RQexperience
+\RQfuture
+}
+
+\newcommand{\RQallsub}{
+\enumerate
+\RQgenealogy
+\RQgenealogysub
+\RQtheory
+\RQmedium
+\RQmediumsub
+\RQexperience
+\RQexperiencesub
+\RQfuture
+}
+
+
+% Load all settings and packages
+\input{settings}
+% \usepackage{fontspec}
+% \usepackage{lipsum}
+% \setmainfont{Inter}
+% **************************************************************************************************************
+%---------------------------------------------------
+% BEGIN DOCUMENT
+%---------------------------------------------------
+
+\begin{document}
+%\frenchspacing
+%\raggedbottom
+%\pagenumbering{roman}
+%\pagestyle{plain}
+
+\makeatletter
+\renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
+\makeatother
+\pagestyle{custom}% Set page style to custom
+\chapterstyle{hansen} % Set chapter style
+
+
+%---------------------------------------------------
+% PREAMBLE: roman page numbering i, ii, iii, ...
+%---------------------------------------------------
+\begingroup
+  \frontmatter
+  \pagenumbering{roman}
+  \clearpage\input{content/00-front/titlepage.tex} % Title page
+  \clearpage\input{content/00-front/dedication.tex} % Dedication page
+  \clearpage\input{content/00-front/acknowledgements.tex} % Acknowledgements page
+  \clearpage\input{content/00-front/declaration.tex} % Declaration
+  \clearpage\input{content/00-front/abstract.tex} % Abstract page
+  %\clearpage\input{content/00-front/acronyms.tex}
+  %\clearpage\input{content/00-front/colophon}
+\endgroup
+
+
+%---------------------------------------------------
+% TEXCOUNT: includes etc.
+%---------------------------------------------------
+%TC:incbib
+
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:macro \citeyearpar [option:text,text]
+
+%TC:group table 0 1
+%TC:group tabular 1 1
+
+
+
+%---------------------------------------------------
+% TABLE OF CONTENTS, LISTS OF TABLES & FIGURES
+%---------------------------------------------------
+
+\begingroup
+  \newpage  
+  \setlength{\parskip}{0pt} % To restore distance between Chapters, sections and subsections in the table of contents
+  \pdfbookmark[0]{Contents}{contents_bookmark}
+  \pagestyle{custom}% Set page style to custom
+  \chapterstyle{hansen} % Set chapter style
+  \setcounter{tocdepth}{1}
+  \tableofcontents* % as per in memoir class 
+\endgroup
+
+%---------------------------------------------------
+% MAIN THESIS TEXT
+%---------------------------------------------------
+\mainmatter
+\pagenumbering{arabic} %Start official numbering here
+%\setcounter{page}{90} % Manual adjustment if necessary
+
+% Modify the header style
+%\pagestyle{scrheadings}
+
+\begingroup
+  \input{content/01-intro.tex} 
+  \input{content/02-review.tex}
+  \input{content/03-theory.tex}
+  \input{content/04-method.tex}
+  \input{content/05-area.tex}
+  \input{content/06-polaris.tex}
+  \input{content/07-rosehill.tex}
+  \input{content/08-discussion.tex}
+  \input{content/09-conclusion.tex}
+\endgroup
+
+%---------------------------------------------------
+% APPENDICES
+%---------------------------------------------------
+%TC:ignore
+\appendix
+\begingroup
+  \input{content/10-appendix/area.tex}
+  \input{content/10-appendix/polaris.tex}
+  \input{content/10-appendix/rosehill.tex}
+\endgroup
+\backmatter
+%TC:endignore
+
+%---------------------------------------------------
+% BIBLIOGRAPHY
+%---------------------------------------------------
+\clearpage
+\phantomsection
+\bibliography{bibliography.bib}
+
+% Don't count these!
+%TC:ignore
+%Word Count \\
+%\quickwordcount{content/01-n}{Introduction} \\
+%\quickwordcount{content/02-w}{Literature Review} \\
+%\quickwordcount{content/03-k}{Theoretical Framework} \\
+%\quickwordcount{content/04-y}{Methodology} \\
+%\quickwordcount{content/05-a}{area\textasciitilde} \\
+%\quickwordcount{content/06-s}{polaris\textasciitilde} \\
+%\quickwordcount{content/07-s}{Performances} \\
+%\quickwordcount{content/08-n}{Discussion} \\
+%\quickwordcount{content/09-n}{Conclusion} \\
+%\quickwordcount{main}{Main Total} \\
+%\detailtexcount{main}
+%TC:endignore
+%---------------------------------------------------
+% END DOCUMENT
+%---------------------------------------------------
+\end{document}
