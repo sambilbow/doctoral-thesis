@@ -27,7 +27,7 @@ It's pertinent to mention that practical work, where carried out, has always bee
 
 
 % ---------------------------------------------
-\section{Resistance in Practice}
+\section{Resistance in Practice} \label{sec: method-resistance}
 Formative in the development of the methodological approach of this thesis has been the concept of `resistance'. In short, this could be characterised as a motivation for changing or acting against the state of the art, practice, technology, or philosophy, out of a discontent for its status quo. This isn't to be confused by resistance in the sense of experiencing resistance to \textit{do} something, although as might be expected, that has reared its head a few times over the last three years too. Its difficult to place resistance into the linear narrative of this thesis, some resistance formed my initial motivations for the carrying out of this research, and some was garnered along the way, especially around the time of the uptake in `Metaverse' as a term to describe the sum total of all creative XR development. Either way, resistance has made up a large portion of my perspective on AR technologies, its role within digital music and humanities more broadly, and my rationale for pursuing several key areas discussed in the thesis so far (anti-consumerism, multisensory experience, agency), and to come.
 
 As referred to in \autoref{sec: theory-aestheticexperience}, contemporary design research in the fields of computational art and music have in recent years rallied behind the broader ``free/libre and open-source software" and ``open-source hardware" ethoses (abbreviated to FLOSS and OSH respectively). This approach, often hand-in-hand with the Maker, DIY, and Hardware Hacking subcultures, stands in stark contrast to the goings-on of mega-corporations board rooms, with their design `sprints', `agile' workflows, and `human-centred' design. While commentary on the considerable role of un(der)funded volunteer labour involved in OS tools and projects is outside of the scope of this thesis, it is worth mentioning. The approaches taken by these subcultures towards embodied design and composition workflows however, has been highly beneficial for the field. In the case of digital music making, software tools and coding languages like PureData, Maximilian, Supercollider, ixilang, Sonic Pi, TidalCycles, and Bela have granted students, researchers, and composers across disciplines, free and beginner-friendly access to a wealth of tutorials, examples, and tools for advanced real-time sampling and synthesis techniques.
@@ -46,31 +46,40 @@ Although
 
 
 % ---------------------------------------------
-\section{Design Patterns for AR Art and Music} \label{sec:  method-patterns} % The XRt Space acknowledge own resistance and how it leads to bias? guidelines for accessibility etc
+\section{Design Patterns for AR Art and Music} \label{sec: method-patterns} % The XRt Space acknowledge own resistance and how it leads to bias? guidelines for accessibility etc
 
-The term design patterns here, is borrowed from the field of software design, where it is taken to describe a ``general, reusable solution to a commonly occurring problem''. 
+The term design pattern here, is borrowed from the field of computer science, where it is taken to describe ``communicating objects and classes that are customized to solve a general design problem in a particular context'' \citep{gamma1995}. A design pattern thus ``names, abstracts, and identifies the key aspects of a common design structure that make it useful for creating a reusable object-oriented design''. So, while as a method it may not operate completely as it would in its native computer science, to address the outstanding aims of the thesis, design patterns do serve to be less rigid than a framework, more open to adaptation than guidelines; whilst inheriting the meaningful organisational structure that comes with an object-oriented design approach\footnote{explain OOD}. Design patterns are characterised by having four elements:
+\begin{itemize}
+    \item The \textbf{pattern name} describes the design problem at a higher level of abstraction
+    \item The \textbf{problem} describes the situation in which you might apply the pattern
+    \item The \textbf{solution} describes the relationships between elements of the pattern that aim to solve the problem
+    \item The \textbf{consequences} are the results and trade-offs of applying the pattern
+\end{itemize}
+
+
+These design patterns are therefore subject to iteration, and the latest version can be found on \href{https://thexrt.space}{the XRt Space website}, a community-editable repository created to host and update them. The principles used to guide the patterns draw on the resistances outlined in \autoref{sec: method-resistance}, namely taking a DIY approach, decoupling from the ocularcentric and layering paradigms of typical AR experience, and attempting to navigate an inherently consumerist space whilst trying not to contribute to exploitative systems of opression that uphold it. They are also guided by the theoretical proposals of \autoref{sec: theory}: that participant's and performer's cognitive processes in the experience of AR works are embodied, embedded, enacted, and extended, and have the potential to be modulated to extents that offer novel aesthetic experiences of augmented \hyperref[sec: theory-materiality]{materiality}, \hyperref[sec: theory-embodiment]{embodiment}, and \hyperref[sec: theory-space]{space}.
 
 \subsection{The Experience}
 \autoref{sec: theory}, drew on a number of theoretical propositions, and put forward that AR has the potential to scaffold new modes of performance and expression in the arts and music, furthermore that from an enactivist approach experience, this would consist in radically modulating the material, embodied, and spatial experience of participants.
 
-\subsubsection{The AR Subform}
-\subsubsection{The Real-Virtual Dynamic}
-\subsubsection{Sensory Engagement}
-\subsubsection{The Interaction}     %snippets 
+\subsubsection{The AR Subform} 
+\subsubsection{The Real-Virtual Dynamic} % axes
+\subsubsection{Sensory Engagement} % from 4ec
+\subsubsection{The Interaction}     %snippets enactivism?
 
 \subsection{The Instrument} %display table
-\begin{table*}
-    \caption{A classification of potential sensory displays for MSAR Instruments}
-    \begin{tabular}{lllll}
-        Sense&Wearable&Tangible&Situated&\\
-        Visual&Optical See Through HMD \footnote{\cite{leapmotion2018}}&Mobile AR \footnote{\cite{apple2020,google2020,vuforia2020}}&Projection Mapping \footnote{\cite{lightform2020}} &\\ &Video See Through HMD* \footnote{\cite{varjo2019}}&&&\\ &Mirrors / Reflectors \footnote{\cite{tonn2020}}&&&\\
-        Auditory&Hear Through Headphones \footnote{\cite{kiefer2018,barde2020}}&Speaker&Wavefield Synthesis \footnote{\cite{melchior2005}}&\\&Mic Through Headphones* \footnote{\cite{lindeman2008,sennheiser2018}}&&Beamforming \footnote{\cite{sharma2015}}&\\
-        Olfactory&Scent Emitter \footnote{\cite{brooks2020}}&Scent Emitter \footnote{\cite{maggioni2019}}&Scent Emitter \footnote{\cite{maggioni2019}}&\\
-        Gustatory&Tongue Patch&Edibles \footnote{\cite{narumi2011}}&Acoustic Levitation \footnote{\cite{vi2017}}&\\
-        Somatosensory   &Vibrotactile Stimulation \footnote{\cite{subpac2020}} \footnote{\cite{seah2015}}    &Vibrotactile Stimulation&3D Printer&\\&Electrical Muscle Stimulation \footnote{\cite{lopes2018}}&&Mid-Air Haptics \footnote{\cite{ablart2019}} &\\
-        Others&Substitution Devices \footnote{\cite{ward2010,hafidh2013}}&&&\\ &Adaptation Devices \footnote{\cite{nagel2005}}&&&\\
-    \end{tabular}
-\end{table*}
+% \begin{table*}
+%     \caption{A classification of potential sensory displays for MSAR Instruments}
+%     \begin{tabular}{lllll}
+%         Sense&Wearable&Tangible&Situated&\\
+%         Visual&Optical See Through HMD \tablefootnote{ hi hi\cite{leapmotion2018}}&Mobile AR \tablefootnote{\cite{apple2020,google2020,vuforia2020}}&Projection Mapping \tablefootnote{\cite{lightform2020}} &\\ &Video See Through HMD* \tablefootnote{\cite{varjo2019}}&&&\\ &Mirrors / Reflectors \tablefootnote{\cite{tonn2020}}&&&\\
+%         Auditory&Hear Through Headphones \tablefootnote{\cite{kiefer2018,barde2020}}&Speaker&Wavefield Synthesis \tablefootnote{\cite{melchior2005}}&\\&Mic Through Headphones* \tablefootnote{\cite{lindeman2008,sennheiser2018}}&&Beamforming \tablefootnote{\cite{sharma2015}}&\\
+%         Olfactory&Scent Emitter \tablefootnote{\cite{brooks2020}}&Scent Emitter \tablefootnote{\cite{maggioni2019}}&Scent Emitter \tablefootnote{\cite{maggioni2019}}&\\
+%         Gustatory&Tongue Patch&Edibles \tablefootnote{\cite{narumi2011}}&Acoustic Levitation \tablefootnote{\cite{vi2017}}&\\
+%         Somatosensory   &Vibrotactile Stimulation \tablefootnote{\cite{subpac2020}} \tablefootnote{\cite{seah2015}}    &Vibrotactile Stimulation&3D Printer&\\&Electrical Muscle Stimulation \tablefootnote{\cite{lopes2018}}&&Mid-Air Haptics \tablefootnote{\cite{ablart2019}} &\\
+%         Others&Substitution Devices \tablefootnote{\cite{ward2010,hafidh2013}}&&&\\ &Adaptation Devices \tablefootnote{\cite{nagel2005}}&&&\\
+%     \end{tabular}
+% \end{table*}
 \subsubsection{Wearable}
 \subsubsection{Tangible}
 \subsubsection{Situated}
@@ -83,9 +92,9 @@ The term design patterns here, is borrowed from the field of software design, wh
 
 % ---------------------------------------------
 \section{AR Experience Studies}
-\subsection{\autoref{sec: area} -  The area\textasciitilde{} System}
+\subsection{The area\textasciitilde{} System - \autoref{sec: area}}
 The starting point for this was the creation of area\textasciitilde{}, a non-visual audio AR experience centred around the self-composition of a hybrid listening environment using an ambisonic microphone, head-, and hand-tracking. As will be expanded upon in \autoref{sec: area}, due to the circumstances of the COVID-19 lockdown, I opted for an autobiographical design method for the iteration and evaluation of the system. Out of the evaluation of this project, namely the endeavour to expand into audiovisual AR experiences, I discovered a suitable platform the develop the rest of doctoral research on: the open-source Project North Star AR headset.
 
-\subsection{\autoref{sec: polaris} - Evaluating polaris\textasciitilde{}}
-\subsection{\autoref{sec: performance} - Experimental A/V AR Performance @ The Rosehill}
+\subsection{Evaluating polaris\textasciitilde{} - \autoref{sec: polaris}}
+\subsection{Experimental A/V AR Performance @ The Rosehill - \autoref{sec: performance}}
 
