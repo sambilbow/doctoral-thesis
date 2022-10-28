@@ -67,21 +67,31 @@ These design patterns are therefore subject to iteration, and the latest version
 \subsection{Designing for Rich AR Experience} \label{sec: method-patterns-experience} 
 \autoref{sec: theory} drew on a number of theoretical propositions, and put forward that AR has the potential to scaffold new modes of performance and expression in the arts and music, furthermore, that from an enactivist approach experience, this would consist in radically modulating the material, embodied, and spatial experience of participants. This is the starting point for ideating and designing an artistic AR experience in the present thesis. This pattern addresses the issue of the typicality of AR experience being simple interactions with visual overlay devices. It approaches experience ideation from a holistic and multisensory, or ``modalities-encompassing'' \citep{schraffenberger2018} perspective.
 
-The `4Es' of an enactivist approach can be considered as conditions for what could be described as ``immersive, rich experience" \citep{bilbow2021}. As highlighted in \autoref{sec: theory-materiality-complexitymusic}, enactivist principles have been offered as guidelines for the creation of interactive systems; both Essl and O'Modhrain \citeyearpar{essl2006} and Armstrong \citeyearpar{armstrong2006} suggest this approach in the design of new musical instruments. 
+The `4Es' of an enactivist approach can be considered as conditions for what could be described as immersive and ``rich experience" \citep{bilbow2021}. As highlighted in \autoref{sec: theory-materiality-complexitymusic}, enactivist principles have been offered as guidelines for the creation of interactive systems in the past; Essl and O'Modhrain \citeyearpar{essl2006}, Armstrong \citeyearpar{armstrong2006}, and Hayes \citeyearpar{hayes2019} suggest this approach in the design of new musical instruments. 
 
-This design pattern also stands in stark contrast to the current direction of corporate XR technologies, where it is being developed to replace in-person interactions, and facilitate in-headset `working from home' virtual environments. It also stands in contrast with the marketed push towards AR as a tool for driving commerce through targeted advertisements. How as artists and musicians can we avoid the corporate, commercial, ocularcentric, and overlay approach to AR?
+The concept of rich experience also stands in stark contrast to the current direction of corporate XR technologies, where it is being developed to \textbf{replace} in-person interactions e.g. by facilitating in-headset `working from home' virtual environments such as Meta Horizons. It also stands in contrast with the marketed push towards AR as a tool for driving commerce through targeted advertisements. How as artists and musicians can we avoid the corporate, commercial, ocularcentric, and overlay approach to AR?
 
-\subsubsection{Sensory Engagement}
+\begin{enumerate}
+    \item Centres on one or more sensory interactions
+    \item Invokes a meaningful relationship between the real and virtual
+    \item Utilises an AR subform
+\end{enumerate}
+% \subsubsection{Sensory Engagement}
 The AR experience ought to be centred on one or more human-sense interactions. It can include any combination of sensory interaction types, i.e visual (vision), auditory (hearing), vestibular (balance), olfactory (smell), gustatory (taste), and somatosensory (touch).
 
-\subsubsection{The Real-Virtual Dynamic}
+% \subsubsection{The Real-Virtual Dynamic}
 AR's medium specificity, discussed in \autoref{sec: theory-materiality-mediumspec}, should be at the forefront of intentional design choices. If AR is unique because its ``invocation of relationships between real and virtual processes in the axes of spatial, thematic, material and ecological distance'', these distances become a key handle by which artists and musicians can steer experience.
 
-\subsubsection{The AR Subform}
+% \subsubsection{The AR Subform}
 
-\subsubsection{The Interaction}
-%*[ ]   include table as figure
-%*[ ]   make table
+% \subsubsection{The Interaction}
+%[ ] >==> Replace with LaTeX table <==< my armpits smell like the swamps of dagobah where yoda went to die.
+\begin{figure}
+    \centering
+    {\includegraphics[width=.75\linewidth]{04-method/snippetscenespace.png}}
+    \caption[A Categorisation of AR Interaction Types]{A Categorisation of AR Interaction Types}
+\end{figure}\label{fig: ARinteraction}
+
 Snippets describe a small-scale clip-like \footnote{Similar in scale to the video-clip, sound-clip, clipart, and now app-clip, however conceptually different in that Snippets are not a miniaturised `extracts' or `segments' of a larger experience} AR Experiences that occur in the approximate interaction space of 30cm3, e.g. between a users hands. The Snippet itself does not supply a full sensorial experience, instead providing two human- to-sense interactions through its AR subforms. Rather than being a fully interactive relationship between real and virtual objects / environments (Behavioural Relationship), Snippets contain simpler, and more reactive Content-based Relationships or Spatial Relationships. 
 
 Scenes describe medium-scale AR Experiences that occur on and around the body, an approximate interaction space of 200cm3. They can be formed from existing Snippets, or created from scratch. They ideally feature more (and higher complexity) human-to-sense interactions, and therefore potentially more interactive, Content-based and Spatial Relationships between real and virtual elements will be formed. 
@@ -91,11 +101,16 @@ Spaces describe large-scale AR Experiences, involving multiple human actors in a
 
 \subsection{Consideration of the AR Instrument} \label{sec: method-patterns-instrument}
 When describing the means through which a participant meaningfully interacts or engages in any kind of information transfer in the AR system, it is through the AR Instrument. 
-%TODO fix table
+%*[ ] >==> Replace with LaTeX table <==<
+\begin{figure}
+    \centering
+    {\includegraphics[width=.75\linewidth]{04-method/sensorydisplays.png}}
+    \caption[Potential AR Instruments]{Potential AR Instruments}
+\end{figure}\label{fig: ARinstrument}
 % \begin{table*}
-%     \caption{A classification of potential sensory displays for MSAR Instruments}
-%     \begin{tabular}{lllll}
-%         Sense&Wearable&Tangible&Situated&\\
+    %     \caption{A classification of potential sensory displays for MSAR Instruments}
+    %     \begin{tabular}{lllll}
+        %         Sense&Wearable&Tangible&Situated&\\
 %         Visual&Optical See Through HMD \tablefootnote{ hi hi\cite{leapmotion2018}}&Mobile AR \tablefootnote{\cite{apple2020,google2020,vuforia2020}}&Projection Mapping \tablefootnote{\cite{lightform2020}} &\\ &Video See Through HMD* \tablefootnote{\cite{varjo2019}}&&&\\ &Mirrors / Reflectors \tablefootnote{\cite{tonn2020}}&&&\\
 %         Auditory&Hear Through Headphones \tablefootnote{\cite{kiefer2018,barde2020}}&Speaker&Wavefield Synthesis \tablefootnote{\cite{melchior2005}}&\\&Mic Through Headphones* \tablefootnote{\cite{lindeman2008,sennheiser2018}}&&Beamforming \tablefootnote{\cite{sharma2015}}&\\
 %         Olfactory&Scent Emitter \tablefootnote{\cite{brooks2020}}&Scent Emitter \tablefootnote{\cite{maggioni2019}}&Scent Emitter \tablefootnote{\cite{maggioni2019}}&\\
@@ -126,5 +141,5 @@ Situated Instruments. Situated AR Instruments include forms that are anchored in
 The starting point for this was the creation of area\textasciitilde{}, a non-visual audio AR experience centred around the self-composition of a hybrid listening environment using an ambisonic microphone, head-, and hand-tracking. As will be expanded upon in \autoref{sec: area}, due to the circumstances of the COVID-19 lockdown, I opted for an autobiographical design method for the iteration and evaluation of the system. Out of the evaluation of this project, namely the endeavour to expand into audiovisual AR experiences, I discovered a suitable platform the develop the rest of doctoral research on: the open-source Project North Star AR headset.
 
 \subsection{Evaluating polaris\textasciitilde{} - \autoref{sec: polaris}}
-\subsection{Experimental A/V AR Performance @ The Rosehill - \autoref{sec: performance}}
+\subsection{Weird Polygons and Hand Noises at The Rosehill - \autoref{sec: performance}}
 
