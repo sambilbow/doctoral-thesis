@@ -50,7 +50,7 @@
 \newcommand{\myTime}{\today \xspace}
 \newcommand{\myVersion}{version 1.0\xspace}
 
-%% Research Questions
+% Research Questions
 \newcommand{\RQgenealogy}{\item[1. ] What is AR's genealogy, historical context, its contemporary forms, trends, exceptions, and definitions?}
 \newcommand{\RQgenealogysub}{
 \begin{enumerate}
@@ -61,11 +61,7 @@
     \item What definition of AR is appropriate for the arts?
 \end{enumerate}
 }
-
-
 \newcommand{\RQtheory}{\item[2. ] What theoretical underpinnings can we use to explicate AR experiences within an artistic context?}
-
-
 \newcommand{\RQmedium}{\item[3. ] What are AR's boundaries and affordances as a medium, are there problems it poses artists and musicians?}
 \newcommand{\RQmediumsub}{
 \begin{enumerate}
@@ -75,8 +71,6 @@
     \item Does AR tend towards an aesthetic?
 \end{enumerate}
 }
-
-
 \newcommand{\RQexperience}{\item[4. ] What is the resultant experience for participants and audiences (or `immersants') of an artistic AR experience?}
 \newcommand{\RQexperiencesub}{
 \begin{enumerate}
@@ -85,13 +79,7 @@
     \item Do AR immersants engage with physical and digital `space' in novel ways?
 \end{enumerate}
 }
-
-
-
 \newcommand{\RQfuture}{\item[5. ] What might a future corpus of artistic AR experiences and digital music instruments look, sound, and feel like?}
-
-
-
 \newcommand{\RQall}{
 \enumerate
 \RQgenealogy
@@ -100,7 +88,6 @@
 \RQexperience
 \RQfuture
 }
-
 \newcommand{\RQallsub}{
 \enumerate
 \RQgenealogy
@@ -112,8 +99,6 @@
 \RQexperiencesub
 \RQfuture
 }
-
-
 % Load all settings and packages
 \input{settings}
 % \usepackage{fontspec}
@@ -123,20 +108,16 @@
 %---------------------------------------------------
 % BEGIN DOCUMENT
 %---------------------------------------------------
-
 \begin{document}
 %\frenchspacing
 %\raggedbottom
 %\pagenumbering{roman}
 %\pagestyle{plain}
-
 \makeatletter
 \renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
 \makeatother
 \pagestyle{custom}% Set page style to custom
 \chapterstyle{hansen} % Set chapter style
-
-
 %---------------------------------------------------
 % PREAMBLE: roman page numbering i, ii, iii, ...
 %---------------------------------------------------
@@ -151,27 +132,19 @@
   %\clearpage\input{content/00-front/acronyms.tex}
   %\clearpage\input{content/00-front/colophon}
 \endgroup
-
-
 %---------------------------------------------------
 % TEXCOUNT: includes etc.
 %---------------------------------------------------
 %TC:incbib
-
 %TC:macro \cite [option:text,text]
 %TC:macro \citep [option:text,text]
 %TC:macro \citet [option:text,text]
 %TC:macro \citeyearpar [option:text,text]
-
 %TC:group table 0 1
 %TC:group tabular 1 1
-
-
-
 %---------------------------------------------------
 % TABLE OF CONTENTS, LISTS OF TABLES & FIGURES
 %---------------------------------------------------
-
 \begingroup
   \newpage  
   \setlength{\parskip}{0pt} % To restore distance between Chapters, sections and subsections in the table of contents
@@ -181,17 +154,14 @@
   \setcounter{tocdepth}{1}
   \tableofcontents* % as per in memoir class 
 \endgroup
-
 %---------------------------------------------------
 % MAIN THESIS TEXT
 %---------------------------------------------------
 \mainmatter
 \pagenumbering{arabic} %Start official numbering here
 %\setcounter{page}{90} % Manual adjustment if necessary
-
 % Modify the header style
 %\pagestyle{scrheadings}
-
 \begingroup
   \input{content/01-chap-intro.tex} 
   \input{content/02-chap-review.tex}
@@ -203,7 +173,6 @@
   \input{content/08-chap-discussion.tex}
   \input{content/09-chap-conclusion.tex}
 \endgroup
-
 %---------------------------------------------------
 % APPENDICES
 %---------------------------------------------------
@@ -216,29 +185,12 @@
 \endgroup
 \backmatter
 %TC:endignore
-
 %---------------------------------------------------
 % BIBLIOGRAPHY
 %---------------------------------------------------
 \clearpage
 \phantomsection
 \bibliography{citations.bib}
-
-% Don't count these!
-%TC:ignore
-%Word Count \\
-%\quickwordcount{content/01-n}{Introduction} \\
-%\quickwordcount{content/02-w}{Literature Review} \\
-%\quickwordcount{content/03-k}{Theoretical Framework} \\
-%\quickwordcount{content/04-y}{Methodology} \\
-%\quickwordcount{content/05-a}{area\textasciitilde} \\
-%\quickwordcount{content/06-s}{polaris\textasciitilde} \\
-%\quickwordcount{content/07-s}{Performances} \\
-%\quickwordcount{content/08-n}{Discussion} \\
-%\quickwordcount{content/09-n}{Conclusion} \\
-%\quickwordcount{main}{Main Total} \\
-%\detailtexcount{main}
-%TC:endignore
 %---------------------------------------------------
 % END DOCUMENT
 %---------------------------------------------------
