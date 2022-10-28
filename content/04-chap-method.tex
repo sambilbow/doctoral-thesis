@@ -56,25 +56,42 @@ The term design pattern here, is borrowed from the field of computer science, wh
     \item The \textbf{consequences} are the results and trade-offs of applying the pattern
 \end{itemize}
 
-\begin{figure}[bth]
-    \myfloatalign
+\begin{figure}
+    \centering
     {\includegraphics[width=.75\linewidth]{04-method/xrtspace.png}}
     \caption[The XRt Space website]{The XRt Space website}
 \end{figure}\label{fig: thexrtspace}
 
-These design patterns are therefore subject to iteration, and the latest version can be found on \href{https://www.thexrt.space}{the XRt Space website}, a community-editable repository created to host and update them. The principles used to guide the patterns draw on the resistances outlined in \autoref{sec: method-resistance}, namely taking a DIY approach, decoupling from the ocularcentric and layering paradigms of typical AR experience, and attempting to navigate an inherently consumerist space whilst trying not to contribute to exploitative systems of oppression that uphold it. They are also guided by the theoretical proposals of \autoref{sec: theory}: that participant's and performer's cognitive processes in the experience of AR artworks are embodied, embedded, enacted, and extended, and have the potential  to be modulated to extents that offer novel aesthetic experiences of augmented \hyperref[sec: theory-materiality]{materiality}, \hyperref[sec: theory-embodiment]{embodiment}, and \hyperref[sec: theory-space]{space}.
+These design patterns are therefore subject to iteration, and the latest version can be found on \href{https://www.thexrt.space}{the XRt Space website}, a community-editable repository created to host and update them. The principles used to guide the patterns draw on the resistances outlined in \autoref{sec: method-resistance}, namely taking a DIY approach, decoupling from the ocularcentric and layering paradigms of typical AR experience, and attempting to navigate an inherently consumerist space whilst trying not to contribute to exploitative systems of oppression that uphold it. They are also guided by the theoretical proposals of \autoref{sec: theory}: that participant's and performer's cognitive processes in the experience of AR artworks are embodied, embedded, enacted, and extended, and have the potential to be modulated to extents that offer novel aesthetic experiences of augmented \hyperref[sec: theory-materiality]{materiality}, \hyperref[sec: theory-embodiment]{embodiment}, and \hyperref[sec: theory-space]{space}. The following sections outline three design patterns, \textit{\nameref*{sec: method-patterns-experience}}, \textit{\nameref*{sec: method-patterns-instrument}}, and \textit{\nameref*{sec: method-patterns-environment}}.
 
-The following sections outline three design patterns. The first, ``Designing for Rich Experience'' addresses the need to approach to experience ideation from a holistic, multisensory, or ``modalities-encompassing'' \citep{schraffenberger2018} perspective.
+\subsection{Designing for Rich AR Experience} \label{sec: method-patterns-experience} 
+\autoref{sec: theory} drew on a number of theoretical propositions, and put forward that AR has the potential to scaffold new modes of performance and expression in the arts and music, furthermore, that from an enactivist approach experience, this would consist in radically modulating the material, embodied, and spatial experience of participants. This is the starting point for ideating and designing an artistic AR experience in the present thesis. This pattern addresses the issue of the typicality of AR experience being simple interactions with visual overlay devices. It approaches experience ideation from a holistic and multisensory, or ``modalities-encompassing'' \citep{schraffenberger2018} perspective.
 
-\subsection{Designing for Rich Experience}
-\autoref{sec: theory} drew on a number of theoretical propositions, and put forward that AR has the potential to scaffold new modes of performance and expression in the arts and music, furthermore, that from an enactivist approach experience, this would consist in radically modulating the material, embodied, and spatial experience of participants.
+The `4Es' of an enactivist approach can be considered as conditions for what could be described as ``immersive, rich experience" \citep{bilbow2021}. As highlighted in \autoref{sec: theory-materiality-complexitymusic}, enactivist principles have been offered as guidelines for the creation of interactive systems; both Essl and O'Modhrain \citeyearpar{essl2006} and Armstrong \citeyearpar{armstrong2006} suggest this approach in the design of new musical instruments. 
 
-\subsubsection{The AR Subform} 
-\subsubsection{The Real-Virtual Dynamic} % axes
-\subsubsection{Sensory Engagement} % from 4ec
-\subsubsection{The Interaction}     %snippets enactivism?
+This design pattern also stands in stark contrast to the current direction of corporate XR technologies, where it is being developed to replace in-person interactions, and facilitate in-headset `working from home' virtual environments. It also stands in contrast with the marketed push towards AR as a tool for driving commerce through targeted advertisements. How as artists and musicians can we avoid the corporate, commercial, ocularcentric, and overlay approach to AR?
 
-\subsection{Consideration of the Instrument} %display table
+\subsubsection{Sensory Engagement}
+The AR experience ought to be centred on one or more human-sense interactions. It can include any combination of sensory interaction types, i.e visual (vision), auditory (hearing), vestibular (balance), olfactory (smell), gustatory (taste), and somatosensory (touch).
+
+\subsubsection{The Real-Virtual Dynamic}
+AR's medium specificity, discussed in \autoref{sec: theory-materiality-mediumspec}, should be at the forefront of intentional design choices. If AR is unique because its ``invocation of relationships between real and virtual processes in the axes of spatial, thematic, material and ecological distance'', these distances become a key handle by which artists and musicians can steer experience.
+
+\subsubsection{The AR Subform}
+
+\subsubsection{The Interaction}
+%*[ ]   include table as figure
+%*[ ]   make table
+Snippets describe a small-scale clip-like \footnote{Similar in scale to the video-clip, sound-clip, clipart, and now app-clip, however conceptually different in that Snippets are not a miniaturised `extracts' or `segments' of a larger experience} AR Experiences that occur in the approximate interaction space of 30cm3, e.g. between a users hands. The Snippet itself does not supply a full sensorial experience, instead providing two human- to-sense interactions through its AR subforms. Rather than being a fully interactive relationship between real and virtual objects / environments (Behavioural Relationship), Snippets contain simpler, and more reactive Content-based Relationships or Spatial Relationships. 
+
+Scenes describe medium-scale AR Experiences that occur on and around the body, an approximate interaction space of 200cm3. They can be formed from existing Snippets, or created from scratch. They ideally feature more (and higher complexity) human-to-sense interactions, and therefore potentially more interactive, Content-based and Spatial Relationships between real and virtual elements will be formed. 
+
+Spaces describe large-scale AR Experiences, involving multiple human actors in a variety of differently sized interaction spaces in a room. For example, augmented hand / body interaction with the environment and other users, and multiple of zones of interaction in different sections of the room. Spaces provide fully multisensory immersive experiences, by making use of a combination of different sensory modalities, AR subforms, and Behavioural Relationships.
+
+
+\subsection{Consideration of the AR Instrument} \label{sec: method-patterns-instrument}
+When describing the means through which a participant meaningfully interacts or engages in any kind of information transfer in the AR system, it is through the AR Instrument. 
+%TODO fix table
 % \begin{table*}
 %     \caption{A classification of potential sensory displays for MSAR Instruments}
 %     \begin{tabular}{lllll}
@@ -88,13 +105,18 @@ The following sections outline three design patterns. The first, ``Designing for
 %     \end{tabular}
 % \end{table*}
 \subsubsection{Wearable}
+Wearable AR Instruments include forms that are worn on the body, including output via head-mounted visual, audio, olfactory and gustatory feedback devices or `displays', and body-mounted proprioceptive feedback devices
+
 \subsubsection{Tangible}
+Tangible AR Instruments include forms that can explored by holding or touching, such as devices that use conductive fabrics and textiles to track input, and then providing sensory feedback, e.g. vibrotactile stimulation (somatosensory). They can also be any object that can be granted instrumentality by a device that can track it and provide contextually aware (i.e. corresponding) sensory feedback via another device. For example, a wooden cube could be transformed into a Tangible Instrument through real-time image recognition, and specific interactions with it could provide auditory feedback. In this example, the auditory feedback would likely be delivered via a Wearable Instrument that was also processing the real-time image recognition such as an HMD with bone-conduction headphones.
+
 \subsubsection{Situated}
+Situated Instruments. Situated AR Instruments include forms that are anchored in a real world environment and therefore provide location-specific experiences. Activation is gauged by user enaction, or user presence via infrared camera tracking or proximity of a worn device. Examples of Situated AR Instruments could include an interactive projection mapping with wavefield synthesis providing auditory feedback, and anchored scent emitters providing olfactory feedback
 
-\subsection{Striking a Real / Virtual Balance}
-\subsection{Choice of Environment}
-\subsection{Allowance for the Real}
-
+\subsection{Striking a Real-Virtual Balance} \label{sec: method-patterns-environment}
+\subsubsection{Choice of Environment}
+\subsubsection{Allowance for the Real}
+\subsubsection{Believability}
 
 
 

@@ -93,6 +93,7 @@ For example, in area\textasciitilde{}, I have used a RØDE Soundfield NTSF-1 mic
 \section{The area\textasciitilde{} system}      \label{sec: area-system}
 The \textit{area\textasciitilde{}}  system, which stands loosely for ‘augmented reality environmental audio’ aims to afford users the ability to spectromorphologically (defined by Smalley to concern spatial, temporal and textural qualities of sound \citeyearpar{smalley1997}) manipulate sounds from their environment into a \textit{virtual audio environment}. Through bone conduction headphones and head tracking, this sound field is heard in synchronicity with their actual environment. The system was created in order to explore and reveal the relationship between real and virtual environments.
 
+%*[ ] fix figure
 \subsection{Hardware Implementation}            \label{sec: area-system-hardware}
 \begin{figure}
     \centering
@@ -112,6 +113,8 @@ The IMU and ESP32 are connected via a detachable 1.5m heat shrunk cable that run
 The only hardware that needs to be accessible for the user is the Leap Motion Controller and the wearable hardware system. The laptop and audio interface are ideally hidden from the user. The microphone should be placed in a location that will provide the user with access to sounds that they wish to manipulate.
 
 \subsection{Software Implementation}            \label{sec: area-system-software}
+
+%*[ ] fix figure
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figures/05-area/areatechnical_max.png}
@@ -119,6 +122,8 @@ The only hardware that needs to be accessible for the user is the Leap Motion Co
     \label{fig: areatechnicalmax}
 \end{figure}
 The patch (\autoref{fig: areatechnicalmax}) uses the audio plugin \citep{rode2020} shown in \autoref{fig: areatechnicalrode} to encode the A-Format ambisonics microphone input into B-Format (a three-dimensional sound field), or what I will refer to as the \textit{ambisonic palette}. This \textit{ambisonic palette} is not heard by the user; instead, they can sculpt from it, forming their own audible \textit{(B-Format) virtual audio environment} through hand gestures. I have defined these gestures in Max MSP with help from the IRCAM Leap Motion library \citeyearpar{ircam2014}, and they occur over three stages of user interaction: \textit{\textbf{record, manipulate, spatialise}}. 
+
+%*[ ] fix figure
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figures/05-area/areatechnical_rode.png}
