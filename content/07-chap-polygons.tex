@@ -11,8 +11,9 @@
 %*[ ]   wc: 1470
 %**     wc: 2000
 %*[ ]   Make Github Page
-%*[ ]   Tidy Pd patches
+%*[ ]   Tidy Pd patches - rename click+-
 %*[ ]   Tidy .cs scripts
+%*[ ]   Link fig: to github scripts
 %*[x]   Decide on chapter sections
 %*[x]   Draft summary
 %*[ ]   Draft composition
@@ -46,12 +47,12 @@ The following chapter outlines my exploration of a a fifteen-minute experimental
 
 
 % ---------------------------------------------
-\section{The Composition of Weird Polygons and Hand Noises} \label{sec: polygons-composition}
+\section{The Composition of Weird Polygons and Hand Noises} \label{sec: polygons-composition}:
 
-As an AR performance ecosystem, polygons\textasciitilde{} revolves around the relationship between a performers actions via body, hand, and head movement, feedback from the audience, and three sound-generating AR instruments: \textit{ambi}, \textit{click}, and \textit{hands}.
+As an AR performance ecosystem, polygons\textasciitilde{} describes the relationship between a performers actions via body, hand, and head movement, feedback from the audience, and three sound-generating AR instruments: \textit{ambi}, \textit{click}, and \textit{hands}. I wanted a system with moving parts, audioreactivity
 
 
-\textit{ambi}, a red wireframe icosahedron, serves as a dual-oscillator drone synthesiser that the performer can call on my taking and bringing it closer to them. Its voice is contingent eleven real-time parameters, which are sent to the PureData patch attached to it. At specified distance two particle systems are activated from the palms of the performers hands, and the drone from \textit{ambi} is activated. The particles are drawn to the centre of \textit{ambi}, their paths guided by an unseen particle forcefield - the same behaviour as in polaris\textasciitilde{}. Real-time hand `collision' in three dimensions with \textit{ambi} is constantly reported, resulting in two sets of $x,y,z$ coordinates that form part of the data that is mapped to parameters in PureData \autoref{fig: polygons-ambi-mapping}.
+\textit{ambi}, a red wireframe icosahedron, serves as a dual-oscillator drone synthesiser that the performer can call on my taking and bringing it closer to them with their hands. Its voice is contingent eleven real-time parameters, which are sent to the PureData patch attached to it. At specified distance two particle systems are activated from the palms of the performers hands, and the drone from \textit{ambi} is activated. The particles are drawn to the centre of \textit{ambi}, their paths guided by an unseen particle forcefield - the same behaviour as in polaris\textasciitilde{}. Real-time hand `collision' in three dimensions with \textit{ambi} is constantly reported per hand, resulting in two sets of $x,y,z$ coordinates that form part of the data that is mapped to parameters in PureData (see \autoref{fig: polygons-ambi-mapping}).
 
 \begin{table}
     \centering
@@ -74,7 +75,7 @@ As an AR performance ecosystem, polygons\textasciitilde{} revolves around the re
     \label{fig: polygons-ambi-mapping}
 \end{table}
 
-
+%*[ ]   move panel in patch under each other for space
 \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{07-polygons/polygons-ambi-pd.png}
@@ -82,7 +83,22 @@ As an AR performance ecosystem, polygons\textasciitilde{} revolves around the re
     \label{fig: polygons-ambi-pd}
 \end{figure}
 
-\textit{click}, a set of two blue wireframe icosahedra, form a feedback system between two low-frequency oscillators. The feedback can be altered by bringing the smaller icosahedron closer to the larger one.  
+\textit{click}, a set of two blue wireframe icosahedra, form a feedback system between two low-frequency oscillator controlled impulse generators. The feedback can be altered by bringing the smaller icosahedron (\textit{click-}) closer to the larger one (\textit{click+}). \textit{click+-} makes use of LibPdIntegration's Unity send functionality; each time there is an impulse generated, a message is sent to Unity, which triggers a shower of particles to be emitted from \textit{click-} to \textit{click+} forcefield-guided cone. As the performer intervenes and creates the feedback system, the closer they bring the icosahedra together, the faster the visual particle shower becomes, and the more erratic the impulse generators feedback on each other. A further sound parameter, connected to a reverb, is mapped to the amount spin \textit{click-} let go with by the performer. The sound palette explores a gradient from static electricity crackles to a sound akin toa car motor catching and revving up as the feedback increases.
+
+\begin{table}
+    \centering
+    \begin{tabular}{ l|l }
+        \textbf{Unity Scene Attribute}         & \textbf{PureData Parameter}   \\
+        \hline      
+        \textit{click+-} Distance              & Impulse 1 Frequency           \\
+        \textit{click-} Collision X            & Impulse 2 Frequency           \\
+        \textit{click-} Collision Y            & Impulse Chorus Rate           \\
+        \textit{click-} Collision Z            & Impulse Chorus Depth          \\
+        \textit{click-} Release Spin Velocity  & Impulse Reverb Amount     
+    \end{tabular}
+    \caption{The parameter mappings for \textit{click}}
+    \label{fig: polygons-click-mapping}
+\end{table}
 
 \begin{figure}
     \centering
@@ -91,7 +107,27 @@ As an AR performance ecosystem, polygons\textasciitilde{} revolves around the re
     \label{fig: polygons-click-pd}
 \end{figure}
 
-Hands
+\textit{hands} constitutes the final AR instrument in \textit{polygons~}; each of the performers hands, when a virtual button besides their palm is toggled \textit{on}, generate a highly resonant filtered white noise. The cutoff, resonance, and amplitude of this generator-filter system is controllable independently per hand, through several dynamic movement-based attributes. The filter cutoff per hand is linearly mapped to that hand's distance to the performers face; the filter resonance per hand is mapped to the angle from that hand's palm angle towards the centre of the performance space; and the amplitude of each is mapped to the stretching of the fingers outwards away from the palm.
+
+\begin{table}
+    \centering
+    \begin{tabular}{ l|l }
+        \textbf{Unity Scene Attribute}         & \textbf{PureData Parameter}    \\
+        \hline      
+        \textit{hand} to Head Distance         & Filter Cutoff                  \\
+        \textit{hand} to Stage Angle           & Filter Resonance               \\
+        \textit{hand}'s Finger Extension       & Amplitude               
+    \end{tabular}
+    \caption{The parameter mappings for \textit{hands}}
+    \label{fig: polygons-hands-mapping}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{07-polygons/polygons-hands-pd.png}
+    \caption{The PureData patch for \textit{hands}}
+    \label{fig: polygons-hands-pd}
+\end{figure}
 
 \subsection{Augmented Materiality} \label{sec: polygons-composition-material}
 %*? Particle system
