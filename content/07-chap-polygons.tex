@@ -1,0 +1,146 @@
+% ---------------------------------------------
+%              _ 
+%  _ __   ___ | |_   _  __ _  ___  _ __  ___
+% | '_ \ / _ \| | | | |/ _` |/ _ \| '_ \/ __| /\/|
+% | |_) | (_) | | |_| | (_| | (_) | | | \__ \|/\/
+% | .__/ \___/|_|\__, |\__, |\___/|_| |_|___/
+% |_|            |___/ |___/
+% ---------------------------------------------
+%*!     wc: 303
+%*?     wc: 564
+%*[ ]   wc: 1470
+%**     wc: 2000
+%*[ ]   Make Github Page
+%*[ ]   Tidy Pd patches
+%*[ ]   Tidy .cs scripts
+%*[x]   Decide on chapter sections
+%*[x]   Draft summary
+%*[ ]   Draft composition
+%*[ ]   Draft performance write up
+%*[ ]   Draft demo write up
+%*[ ]   Draft future
+% ---------------------------------------------
+\chapter{Performing polygons\textasciitilde{}}
+\label{sec: polygons}
+\markboth{}{Performing polygons\textasciitilde{}}
+\epigraph{\emph{quote}}{\citep[]{bilbow2022}}
+% ---------------------------------------------
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{07-polygons/polygons-ambi-rh.png}
+    \caption{Performance of polygons\textasciitilde{} at The Rosehill}
+    \label{fig: polygons-ambi-rh}
+\end{figure}
+\section{Developing an AR Performance Practice} \label{sec: polygons-developing}
+As a direct consequence of witnessing participants enjoyment and play with polaris\textasciitilde{}, I recognised for the first time looking from the outside in, that the system had a larger propensity for fostering learning, virtuosity, and depth of expression than I had originally thought; if only the experience was slightly more complex, the interactions more \textit{nuanced}. The gestures, play, and expression by participants led to a kind of quasi-transhumanist dance, one that struck me as a technologically mediated dialogue between hybrid self and hybrid environment, a delicate balance of agency.
+
+Until this point, I had been primarily focused on the medium as used for the composition of musical pieces e.g. \hyperref[sec: area]{area\textasciitilde{}}, or of installation-like experiences \hyperref[sec: polaris]{polaris\textasciitilde{}}. Performance with AR had remained abstract, especially as, formally, its not my preferred mode of musical expression. However, the balance of agency between participant and system, between self and environment, presented itself during the evaluation of polaris\textasciitilde{} to be an area ready for exploration through performance. 
+
+Most of the software and hardware I had used in the development of polaris\textasciitilde{} was readily transferable to the context of performance. There was no need to change from the combination of PureData, LibPdIntegration, and Unity. However, performance did confront me with new considerations: 
+\begin{itemize}
+    \item \textit{What elements of my experience would need to be shared with an audience?} 
+    \item \textit{What role would my gestures have in describing the experience that I was by now intimately aware of, but would be strange for an audience?} 
+\end{itemize}
+The following chapter outlines my exploration of a a fifteen-minute experimental audiovisual AR improvisation using an AR performance ecosystem called \textit{Weird Polygons and Hand Noises}, or \textit{polygons\textasciitilde{}} for short.
+
+
+
+% ---------------------------------------------
+\section{The Composition of Weird Polygons and Hand Noises} \label{sec: polygons-composition}
+
+As an AR performance ecosystem, polygons\textasciitilde{} revolves around the relationship between a performers actions via body, hand, and head movement, feedback from the audience, and three sound-generating AR instruments: \textit{ambi}, \textit{click}, and \textit{hands}.
+
+
+\textit{ambi}, a red wireframe icosahedron, serves as a dual-oscillator drone synthesiser that the performer can call on my taking and bringing it closer to them. Its voice is contingent eleven real-time parameters, which are sent to the PureData patch attached to it. At specified distance two particle systems are activated from the palms of the performers hands, and the drone from \textit{ambi} is activated. The particles are drawn to the centre of \textit{ambi}, their paths guided by an unseen particle forcefield - the same behaviour as in polaris\textasciitilde{}. Real-time hand `collision' in three dimensions with \textit{ambi} is constantly reported, resulting in two sets of $x,y,z$ coordinates that form part of the data that is mapped to parameters in PureData \autoref{fig: polygons-ambi-mapping}.
+
+\begin{table}
+    \centering
+    \begin{tabular}{ l|l l }
+        \textbf{Unity Scene Attribute}  & \multicolumn{2}{ l }{\textbf{PureData Parameter}}   \\
+        \hline
+        \textbf{Hand}                   & \textbf{via Left Hand}& \textbf{via Right Hand}       \\
+        \hline
+        Collision Distance              & Drone 1 On / Off      & Drone 2 On / Off              \\
+        Collision X                     & Reverb Amount         & Drone 2 LPF CF Mod            \\
+        Collision Y                     & Drone 1 Pitch         & Drone 2 Pitch                 \\
+        Collision Z                     & Rev/Dly Amount        & Drone 2 LPF CF                \\
+        \hline
+        
+        \textbf{\textit{ambi}}          & \multicolumn{2}{ l }{\textbf{via pinch gesture}}    \\
+        \hline
+        Scale                           & \multicolumn{2}{ l }{Output Filter Cutoff}          \\  
+    \end{tabular}
+    \caption{The parameter mappings for \textit{ambi}}
+    \label{fig: polygons-ambi-mapping}
+\end{table}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{07-polygons/polygons-ambi-pd.png}
+    \caption{The PureData patch for \textit{ambi}}
+    \label{fig: polygons-ambi-pd}
+\end{figure}
+
+\textit{click}, a set of two blue wireframe icosahedra, form a feedback system between two low-frequency oscillators. The feedback can be altered by bringing the smaller icosahedron closer to the larger one.  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{07-polygons/polygons-click-pd.png}
+    \caption{The PureData patch for \textit{click}}
+    \label{fig: polygons-click-pd}
+\end{figure}
+
+Hands
+
+\subsection{Augmented Materiality} \label{sec: polygons-composition-material}
+%*? Particle system
+%*? Learning => Improvisation
+%\nameref{sec: theory-materiality}
+
+
+\subsection{Augmented Embodiment} \label{sec: polygons-composition-embodiment}
+%*? Exploration => Movement
+%*? Difficult sounds => Movements
+
+%\nameref{sec: theory-embodiment}
+
+
+\subsection{Augmented Space} \label{sec: polygons-composition-space}
+%*? Invitation of the audience into a hybrid shared space
+%\nameref{sec: theory-space}
+
+
+
+
+% ---------------------------------------------
+\section{Performances} \label{sec: polygons-performances}
+\subsection{Technical Setup} \label{sec: polygons-performances-setup}
+%*? Laptop?
+%*? Method of audience display -> 2x headset -> laptop -> projector
+%*? Speaker reversal
+
+\subsection{emute\_06 at The Rosehill} \label{sec: polygons-performances-rosehill}
+polygons\textasciitilde{} was developed for a performance as part of the seventh Experimental Music Technologies (emute) Lab \href{http://www.emutelab.org/blog/emutelab6}{showcase} at The Rosehill - an independent venue, recording studio, label, creative hub and co-working space run by artists and musicians.
+
+\subsection{Showcase at the ACCA} \label{sec: polygons-performances-acca}
+
+
+
+% ---------------------------------------------
+\section{Demonstrations} \label{sec: polygons-demonstrations}
+\subsection{MAH Doctoral Conference} \label{sec: polygons-demonstrations-mah}
+
+\subsection{SHL Make \& Create} \label{sec: polygons-demonstrations-shl}
+
+\subsection{Embodiment Hackathon} \label{sec: 
+polygons-demonstrations-emh}
+
+
+
+% ---------------------------------------------
+\section{The Future of AR Musical Performance}
+\subsection{Intimacy}
+\subsection{Relevant Work}
+%** Green, Hayes, guy from TAP, guy from PNS, guy from YT
+\subsection{Moving forwards}
