@@ -6,7 +6,7 @@
 % | .__/ \___/|_|\__, |\__, |\___/|_| |_|___/
 % |_|            |___/ |___/
 % ---------------------------------------------
-%*!     wc: 854
+%*!     wc: 943
 %**     wc: 2000
 %*[ ]   Make Github Page
 %*[ ]   Tidy Pd patches - rename click+-
@@ -14,7 +14,7 @@
 %*[ ]   Link fig: to github scripts
 %*[x]   Decide on chapter sections
 %*[x]   Draft summary
-%*[ ]   Draft composition
+%*[X]   Draft composition
 %*[ ]   Draft performance write up
 %*[ ]   Draft demo write up
 %*[ ]   Draft future
@@ -47,7 +47,7 @@ The following chapter outlines my exploration of a a fifteen-minute experimental
 % ---------------------------------------------
 \section{The Composition of Weird Polygons and Hand Noises} \label{sec: polygons-composition}
 
-Drawing from the categories extracted from \textit{polaris\textasciitilde{}}'s I wanted a system with physically moveable elements, audio-reactivity, enough room to be able to explore the scene both spatially and in terms of sonic palette. As an AR performance ecosystem, \textit{polygons\textasciitilde{}} delivers this by describing the relationship between a performers actions via body, hand, and head movement, feedback from the audience, and three real-time AR musical instruments: \textit{ambi}, \textit{click}, and \textit{hands}. 
+Drawing from the categories extracted from \nameref{sec: polaris}: \nameref{sec: polaris-feedback}, I pursued the design of a system with physically moveable elements, audio-reactivity, and enough room to be able to learn and explore the scene both spatially and in terms of interaction and sonic palette. Thus, as an AR performance ecosystem, \textit{polygons\textasciitilde{}} delivers this by describing the improvisational and performative relationship between a performers actions via body, hand, and head movement, feedback from the audience, and three real-time AR musical instruments: \textit{ambi}, \textit{click}, and \textit{hands}. 
 
 %*[ ]   add unity image of ambi w/ particles
 \textit{ambi}, a red wireframe icosahedron, serves as a dual-oscillator drone synthesiser that the performer can call on my taking and bringing it closer to them with their hands. Its voice is contingent eleven real-time parameters, which are sent to the PureData patch attached to it. At specified distance two particle systems are activated from the palms of the performers hands, and the drone from \textit{ambi} is activated. The particles are drawn to the centre of \textit{ambi}, their paths guided by an unseen particle forcefield - the same behaviour as in \textit{polaris\textasciitilde{}}. Real-time hand `collision' in three dimensions with \textit{ambi} is constantly reported per hand, resulting in two sets of $x,y,z$ coordinates that form part of the data that is mapped to parameters in PureData (see \autoref{fig: polygons-ambi-mapping}).
@@ -103,7 +103,7 @@ Drawing from the categories extracted from \textit{polaris\textasciitilde{}}'s I
 \end{figure}
 
 %*[ ]   add unity image of hand w/ colours
-\textit{hands} constitutes the final AR instrument in \textit{polygons~}; each of the performers hands, when a virtual button besides their palm is toggled \textit{on}, generate a highly resonant filtered white noise. The cutoff, resonance, and amplitude of this generator-filter system is controllable independently per hand, through several dynamic movement-based attributes. The filter cutoff per hand is linearly mapped to that hand's distance to the performers face; the filter resonance per hand is mapped to the angle from that hand's palm angle towards the centre of the performance space; and the amplitude of each is mapped to the stretching of the fingers outwards away from the palm.
+\textit{hands} constitutes the final AR instrument in \textit{polygons~}; each of the performers hands, when a virtual button besides their palm is toggled \textit{on}, generate a highly resonant filtered white noise. The cutoff, resonance, and amplitude of this generator-filter system is controllable independently per hand, through several dynamic movement-based attributes. The filter cutoff per hand is linearly mapped to that hand's distance to the performers face; the filter resonance per hand is mapped to the angle from that hand's palm angle towards the centre of the performance space; and the amplitude of each is mapped to the stretching of the fingers outwards away from the palm. The sounds delivered by \textit{hands} are harsh and unpleasant at certain parameter combinations and purposefully loud; from a performative standpoint, this engenders specific gestures, movements, and stances, as the performer grapples with a sonic experience akin to howling and shrieking winds.
 \begin{table}
     \centering
     \begin{tabular}{ l|l }
@@ -123,24 +123,16 @@ Drawing from the categories extracted from \textit{polaris\textasciitilde{}}'s I
     \label{fig: polygons-hands-pd}
 \end{figure}
 
-\subsection{Augmented Materiality} \label{sec: polygons-composition-material}
-%*? Particle system
-%*? Learning => Improvisation
-%\nameref{sec: theory-materiality}
+Together, and separately, \textit{ambi}, \textit{click-+}, and \textit{hands} provide a complex sound palette, explorable by the performer through non-linear combinations of hand gestures, body movements, and stances, that themselves invariably feed back into the decisions made to delve into specific sounds. Visually, \textit{polygons\textasciitilde{}} draws on the primitive wireframe AR systems of the early 20th century such as the \textit{KARMA} system \cite{feiner1993} (see: \autoref{fig: polygons-wireframes}) , and Sutherland's \textit{Window}, which were constrained by computer power. This is juxtaposed by the fluid and visually complex behaviour of the thousands of multicoloured particles used by \textit{ambi}, and \textit{click-+}. Sonically 
 
-
-\subsection{Augmented Embodiment} \label{sec: polygons-composition-embodiment}
-%*? Exploration => Movement
-%*? Difficult sounds => Movements
-
-%\nameref{sec: theory-embodiment}
-
-
-\subsection{Augmented Space} \label{sec: polygons-composition-space}
-%*? Invitation of the audience into a hybrid shared space
-%\nameref{sec: theory-space}
-
-
+\begin{figure}
+    \centering
+    \subcaptionbox{Sutherlands `Ultimate Display'}[.3\linewidth]{\includegraphics[height=2.5cm]{07-polygons/sutherland_68.png}}
+    \hfill
+    \subcaptionbox{Feiner's `KARMA' System}[.3\linewidth]{\includegraphics[height=2.5cm]{07-polygons/feiner_93_2.png}}%
+    \caption{Wireframe Influences}
+    \label{fig: polygons-wireframes}
+\end{figure}
 
 
 % ---------------------------------------------
@@ -163,8 +155,7 @@ polygons\textasciitilde{} was developed for a performance as part of the seventh
 
 \subsection{SHL Make \& Create} \label{sec: polygons-demonstrations-shl}
 
-\subsection{Embodiment Hackathon} \label{sec: 
-polygons-demonstrations-emh}
+\subsection{Embodiment Hackathon} \label{sec: polygons-demonstrations-emh}
 
 
 
