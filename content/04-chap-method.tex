@@ -5,63 +5,64 @@
 % | | | | | |  __/ |_| | | | (_) | (_| |
 % |_| |_| |_|\___|\__|_| |_|\___/ \__,_|
 % ---------------------------------------------
-%*?     wc: 1261
+%*?     wc: 1282
 %*[ ]   wc: 700
 %**     wc: 2000
 %*[ ]   Fix up xrt.space
-%*[ ]   Draft design patterns
 % ---------------------------------------------
 \chapter{A DIY Approach to AR in the Arts}
 \label{sec: method}
 \markboth{}{A DIY Approach to AR in the Arts}
 \epigraph{\emph{This chapter draws some of its content from a published short-paper in the Doctoral Consortium of the Tangible, Embedded, and Embodied Interaction Conference 2021}}{\cite[]{bilbow2021b}}
 % ---------------------------------------------
-\section{Research Methods}\label{sec: method-methods} % lr > theory > YOU ARE HERE > studies > discussion > conclusion
+\section{Research Methods}\label{sec: method-methods}
 The methods present in this thesis have stayed consistent with their original proposal, with the exception of specific methods of data collection and analysis being disrupted by the COVID-19 pandemic, which commenced three months after the start of research. 
 In \autoref{sec: literature}, the historical origins, contextual trends, exceptions, and contemporary forms of AR technologies were outlined. Additionally, examples of AR's use in the arts were provided, along with specific rationales for their use, e.g. sensory engagement, collaborative expression, and activism and agency. In the previous chapter, I outlined a trio of lenses through which to consider the material, embodied, and spatial aspects of AR. These drew from a 4EC approach to experience, which posits that cognitive processes are embodied, embedded, enacted and extended. In the current chapter I will be outlining my methodological approach to the practice-based side of the research: designing, performing, and evaluating musical AR experiences, and AR DMIs. A review of the outstanding research questions will be outlined, to provide the chapter a clear direction into the ensuing three study chapters.
 
 \begin{enumerate}
     \RQmedium
     \RQexperience
-    \RQfuture
 \end{enumerate}
 
-The present thesis approaches the above questions by making use of several established practice research methods. Broadly, these methods have lead to practical contributions that will be explored in this chapter and the following three study chapters: namely the creation and iterative design of multisensory AR experiences, and a set of open design patterns for doing so. These practical contributions function both as ongoing research probes, and as platforms for reproducible artistic work for the wider experimental music research community. 
+The present thesis approaches the above questions by making use of several established practice research methods. Broadly, these methods have led to practical contributions that will be explored in the following three study chapters: the creation and iterative design of multisensory AR experiences, and in \autoref{sec: discussion-patterns} with a set of open design patterns for creating similar AR musical compositions and performances. These practical contributions have functioned both as ongoing research probes, and as platforms for reproducible artistic work for the wider experimental music research community. 
 
-As will be explained in \autoref{sec: discussion-patterns}, it is within this context of creating, developing, implementing and iterating on a set of open design patterns for AR art and music that the research methods employed in the following chapters are carried out. This started with a motivation for creating smaller (in complexity and in interactable space) experiences, that were simple in their sensory modulation and instrumental reactivity, with the view to later incorporate them in larger scale interactive AR experiences once sufficiently tested. However, due to COVID-19 the prospect of user-testing and iterating on the design of multiple experiences, especially large scale ones, through participant feedback became increasingly difficult to facilitate and plan for. Thus, I opted instead to focus on developing working musical AR prototypes that I myself would play regularly, tweak, and iterate upon. Then, and there, an AR research and compositional practice began.
+As will be explained in \autoref{sec: discussion-patterns}, it is within this context of creating, developing, implementing and iterating on a set of open design patterns for AR art and music that the research methods employed in the following chapters are carried out. This started with a motivation for creating smaller (in complexity and in interactable space) experiences, that were simple in their sensory modulation and instrumental reactivity, with the view to later incorporate them in larger scale interactive AR experiences once sufficiently tested. However, due to COVID-19, the prospect of user-testing and iterating on the design of multiple experiences, especially large scale ones, through participant feedback became increasingly difficult to facilitate and plan for. Thus, I opted to focus on developing working musical AR prototypes that I myself would compose with regularly, tweak, and iterate upon. Then, and there, an AR research and compositional practice began.
 
-It's pertinent to mention that practical work, where carried out, has always been documented for analysis, open-research, and archival purposes. I found the combination of \href{https://sambilbow.github.io}{my personal website} as well as \href{https://github.com/sambilbow}{GitHub} a suitable solution for this. Links to project files will be included in the study chapters. Before outlining the aforementioned design patterns, I would first like to touch upon the concept of resistance, and its role in motivating the methodological approach taken in the thesis.
+It's pertinent to mention that practical work, where carried out, has always been documented for analysis, open-research, and archival purposes. I found the combination of \href{https://sambilbow.github.io}{my personal website} as well as \href{https://github.com/sambilbow}{GitHub} and \href{https://youtube.com/@sambilbow}{YouTube} a suitable solution for this. Links to project files will be included in the study chapters. Before outlining the specific methods touched on in later chapters, I would first like to touch upon the concept of resistance, and its role in motivating the methodological approach taken in the thesis.
 
 
 
 % ---------------------------------------------
 \section{Resistance in Practice} \label{sec: method-resistance}
-Formative in the development of the methodological approach of this thesis has been the concept of `resistance'. In short, this could be characterised as a motivation for changing or acting against the state of the art, practice, technology, or philosophy, out of a discontent for its status quo. This isn't to be confused by resistance in the sense of experiencing resistance to \textit{do} something, although as might be expected, that has reared its head a few times over the last three years too. Its difficult to place resistance into the linear narrative of this thesis, some resistance formed my initial motivations for the carrying out of this research, and some was garnered along the way, especially around the time of the uptake in `Metaverse' as a term to describe the sum total of all creative XR development. Either way, resistance has made up a large portion of my perspective on AR technologies, its role within digital music and humanities more broadly, and my rationale for pursuing several key areas discussed in the thesis so far (anti-consumerism, multisensory experience, agency), and to come.
+Formative in the development of the methodological approach of this thesis has been the concept of `resistance'. In short, this could be characterised as a motivation for changing or acting against the state of the art, practice, technology, or philosophy, out of a discontent for its status quo. This isn't to be confused by resistance in the sense of experiencing resistance to \textit{do} something, although as might be expected, that has reared its head a few times over the last three years too. It is difficult to place resistance into the linear narrative of this text; some resistance formed my initial motivations for the carrying out of this research, and some was garnered along the way, especially around the time of the unfortunate uptake in `Metaverse' as a term to describe the sum total of all creative XR development and labour. Either way, resistance has made up a large portion of my perspective on AR technologies, its role within digital music and humanities more broadly, and my rationale for pursuing several key areas discussed in the thesis so far (anti-consumerism, multisensory experience, agency), and in sections to come.
 
+\subsection{Maker \& DIY Subcultures} \label{sec: method-resistance-maker}
 As referred to in \autoref{sec: introduction-aestheticexperience}, contemporary design research in the fields of computational art and music have in recent years rallied behind the broader ``free/libre and open-source software" and ``open-source hardware" ethoses (abbreviated to FLOSS and OSH respectively). This approach, often hand-in-hand with the Maker, DIY, and Hardware Hacking subcultures, stands in stark contrast to the goings-on of mega-corporations board rooms, with their design `sprints', `agile' workflows, and `human-centred' design. While commentary on the considerable role of un(der)funded volunteer labour involved in OS tools and projects is outside of the scope of this thesis, it is worth mentioning. The approaches taken by these subcultures towards embodied design and composition workflows however, has been highly beneficial for the field. In the case of digital music making, software tools and coding languages like PureData, Maximilian, Supercollider, ixilang, Sonic Pi, TidalCycles, and Bela have granted students, researchers, and composers across disciplines, free and beginner-friendly access to a wealth of tutorials, examples, and tools for advanced real-time sampling and synthesis techniques.
 
 It could be proposed, that this approach is motivated in part by a resistance against many of the `features' typically found in commercial ``closed-source" software and hardware. Providing significant barriers to accessible learning, creativity, and artistic authenticity, these include lack of interoperability with other software, use of proprietary file formats, high initial or recurring subscription costs, and restricted access to lower-level parameters, functions, and settings. It is within this resistance against the closed-source and / or commercial that the practical work of this thesis attempts to situate itself, drawing on its implicit designerly practices and aesthetics. As a result, the path taken to address the key areas of the thesis has involved the bringing into the fore, knowledge from the creative practice of hacking, making, designing, and iterating with experimental and DIY hardware and software.
 
+\subsection{Ocularcentrism} \label{sec: method-resistance-ocularcentrism}
 A second form of resistance that the methodological approach of this thesis explored is the ocularcentrism found in AR technologies mentioned previously in \autoref{sec: literature-interface-sensory-visual} and \autoref{sec: theory-materiality-mediumspec}. As a practitioner of music, and audio related technologies, this has provided a significant portion of the motivation for carrying out the present research, as well as a significant portion of the challenges faced when attempting to develop AR as a medium for sound-based interactive experiences.
 
 Although m
 
 %% wanting to make room for later ms endeavours, time/expertise/cost/access barrier for the moment
 
+\subsection{Process} \label{sec: method-resistance-overlay}
 %% additive art is inherently hybrid, the space counts etc
-%% consumer
+
 
 
 
 
 % ---------------------------------------------
-\section{AR Experience Studies}
-The three ensuing chapters \textit{\nameref{sec: area}}, \textit{\nameref{sec: polaris}}, and \textit{\nameref{sec: polygons}} outline and analyse three different expressive AR DMIs developed over the course of this research, each with different focuses. Though they were initially guided by a loose set of proto-design patterns \citep{bilbow2021b}, it is through the insights and analysis gained through the creation and iteration of their study that the above \hyperref[sec: discussion-patterns]{design patterns} have been developed.
+\section{Research in Practice - AR Musical Experiences}
+The three ensuing chapters, \textit{\nameref{sec: area}}, \textit{\nameref{sec: polaris}}, and \textit{\nameref{sec: polygons}} outline and analyse three AR interactive music systems developed over the course of this thesis, each with different but converging focuses. Though they were initially guided by a loose set of proto-design patterns \citep{bilbow2020a}, it is through the insights and analysis gained in their creation and iteration that the \nameref{sec: discussion-patterns} have been developed.
 
-\subsection{Composing \textit{area\textasciitilde{}} - \autoref{sec: area}}
+\subsection{Composing \textit{area\textasciitilde{}}}
 The starting point for this was the creation of \textit{area\textasciitilde{}}, a non-visual audio AR experience centred around the self-composition of a hybrid listening environment using an ambisonic microphone, head-, and hand-tracking. As will be expanded upon in \autoref{sec: area}, due to the circumstances of the COVID-19 lockdown, I opted for an autobiographical design method for the iteration and evaluation of the system. Out of the evaluation of this project, namely the endeavour to expand into audiovisual AR experiences, I discovered a suitable platform the develop the rest of doctoral research on: the open-source Project North Star AR headset.
 
-\subsection{Evaluating \textit{polaris\textasciitilde{}} - \autoref{sec: polaris}}
+\subsection{Evaluating \textit{polaris\textasciitilde{}}}
 
 
-\subsection{Performing \textit{polygons\textasciitilde{}} - \autoref{sec: polygons}}
+\subsection{Performing \textit{polygons\textasciitilde{}}}
