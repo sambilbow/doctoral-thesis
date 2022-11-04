@@ -157,10 +157,10 @@
 \usepackage{transparent}
 
 % Setup the bibliography
-%\PassOptionsToPackage{square,numbers}{natbib} % for natbib
+%\PassOptionsToPackage{round,semicolon,authoryear}{natbib} % for natbib
 \usepackage{natbib}				
-
-\bibliographystyle{styles/ecology}
+\renewcommand{\harvardurl}{\textbf{URL:} \url} % fix for url/doi
+\bibliographystyle{styles/agsm} % fix for deprecated \bf command
 
 % -------------------------------------------------------------
 % Setup the style of the backrefs from the bibliography
