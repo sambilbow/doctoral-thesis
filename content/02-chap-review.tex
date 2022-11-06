@@ -1,22 +1,22 @@
-% ---------------------------------------------
+% -----------------------------------------------------------------------------
 %                 _
 %  _ __ _____   _(_) _____      __
 % | '__/ _ \ \ / / |/ _ \ \ /\ / /
 % | | |  __/\ V /| |  __/\ V  V /
 % |_|  \___| \_/ |_|\___| \_/\_/
-% ---------------------------------------------
+% -----------------------------------------------------------------------------
 %*[ ]   include more context
-% ---------------------------------------------
+% -----------------------------------------------------------------------------
 \chapter{Literature Review}
 \label{sec: literature}
 \markboth{}{Literature Review}
-\epigraph{\emph{}}{\citep[]{bilbow2022}}
-% ---------------------------------------------
+\epigraph{\textit{}}{\citep[]{bilbow2022}}
+% -----------------------------------------------------------------------------
 This literature review takes a retrospective view at the history of augmented reality technologies. In laying clear the origination of these technologies within predominantly visual fields of research, it allows for a critique of preconceived notions about the definitions of what AR is, and the boundaries of how it is used today. The review outlines the contemporary forms, sensory display techniques, and methods taken to mediate our reality with virtual processes. In sketching out this wide variety of possible arising interactions, I make clear the benefit of considering AR as a medium for expressive computational artwork, namely in its inherent ability to approach technology from a creative and inclusive perspective (not just from the perspective of viewing AR as a visual overlay tool). I then touch on examples of AR art that make much more creative use of the materiality of AR in this way.
 
 
 
-% ---------------------------------------------
+% -----------------------------------------------------------------------------
 \section{The Augmented Reality Interface}\label{sec: literature-interface}
 \subsection{History of AR}\label{sec: literature-interface-history}
 The earliest conceptions of what we would today call AR began their development in 1965 with Ivan Sutherland's `Ultimate Display' \citeyearpar{sutherland1968}. Sutherland's project involved hypothesising and developing a computer interface that could serve `as many senses as posxsible'. He speculated that this interface could `serve as a looking-glass into the mathematical wonderland constructed in computer memory'. By 1968, Sutherland had constructed what he called a `head-mounted three dimensional display', with a which was affixed to the ceiling of his lab with mechanical tracking arm that measured the position and orientation of the display in the room, called `The Sword of Damocles'. The head-mounted display provided per-eye visual displays via mini-CRT monitors, whose content was updated in real-time, dependent on the tracked pose of the head. This resulted in the three-dimensional (visual) perception of a hybridised real and virtual space, see \autoref{fig: sutherlandsword}.
@@ -126,7 +126,7 @@ However, AR is still typically realised in the form of graphical overlay, and as
 The second most developed-for sense in AR is the auditory system, borrowing from a rich history of spatial audio techniques such as exploiting HRTF for binaural audio playback and realistic audio localisation. Within the field of audio AR, as previously mentioned, `hearables' with `transparency hearing` modes offer the auditory equivalent of video see-through (coined mic-through \citep{lindeman2008}), where the occluded outside world is captured through a microphone, on top of which virtual sounds can be processed. Also outlined by Lindeman and Noma is the use of bone conduction headphones to offer a mediated perception of sound environments without the need to occlude the participants ears (coined hear-through), which could be considered equivalent to optical see-through. Moving into the environment, there are a myriad spatial audio techniques that could be used within AR, delivered by speaker arrays such as those found in wave-field synthesis and ambisonic beam-forming practices.
 
 \subsubsection{Haptic Sense}\label{sec: literature-interface-sensory-haptic}
-Due to the prevalence of hand-tracking technologies in the interaction with head-mounted AR applications, one might assume that being able to actually \emph{feel} the virtual objects that are placed in AR would be one of the most important and developed concepts in AR. However, much of the early research in AR placed importance around overlaying instructions, rather than interactive objects. Hence, the haptic feedback of touching AR objects is relatively under-explored compared to the common issues which affected early and (funded) research - accurate registration of real and virtual processes; and higher visual fidelity. In most cases, it was deemed enough to \emph{see} the effect that ones hands or body position had on the AR object or scene respectively. Today, there exist numerous technologies that could provide computationally mediated haptic perception in AR, for example through vibrotactile feedback or electrical muscle stimulation \citep{lopes2018}.
+Due to the prevalence of hand-tracking technologies in the interaction with head-mounted AR applications, one might assume that being able to actually \textit{feel} the virtual objects that are placed in AR would be one of the most important and developed concepts in AR. However, much of the early research in AR placed importance around overlaying instructions, rather than interactive objects. Hence, the haptic feedback of touching AR objects is relatively under-explored compared to the common issues which affected early and (funded) research - accurate registration of real and virtual processes; and higher visual fidelity. In most cases, it was deemed enough to \textit{see} the effect that ones hands or body position had on the AR object or scene respectively. Today, there exist numerous technologies that could provide computationally mediated haptic perception in AR, for example through vibrotactile feedback or electrical muscle stimulation \citep{lopes2018}.
 
 \subsubsection{The Chemical Senses}\label{sec: literature-interface-sensory-chemical}
 Whereas auditory and haptic sensations have been developed in AR, the chemical senses (smell and taste) have received far less exploration. Visual, auditory, and touch information can be believably recreated with technology through analog to digital conversion of electromagnetic radiation (light) and mechanical wave transmission (sound and touch). Conversely, smells and tastes contain organic information, the sensors (and thus A2D conversion) for which have not been invented yet. As such, the closest we can get to receiving chemical sensory data is through computationally activated rather than computationally mediated displays: scent emitters \citep{maggioni2019}, and taste patches for example. Accordingly, in order to mediate the sense of taste, creative methods of sensory illusion have often been employed, i.e. Narumi et al. demonstrating that the sense of flavour can be mediated via visual overlay in AR \citep{narumi2011}. The sense of temperature has also been mediated through cross-modal sensory illusion exploiting the trigeminal nerve in the nose, Brooks et al. demonstrates that users in VR can be made to feel warmer or colder based on the relative amounts of capsaicin or eucalyptus emitted near the nose \citeyearpar{brooks2020}.
@@ -160,7 +160,7 @@ Additive layering of virtual content onto our real environment is by far the mos
     \caption{Schraffenberger's taxonomy of relationships and emergent AR subforms}\label{table:schraffenbergertaxonomy}
 \end{table}
 
-In particular, `diminished reality', aims to \emph{remove} real objects in our environment. When explored in the visual sense, this approach uses computer vision and content-aware substitution to remove a section or object of the real-world environment through camera sensors. Noise cancelling potentially offers an auditory diminished reality, but due to the fact that sound is propagated via mechanical waves, our sense of sound is closely intertwined with physically feelings of vibration, which are much harder to remove \citep{mori2017}. Further examples of sound-driven but cross-modal techniques are outlined in \citep{walther-hansen2020}.
+In particular, `diminished reality', aims to \textit{remove} real objects in our environment. When explored in the visual sense, this approach uses computer vision and content-aware substitution to remove a section or object of the real-world environment through camera sensors. Noise cancelling potentially offers an auditory diminished reality, but due to the fact that sound is propagated via mechanical waves, our sense of sound is closely intertwined with physically feelings of vibration, which are much harder to remove \citep{mori2017}. Further examples of sound-driven but cross-modal techniques are outlined in \citep{walther-hansen2020}.
 
 `Altered reality' has the potential to provide new and otherwise inaccessible sensory and perceptual experience Schraffenberger describes that this is possible through virtual components altering the perception of real components in an AR system. Mann outlines a myriad examples of altered visual percepts \citeyearpar{mann1994}, from giants eyes, to `slow' glasses. More recently, Nishida et al. have experimented with `egocentric smaller-person experience' through use of a video see-through AR headset, in which unlike typical AR, the cameras are mounted at waist height, rather than on the HMD \citeyearpar{nishida2019}. This afforded participants a difference in real-time visual perception, and resulted in them generally feeling smaller and behaving more like a child. In tandem with this altered visual perception, they propose a modified robotic glove `HandMorph' \citeyearpar{nishida2020} that alters sensations of touch through reduced finger and overall grip size. 
 
@@ -170,7 +170,7 @@ In particular, `diminished reality', aims to \emph{remove} real objects in our e
     \caption[Nishida's `HandMorph']{Nishida's `HandMorph'}\label{fig: handmorph}
 \end{figure}
 
-In a similar vein, `extended perception' revolves around the potential to provide \emph{more} senses, or the sensing of stimuli outside of the range of our sensory systems. Bees for example have a visual system that extends far further into the ultraviolet range of EM radiation than our own eyes allow us; dogs hear much higher frequencies our ears allow us (thank goodness); and sharks can smell one part blood in a million parts water. These fun facts demonstrate vast differences in sensory acuity between species; but did you know that some shark have a constellation of pores \footnote{\url{https://www.sharktrust.org/shark-senses}} along the lateral side of their bodies that allows them to perceive minute pressure changes in water? This enables them to create a `pressure map' of their surroundings through active body movement. Modern technology could endow us with similar and myriad extended perceptions of our environment and its stimuli; Mann has experimented with making representations of radio waves translated down to the sensory range of our own eyes \citeyearpar{mann2018a}
+In a similar vein, `extended perception' revolves around the potential to provide \textit{more} senses, or the sensing of stimuli outside of the range of our sensory systems. Bees for example have a visual system that extends far further into the ultraviolet range of EM radiation than our own eyes allow us; dogs hear much higher frequencies our ears allow us (thank goodness); and sharks can smell one part blood in a million parts water. These fun facts demonstrate vast differences in sensory acuity between species; but did you know that some shark have a constellation of pores \footnote{\url{https://www.sharktrust.org/shark-senses}} along the lateral side of their bodies that allows them to perceive minute pressure changes in water? This enables them to create a `pressure map' of their surroundings through active body movement. Modern technology could endow us with similar and myriad extended perceptions of our environment and its stimuli; Mann has experimented with making representations of radio waves translated down to the sensory range of our own eyes \citeyearpar{mann2018a}
 
 \begin{figure}[bth]
     \myfloatalign
@@ -182,12 +182,12 @@ In a similar vein, `extended perception' revolves around the potential to provid
 
 
 
-% ---------------------------------------------
+% -----------------------------------------------------------------------------
 \section{Augmented Reality in the Arts}\label{sec: literature-arts}
 Computational art, the use of computational programming or software as a tool, performance aid, medium or collaborator to create art or artistic works, is currently witnessing the adoption of new and exciting technologies such as trained machine learning algorithms, increasingly immersive displays and large-scale networked experiences. These implementations of technology within the creation artworks leads to a greater understanding of the materiality and affordance of these technologies. In this section, I draw attention the the modes of sensory engagment, aesthetic experience, collaborative expression, and activism that AR specifically affords artists willing to explioit its use as a medium.
 
 \subsection{Sensory Engagement}\label{sec: literature-arts-sensory}
-Computational art has seen the use of AR as a medium since the early 2000’s: in 2008, Grasset et al. presented case studies of AR art exhibitions, with the conclusion that for effective design of artworks, specific importance should be placed on the relationship \emph{between} real and virtual components \citeyearpar{grasset2008}. These relationships have come to describe a matrix of possibilities between senses and mediating processes, i.e. altered hearing, extended smell, diminished sight. Papagiannis has drawn attention to this broader multisensory view of AR in attempting to understand an aesthetic for AR applications, `AR is beginning to expand in new ways, beyond visual frames and into the full human sensorium' \citeyearpar{papagiannis2014}. In 2015, the Tate Sensorium multisensory art exhibition used novel mid-air haptic devices to augment visual art \citep{vi2017a}. The results of the included study found that more congruent multisensory experiences lead to audiences finding artwork more emotionally engaging. If more congruent multisensory experiences of art lead to more emotional engagement, and AR has the potential to mediate multiple senses in rich and provocative ways, surely this makes it an ideal medium for such works. 
+Computational art has seen the use of AR as a medium since the early 2000’s: in 2008, Grasset et al. presented case studies of AR art exhibitions, with the conclusion that for effective design of artworks, specific importance should be placed on the relationship \textit{between} real and virtual components \citeyearpar{grasset2008}. These relationships have come to describe a matrix of possibilities between senses and mediating processes, i.e. altered hearing, extended smell, diminished sight. Papagiannis has drawn attention to this broader multisensory view of AR in attempting to understand an aesthetic for AR applications, `AR is beginning to expand in new ways, beyond visual frames and into the full human sensorium' \citeyearpar{papagiannis2014}. In 2015, the Tate Sensorium multisensory art exhibition used novel mid-air haptic devices to augment visual art \citep{vi2017a}. The results of the included study found that more congruent multisensory experiences lead to audiences finding artwork more emotionally engaging. If more congruent multisensory experiences of art lead to more emotional engagement, and AR has the potential to mediate multiple senses in rich and provocative ways, surely this makes it an ideal medium for such works. 
 
 \begin{figure}[bth]
     \myfloatalign
@@ -230,19 +230,20 @@ As well as its liminality between real and virtual space promoting otherwise dan
 \begin{figure}
     \centering
     \subcaptionbox{Manifest.AR MoMA Invasion\label{fig: activismARt-moma}}{\includegraphics[width=0.45\linewidth]{02-review/moma.jpg}}
-    \hfill
     \subcaptionbox{Invisible Istanbul\label{fig: activismARt-istanbul}}{\includegraphics[width=0.45\linewidth]{02-review/thiel.jpg}}
     \caption{Activism through Interventionist ARt}
     \label{fig: activismARt}
 \end{figure}
 
+%*[ ]   \epigraph this shit
 As summarised by Manifest.AR member Martin Skwarek puts it: `Alice has stepped through the looking glass [...] It is the job all future artists and activists to use this technology for the better, to bring people together, and uproot social injustice.' \citeyearpar{skwarek2018}
 
 
 
-\subsection{An Arts Approach to Designing Multisensory AR}\label{sec: literature-arts-designingart}
+\subsection{Towards an Embodied Artistic Understanding of AR}\label{sec: literature-arts-designingart}
 Agreeing that AR can be used as a medium for the composition of computational art through software tool or instrument design, surfaces the question of what the materiality, both for user and developer, of such a digital tool, or piece software would look, sound, feel, taste or smell like. As Papagiannis highlights, `Understanding the capacities of the technology and its constraints to exploit the technology to artistic use by envisioning novel applications and approaches, and developing new aesthetics and conventions beyond previous traditional forms' \citeyearpar{papagiannis2017}.
 
 If visual overlay AR has been used as `a viewing instrument to bring into focus forces invisible to the naked or unknowing eye, and make them visible in the public sphere.' \citep{thiel2011}, what emergent properties might devices rising out from multisensory approaches to design afford? What are the futures of digital musical instruments, whos designers opt to use this technology?
 
-The next chapter explores three theoretical approaches that will help us understand more about the hybrid real-virtual \emph{space} it co-constructs with participants when in use, the \emph{materiality} afforded by AR when used as a medium for creative expression, and the experience of \emph{embodiment} it has the potential of imparting on these participants.
+
+The next chapter explores three theoretical approaches that will help us further understand the \textit{materiality} afforded by AR when used as a medium for creative expression, the experience of \textit{embodiment} it has the potential of imparting on its immersants, and about the hybrid real-virtual \textit{space} it co-constructs with them when in use.
