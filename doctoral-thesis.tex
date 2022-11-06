@@ -1,14 +1,14 @@
-% ---------------------------------------------------------------------------------------------
+% --------------------------------------------------------------------------- %----------------
 %        _         _       _   _               _
 %  _ __ | |__   __| |     | |_| |__   ___  ___(_)___
 % | '_ \| '_ \ / _` |_____| __| '_ \ / _ \/ __| / __|
 % | |_) | | | | (_| |_____| |_| | | |  __/\__ \ \__ \
 % | .__/|_| |_|\__,_|      \__|_| |_|\___||___/_|___/
 % |_|
-% ---------------------------------------------------------------------------------------------
+% --------------------------------------------------------------------------- %----------------
 %*[ ]  Fix Zotero Bibliography
 %*[ ]  Fix BibTex styles for URLs
-% ---------------------------------------------------------------------------------------------
+% --------------------------------------------------------------------------- %----------------
 % A PhD thesis suitable for submission at the University of Sussex
 %
 % Copyright (c) 2018 Martin Jung
@@ -31,7 +31,7 @@
 % OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 % SOFTWARE. 
 %
-% ---------------------------------------------------------------------------------------------
+% --------------------------------------------------------------------------- %----------------
 
 
 % Document class via KOMA script
@@ -134,12 +134,13 @@
 \begingroup
   \frontmatter
   \pagenumbering{roman}
-  \clearpage\input{content/00-front-titlepage.tex} % Title page
-  \clearpage\input{content/00-front-dedication.tex} % Dedication page
-  \clearpage\input{content/00-front-acks.tex} % Acknowledgements page
-  \clearpage\input{content/00-front-declaration.tex} % Declaration
-  \clearpage\input{content/00-front-abstract.tex} % Abstract page
-  %\clearpage\input{content/00-front/acronyms.tex}
+  \clearpage\input{content/00-front-titlepage.tex}
+  \clearpage\input{content/00-front-dedication.tex}
+  \clearpage\input{content/00-front-acks.tex}
+  \clearpage\input{content/00-front-declaration.tex}
+  \clearpage\input{content/00-front-publications.tex}
+  \clearpage\input{content/00-front-acronyms.tex}
+  \clearpage\input{content/00-front-abstract.tex}
   %\clearpage\input{content/00-front/colophon}
 \endgroup
 %---------------------------------------------------
@@ -161,7 +162,7 @@
   \pdfbookmark[0]{Contents}{contents_bookmark}
   \pagestyle{custom}% Set page style to custom
   \chapterstyle{hansen} % Set chapter style
-  \setcounter{tocdepth}{2}
+  \setcounter{tocdepth}{1}
   \tableofcontents* % as per in memoir class 
 \endgroup
 %---------------------------------------------------
