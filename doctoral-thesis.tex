@@ -134,76 +134,11 @@
 % PREAMBLE: roman page numbering i, ii, iii, ...
 % ---------------------------------------------------
 \begingroup
-  \frontmatter
-  \pagenumbering{roman}
-  \clearpage\input{content/00-front-titlepage.tex}
-  \clearpage\input{content/00-front-dedication.tex}
-  \clearpage\input{content/00-front-acks.tex}
-  \clearpage\input{content/00-front-declaration.tex}
-  \clearpage\input{content/00-front-publications.tex}
-  \clearpage\input{content/00-front-acronyms.tex}
-  \clearpage\input{content/00-front-abstract.tex}
-  %\clearpage\input{content/00-front/colophon}
-\endgroup
-% ---------------------------------------------------
-% TEXCOUNT: includes etc.
-% ---------------------------------------------------
-%TC:incbib
-%TC:macro \cite [option:text,text]
-%TC:macro \citep [option:text,text]
-%TC:macro \citet [option:text,text]
-%TC:macro \citeyear [option:text,text]
-%TC:group table 0 1
-%TC:group tabular 1 1
-% ---------------------------------------------------
-% TABLE OF CONTENTS, LISTS OF TABLES & FIGURES
-% ---------------------------------------------------
-\begingroup
-  \newpage  
-  \setlength{\parskip}{0pt} % To restore distance between Chapters, sections and subsections in the table of contents
-  \pdfbookmark[0]{Contents}{contents_bookmark}
-  \pagestyle{custom}% Set page style to custom
-  \chapterstyle{hansen} % Set chapter style
-  \setcounter{tocdepth}{1}
-  \tableofcontents* % as per in memoir class 
-\endgroup
-% ---------------------------------------------------
-% MAIN THESIS TEXT
-% ---------------------------------------------------
-\mainmatter
-\pagenumbering{arabic} %Start official numbering here
-%\setcounter{page}{90} % Manual adjustment if necessary
-% Modify the header style
-%\pagestyle{scrheadings}
-\begingroup
-  \input{content/01-chap-intro.tex} 
-  \input{content/02-chap-review.tex}
-  \input{content/03-chap-theory.tex}
-  \input{content/04-chap-method.tex}
-  \input{content/05-chap-area.tex}
-  \input{content/06-chap-polaris.tex}
-  \input{content/07-chap-polygons.tex}
-  \input{content/08-chap-discussion.tex}
-  \input{content/09-chap-conclusion.tex}
-\endgroup
-% ---------------------------------------------------
-% APPENDICES
-% ---------------------------------------------------
-%TC:ignore
-\appendix
-\begingroup
-  \input{content/10-appendix-a.tex}
-  \input{content/10-appendix-b.tex}
-  \input{content/10-appendix-c.tex}
-\endgroup
-\backmatter
-%TC:endignore
-% ---------------------------------------------------
-% BIBLIOGRAPHY
-% ---------------------------------------------------
-\clearpage
-\phantomsection
-\bibliography{citations.bib}
+\pagenumbering{roman}
+  \input{content/00-front-abstract.tex}
+  \bibliography{citations.bib}
+\endgroup 
+
 % ---------------------------------------------------
 % END DOCUMENT
 % ---------------------------------------------------
