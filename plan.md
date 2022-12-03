@@ -1,8 +1,4 @@
--------------------------------------------- [Chapter 2 - general-thesis]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
+-------------------------------------------- [ general thesis ]
 <!--    [ ] Outstanding Work
         Citations 2h
         [ ]     Check all citations in Zotero and in .bib
@@ -43,32 +39,20 @@
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
 <!--    [x] Completed Work
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 
 -------------------------------------------- [Chapter 1 - intro]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         [ ]     Add working definitions
         [ ]     Re-draft
         [ ]     x
 <!--    [x] Completed Work
         [x]     Chapter Quote
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 
 -------------------------------------------- [Chapter 2 - review]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         Include
@@ -76,42 +60,24 @@
         [ ]     Shaw
         [ ]     More context
 <!--    [x] Completed Work
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [Chapter 3 - theory]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         [ ]     Trim quotes
 <!--    [x] Completed Work
         [x]     Chapter Quote
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [Chapter 4 - method]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         [ ]     Look back at Miro diagram
         [ ]     x
 <!--    [x] Completed Work
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [Chapter 5 - area]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         Documentation
@@ -122,15 +88,9 @@
         [ ]     Link to design patterns
         [ ]     x
 <!--    [x] Completed Work
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [Chapter 6 - polaris]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         Documentation
@@ -142,15 +102,9 @@
         Ethics Statement
         [ ]     Pull what you want and move rest to appendix?
 <!--    [x] Completed Work
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [Chapter 7 - polygons]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         Documentation
         [ ]     Include study blog, repo, and wiki links.
@@ -162,15 +116,9 @@
         [ ]     Add Amy Brandon <- ar headset performances
 <!--    [x] Completed Work
         [x]     Chapter Quote
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [Chapter 8 - discussion]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         Other
         [ ]     Re-Draft design patterns
@@ -179,28 +127,16 @@
         [ ]     Include Ali Heston's framework for designing XR
 <!--    [x] Completed Work
         [x]     Chapter Quote
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [Chapter 9 - conclusion]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         [ ]     x
 <!--    [x] Completed Work
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 -------------------------------------------- [ appendices ]
-<!--    ! Don't Forget
-        !       x
-<!--    * Notes
-        *       x
 <!--    [ ] Outstanding Work
         Create GitHub wikis
         [ ]     area
@@ -223,8 +159,6 @@
         [ ]     List of videos
         [ ]     Setup Instructions from wiki
 <!--    [x] Completed Work
-<!--    ? Open Questions
-        ?       x
 --->
 --------------------------------------------
 
