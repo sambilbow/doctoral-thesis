@@ -138,27 +138,41 @@
 --------------------------------------------
 -------------------------------------------- [ appendices ]
 <!--    [ ] Outstanding Work
-        Create GitHub wikis
+        Complete GitHub wikis
         [ ]     area
         [ ]     polaris
         [ ]     polygons
-        Layout
-        [ ]     Decide on appendix layout (Repository -> Thesis)
         area
-        [ ]     Link to blog, repository, wiki
         [ ]     List of videos
         [ ]     List of recordings
-        [ ]     Setup Instructions from wiki
+        [ ]     Blog
+        [ ]     Code
+        [ ]     Guide
         polaris
-        [ ]     Link to blog, repository, wiki
         [ ]     List of videos
-        [ ]     Setup Instructions from wiki
+        [ ]     Blog
+        [ ]     Code
+        [ ]     Guide
         [ ]     Ethics statement
+        [x]     Polaris Study Content
         polygons
-        [ ]     Link to blog, repository, wiki
         [ ]     List of videos
-        [ ]     Setup Instructions from wiki
+        [ ]     Blog
+        [ ]     Code
+        [ ]     Guide
 <!--    [x] Completed Work
+        Create GitHub wikis
+        [x]     area
+        [x]     polaris
+        [x]     polygons
+        Layout
+        [x]     Decide on appendix layout (Repository -> Thesis)
+        area
+        [x]     Link to blog, repository, wiki
+        polaris
+        [x]     Link to blog, repository, wiki
+        polygons
+        [x]     Link to blog, repository, wiki
 --->
 --------------------------------------------
 
