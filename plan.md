@@ -99,6 +99,7 @@
         [ ]     Re-draft
         [ ]     Link to theory
         [ ]     Link to design patterns
+        [ ]     iframes -> explain and do screenshots
         Ethics Statement
         [ ]     Pull what you want and move rest to appendix?
 <!--    [x] Completed Work
@@ -146,19 +147,15 @@
         [ ]     List of videos
         [ ]     List of recordings
         [ ]     Blog
-        [ ]     Code
         [ ]     Guide
         polaris
         [ ]     List of videos
         [ ]     Blog
-        [ ]     Code
         [ ]     Guide
         [ ]     Ethics statement
-        [x]     Polaris Study Content
         polygons
         [ ]     List of videos
         [ ]     Blog
-        [ ]     Code
         [ ]     Guide
 <!--    [x] Completed Work
         Create GitHub wikis
@@ -169,10 +166,14 @@
         [x]     Decide on appendix layout (Repository -> Thesis)
         area
         [x]     Link to blog, repository, wiki
+        [x]     Code
         polaris
         [x]     Link to blog, repository, wiki
+        [x]     Code
+        [x]     Polaris Study Content
         polygons
         [x]     Link to blog, repository, wiki
+        [x]     Code
 --->
 --------------------------------------------
 
