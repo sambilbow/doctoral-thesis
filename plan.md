@@ -38,6 +38,7 @@
         [ ]     Chapter styling, subtitle layout
         [ ]     Chapter Quote styling
         [ ]     Decide on clearpages and newpages and blankpages
+        [ ]     CHECK ALL \autofills in doctoral-thesis.tex
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
@@ -148,16 +149,11 @@
         [ ]     polaris
         [ ]     polygons
         area
-        [ ]     List of videos
-        [ ]     List of recordings
-        [ ]     Blog
         [ ]     Guide
         polaris
-        [ ]     List of videos
         [ ]     Blog
-                [ ] tildes
         [ ]     Guide
-        [ ]     Ethics statement
+        [ ]     Redraft Ethics statement
         polygons
         [ ]     List of videos
         [ ]     Blog
@@ -170,9 +166,13 @@
         Layout
         [x]     Decide on appendix layout (Repository -> Thesis)
         area
+        [x]     List of videos
+        [x]     List of recordings
+        [x]     Blog
         [x]     Link to blog, repository, wiki
         [x]     Code
         polaris
+        [x]     List of videos
         [x]     Link to blog, repository, wiki
         [x]     Code
         [x]     Polaris Study Content
