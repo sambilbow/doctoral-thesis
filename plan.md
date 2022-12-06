@@ -1,5 +1,8 @@
 -------------------------------------------- [ general thesis ]
 <!--    [ ] Outstanding Work
+        Archiving
+        [ ]     Statement on contenta availability -> email for access
+        [ ]     Remove links to github in study chapters now that repo is at start
         Citations 2h
         [ ]     Check all citations in Zotero and in .bib
         [ ]     Decide on bibliography style
@@ -141,6 +144,7 @@
 <!--    [ ] Outstanding Work
         Complete GitHub wikis
         [ ]     area
+                [ ]     audio interface
         [ ]     polaris
         [ ]     polygons
         area
@@ -151,6 +155,7 @@
         polaris
         [ ]     List of videos
         [ ]     Blog
+                [ ] tildes
         [ ]     Guide
         [ ]     Ethics statement
         polygons
