@@ -151,12 +151,9 @@
         area
         [ ]     Guide
         polaris
-        [ ]     Blog
         [ ]     Guide
         [ ]     Redraft Ethics statement
         polygons
-        [ ]     List of videos
-        [ ]     Blog
         [ ]     Guide
 <!--    [x] Completed Work
         Create GitHub wikis
@@ -172,11 +169,14 @@
         [x]     Link to blog, repository, wiki
         [x]     Code
         polaris
+        [x]     Blog
         [x]     List of videos
         [x]     Link to blog, repository, wiki
         [x]     Code
         [x]     Polaris Study Content
         polygons
+        [x]     List of videos
+        [x]     Blog
         [x]     Link to blog, repository, wiki
         [x]     Code
 --->
