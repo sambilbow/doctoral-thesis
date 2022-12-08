@@ -1,4 +1,4 @@
--------------------------------------------- [ general thesis ]
+------------------------------------ [ general thesis ]
 <!--    [ ] Outstanding Work
         Archiving
         [ ]     Statement on contenta availability -> email for access
@@ -44,9 +44,8 @@
         [ ]     Another but I forgot
 <!--    [x] Completed Work
 --->
---------------------------------------------
-
--------------------------------------------- [Chapter 1 - intro]
+------------------------------------
+------------------------------------ [Chapter 1 - intro]
 <!--    [ ] Outstanding Work
         [ ]     Add working definitions
         [ ]     Re-draft
@@ -54,9 +53,8 @@
 <!--    [x] Completed Work
         [x]     Chapter Quote
 --->
---------------------------------------------
-
--------------------------------------------- [Chapter 2 - review]
+------------------------------------
+------------------------------------ [Chapter 2 - review]
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         Include
@@ -65,23 +63,23 @@
         [ ]     More context
 <!--    [x] Completed Work
 --->
---------------------------------------------
--------------------------------------------- [Chapter 3 - theory]
+------------------------------------
+------------------------------------ [Chapter 3 - theory]
 <!--    [ ] Outstanding Work
         [ ]     Trim quotes
 <!--    [x] Completed Work
         [x]     Chapter Quote
 --->
---------------------------------------------
--------------------------------------------- [Chapter 4 - method]
+------------------------------------
+------------------------------------ [Chapter 4 - method]
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         [ ]     Look back at Miro diagram
         [ ]     x
 <!--    [x] Completed Work
 --->
---------------------------------------------
--------------------------------------------- [Chapter 5 - area]
+------------------------------------
+------------------------------------ [Chapter 5 - area]
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         Documentation
@@ -93,8 +91,8 @@
         [ ]     x
 <!--    [x] Completed Work
 --->
---------------------------------------------
--------------------------------------------- [Chapter 6 - polaris]
+------------------------------------
+------------------------------------ [Chapter 6 - polaris]
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         Documentation
@@ -108,8 +106,8 @@
         [ ]     Pull what you want and move rest to appendix?
 <!--    [x] Completed Work
 --->
---------------------------------------------
--------------------------------------------- [Chapter 7 - polygons]
+------------------------------------
+------------------------------------ [Chapter 7 - polygons]
 <!--    [ ] Outstanding Work
         Documentation
         [ ]     Include study blog, repo, and wiki links.
@@ -122,8 +120,8 @@
 <!--    [x] Completed Work
         [x]     Chapter Quote
 --->
---------------------------------------------
--------------------------------------------- [Chapter 8 - discussion]
+------------------------------------
+------------------------------------ [Chapter 8 - discussion]
 <!--    [ ] Outstanding Work
         Other
         [ ]     Re-Draft design patterns
@@ -133,48 +131,48 @@
 <!--    [x] Completed Work
         [x]     Chapter Quote
 --->
---------------------------------------------
--------------------------------------------- [Chapter 9 - conclusion]
+------------------------------------
+------------------------------------ [Chapter 9 - conclusion]
 <!--    [ ] Outstanding Work
         [ ]     Chapter Quote
         [ ]     x
 <!--    [x] Completed Work
 --->
---------------------------------------------
--------------------------------------------- [ appendices ]
+------------------------------------
+------------------------------------ [ appendices ]
 <!--    [ ] Outstanding Work
-        Complete GitHub wikis
-        [ ]     area
-                [ ]     audio interface
-        [ ]     polaris
-        [ ]     polygons
-        area
-        [ ]     Guide
+        LaTeX
+        [ ]     Add labels, back-link
         polaris
-        [ ]     Guide
         [ ]     Redraft Ethics statement
-        polygons
-        [ ]     Guide
 <!--    [x] Completed Work
         Create GitHub wikis
         [x]     area
         [x]     polaris
         [x]     polygons
+        Complete GitHub wikis
+        [x]     area
+                [x]     audio interface
+        [x]     polaris
+        [x]     polygons
         Layout
         [x]     Decide on appendix layout (Repository -> Thesis)
         area
+        [x]     Guide
         [x]     List of videos
         [x]     List of recordings
         [x]     Blog
         [x]     Link to blog, repository, wiki
         [x]     Code
         polaris
+        [x]     Guide
         [x]     Blog
         [x]     List of videos
         [x]     Link to blog, repository, wiki
         [x]     Code
         [x]     Polaris Study Content
         polygons
+        [x]     Guide
         [x]     List of videos
         [x]     Blog
         [x]     Link to blog, repository, wiki
