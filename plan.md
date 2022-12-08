@@ -1,6 +1,5 @@
------------------------------------- [ general thesis ]
-<!--    [ ] Outstanding Work
-        Archiving
+ [ Thesis ]
+<!--    Archiving
         [ ]     Statement on contenta availability -> email for access
         [ ]     Remove links to github in study chapters now that repo is at start
         Citations 2h
@@ -42,59 +41,38 @@
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
-<!--    [x] Completed Work
 --->
-------------------------------------
------------------------------------- [Chapter 1 - intro]
-<!--    [ ] Outstanding Work
-        [ ]     Add working definitions
+ [Chapter 1 - Intro]
+<!--    [ ]     Add working definitions
         [ ]     Re-draft
-        [ ]     x
-<!--    [x] Completed Work
         [x]     Chapter Quote
 --->
-------------------------------------
------------------------------------- [Chapter 2 - review]
-<!--    [ ] Outstanding Work
-        [ ]     Chapter Quote
+ [Chapter 2 - Review]
+<!--    [ ]     Chapter Quote
         Include
         [ ]     Tanaka
         [ ]     Shaw
         [ ]     More context
-<!--    [x] Completed Work
 --->
-------------------------------------
------------------------------------- [Chapter 3 - theory]
-<!--    [ ] Outstanding Work
-        [ ]     Trim quotes
-<!--    [x] Completed Work
+ [Chapter 3 - Theory]
+<!--    [ ]     Trim quotes
         [x]     Chapter Quote
 --->
-------------------------------------
------------------------------------- [Chapter 4 - method]
-<!--    [ ] Outstanding Work
-        [ ]     Chapter Quote
+ [Chapter 4 - Method]
+<!--    [ ]     Chapter Quote
         [ ]     Look back at Miro diagram
-        [ ]     x
-<!--    [x] Completed Work
 --->
-------------------------------------
------------------------------------- [Chapter 5 - area]
-<!--    [ ] Outstanding Work
-        [ ]     Chapter Quote
+ [Chapter 5 - area]
+<!--    [ ]     Chapter Quote
         Documentation
         [ ]     Include study blog, repo, and wiki links.
         Other
         [ ]     Re-draft
         [ ]     Link to theory
         [ ]     Link to design patterns
-        [ ]     x
-<!--    [x] Completed Work
 --->
-------------------------------------
------------------------------------- [Chapter 6 - polaris]
-<!--    [ ] Outstanding Work
-        [ ]     Chapter Quote
+ [Chapter 6 - polaris]
+<!--    [ ]     Chapter Quote
         Documentation
         [ ]     Include study blog, repo, and wiki links.
         Other
@@ -104,12 +82,9 @@
         [ ]     iframes -> explain and do screenshots
         Ethics Statement
         [ ]     Pull what you want and move rest to appendix?
-<!--    [x] Completed Work
 --->
-------------------------------------
------------------------------------- [Chapter 7 - polygons]
-<!--    [ ] Outstanding Work
-        Documentation
+ [Chapter 7 - polygons]
+<!--    Documentation
         [ ]     Include study blog, repo, and wiki links.
         Other
         [ ]     Tidy Pd patches - rename click+-
@@ -117,35 +92,25 @@
         [ ]     Link fig: to github scripts and pd patches
         [ ]     Add Vincs <- dance and visuals but not music
         [ ]     Add Amy Brandon <- ar headset performances
-<!--    [x] Completed Work
         [x]     Chapter Quote
 --->
-------------------------------------
------------------------------------- [Chapter 8 - discussion]
-<!--    [ ] Outstanding Work
-        Other
+ [Chapter 8 - Discussion]
+<!--    Other
         [ ]     Re-Draft design patterns
         [ ]     EXPLAIN OOD
         [ ]     Consequences dp?
         [ ]     Include Ali Heston's framework for designing XR
-<!--    [x] Completed Work
         [x]     Chapter Quote
 --->
-------------------------------------
------------------------------------- [Chapter 9 - conclusion]
-<!--    [ ] Outstanding Work
+ [Chapter 9 - Conclusion]
+<!--    
         [ ]     Chapter Quote
-        [ ]     x
-<!--    [x] Completed Work
 --->
-------------------------------------
------------------------------------- [ appendices ]
-<!--    [ ] Outstanding Work
-        LaTeX
+ [ Appendices ]
+<!--    LaTeX
         [ ]     Add labels, back-link
         polaris
         [ ]     Redraft Ethics statement
-<!--    [x] Completed Work
         Create GitHub wikis
         [x]     area
         [x]     polaris
@@ -178,7 +143,7 @@
         [x]     Link to blog, repository, wiki
         [x]     Code
 --->
---------------------------------------------
+--------
 
 
 
@@ -209,7 +174,10 @@
 
 # Doctoral Thesis Structure
 | Chapter                                                                       | Purpose - what does it need to do?                                                                               | What to change?                                |
-| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+|
+----- |
+---- |
+---------- |
 |                                                                               |                                                                                                                  |                                                |
 | Towards Augmented Reality as Medium for Sound ARt Composition and Performance | Motivation, aims, questions, how to answer them, and what to expect in the thesis                                | not much!                                      |
 | Histories, Origins, Trends, and Problems of Augmented Reality                 | Guide through the field of AR technologies, context, trends, and problems - identify material, embodiment, space | more context! new ending                       |
