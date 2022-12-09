@@ -1,3 +1,7 @@
+games in context
+pokemon ar
+kinect whitney
+
  [ Thesis ]
 <!--    Archiving
         [ ]     Statement on contenta availability -> email for access
@@ -13,6 +17,8 @@
             [ ] polygons Unity / Pd
             [ ] Discussion xrtspace new website
         [ ]     Figure placement, stacking, hspace etc.
+        [ ]     Landscape wholepage figures
+        [ ]     Captions for detail, copy from text two sentences max
         Tables 1h
         [ ]     Convert tables to LaTeX
         Punctuation 1h
@@ -41,6 +47,7 @@
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
+        [ ]     Archive zenodo
 --->
  [Chapter 1 - Intro]
 <!--    [ ]     Add working definitions
@@ -100,6 +107,9 @@
         [ ]     EXPLAIN OOD
         [ ]     Consequences dp?
         [ ]     Include Ali Heston's framework for designing XR
+
+        [ ]     ADD STUDY EVIDENCE TO THIS CHAPTER NOW
+        [ ]     Move patterns to new chapter
         [x]     Chapter Quote
 --->
  [Chapter 9 - Conclusion]
@@ -110,7 +120,7 @@
 <!--    LaTeX
         [ ]     Add labels, back-link
         polaris
-        [ ]     Redraft Ethics statement
+        [ ]     Redraft Ethics statement >> move to 4
         Create GitHub wikis
         [x]     area
         [x]     polaris

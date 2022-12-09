@@ -10,7 +10,7 @@
 % --------------------------------------------------------------------------- %
 % Settings script with new commands and certain packages
 \usepackage{pdfpages}
-
+\usepackage{bibentry}
 \usepackage{ifthen}
 \newboolean{enable-backrefs} % enable backrefs in the bibliography
 \setboolean{enable-backrefs}{false} % true false
@@ -160,7 +160,7 @@
 % Setup the bibliography
 %\PassOptionsToPackage{round,semicolon,authoryear}{natbib} % for natbib
 \usepackage{natbib}				
-\renewcommand{\harvardurl}{\textbf{URL:} \url} % fix for url/doi
+\renewcommand{\harvardurl}{\textbf{URL:} \url} % fix for url/doi`'
 \bibliographystyle{styles/agsm} % fix for deprecated \bf command
 
 % ---------------------------------------------------------------------------
