@@ -6,9 +6,11 @@ kinect whitney
 <!--    Archiving
         [ ]     Statement on contenta availability -> email for access
         [ ]     Remove links to github in study chapters now that repo is at start
+        [ ]     bfg scrub repo of .bib for filepath opsec
         Citations 2h
         [ ]     Check all citations in Zotero and in .bib
-        [ ]     Decide on bibliography style
+        [x]     Decide on bibliography style
+        [x]     host bilbow et al on github.io or zenodo
         Figures 4h 
         [ ]     Find sources for all figures used so far
         [ ]     Create Figure List
@@ -28,9 +30,23 @@ kinect whitney
         [ ]     Check for double spcaes
         Footnotes 30m
         [ ]     Use of website links for non-citing material
+                [ ]     2 moma?
+                [ ]     5 aftershokz
+                [ ]     5 karma
+                [ ]     5 max
+                [ ]     5 winer
+                [ ]     5 espressif
+                [ ]     5 ircam
+                [ ]     5 icst add footnote keep cite
+                [ ]     5 leapmotion 2016
+                [ ]     5 leapmotion 2017
+                [ ]     5 UL 2020a
+                [ ]     5 UL 2020b
+                [ ]     5 rode
         Frontmatter 1h
         [ ]     Complete acknowledgements
-        [ ]     publications.tex layout
+                [ ] include projects and urls from all 3 studies
+        [ ]     publications.tex add and layout
         Abstract 30m
         [ ]     Complete abstract text
         [ ]     abstract.tex layout and choose on name (summary?)
@@ -59,6 +75,7 @@ kinect whitney
         Include
         [ ]     Tanaka
         [ ]     Shaw
+        [ ]     turchet hamilton and camci 2021
         [ ]     More context
 --->
  [Chapter 3 - Theory]
@@ -98,7 +115,7 @@ kinect whitney
         [ ]     Tidy .cs scripts
         [ ]     Link fig: to github scripts and pd patches
         [ ]     Add Vincs <- dance and visuals but not music
-        [ ]     Add Amy Brandon <- ar headset performances
+        [ ]     Add Amy Brandon <- ar headset performances and preprint, as well as 2018a
         [x]     Chapter Quote
 --->
  [Chapter 8 - Discussion]

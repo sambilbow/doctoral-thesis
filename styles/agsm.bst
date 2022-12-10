@@ -17,6 +17,11 @@
 %   Peter Williams, Key Centre for Design Quality, Sydney University
 %   e-mail: peterw@archsci.arch.su.oz.au
 
+% CHANGES
+% Modified by Sam Bilbow 2022
+%   remove newline on ln168 for URLS
+%   change to \bfseries on ln156 for volumes larger than 9
+
 ENTRY
   { address
     author
@@ -148,7 +153,7 @@ FUNCTION {emphasize}
 FUNCTION {embolden}
 { duplicate$ empty$
     { pop$ "" }
-    { "{\textbf " swap$ * "}" * }
+    { "{\bfseries " swap$ * "}" * }
   if$
 }
 
@@ -162,7 +167,7 @@ FUNCTION {quote}
 FUNCTION {write.url}
 { URL empty$
     { skip$ }
-    { "\newline\harvardurl{" URL * "}" * write$ newline$ }
+    { "\harvardurl{" URL * "}" * write$ newline$ } %! remove newline
   if$
 }
 

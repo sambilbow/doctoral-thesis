@@ -66,7 +66,8 @@
 \usepackage{doi}  
 
 % Provides a linked \url{#1} that doesn't require escape characters
-\usepackage{url}
+\usepackage{xurl} %! potentially fix url overflowing hbox in bib
+\def\UrlBreaks{\do\/\do-} %! fixes breaks?
 \renewcommand{\UrlFont}{\normalsize}
 % For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
 % (uncomment to typeset the e\-/mail address in typewriter font;
@@ -160,7 +161,7 @@
 % Setup the bibliography
 %\PassOptionsToPackage{round,semicolon,authoryear}{natbib} % for natbib
 \usepackage{natbib}				
-\renewcommand{\harvardurl}{\textbf{URL:} \url} % fix for url/doi`'
+\renewcommand{\harvardurl}{Available at: \url} % fix for url/doi`'
 \bibliographystyle{styles/agsm} % fix for deprecated \bf command
 
 % ---------------------------------------------------------------------------
@@ -198,9 +199,9 @@
     hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,%
     urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, %pagecolor=RoyalBlue,%
     %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
-    pdftitle={\myTitle},%
-    pdfauthor={\textcopyright\ \myName, \myUni, \myFaculty},%
-    pdfsubject={\myCourse},%
+    pdftitle={\myTitle: \mySubtitle},%
+    pdfauthor={\textcopyright\ \myName, \myCenter, \myDepartment, \myUni},%
+    pdfsubject={\myDegree, \myCourse},%
     pdfkeywords={\myKeywords},%
     pdfcreator={pdfLaTeX},%
     pdfproducer={LaTeX}%
@@ -380,23 +381,7 @@
 \flushbottom
 
 
-\usepackage{verbatim}
 %%%% Custom packages
-
-\newcommand{\detailtexcount}[1]{%
-  \immediate\write18{texcount -merge -sum -sub=chapter -q #1.tex output.bbl > #1.wcdetail }%
-  %\verbatiminput{#1.wcdetail}%
-}
-
-\newcommand{\quickwordcount}[2]{%
-  \immediate\write18{texcount -1 -sum -merge -q #1.tex output.bbl > #1-words.sum }%
-  \input{#1-words.sum} \hrulefill \xspace #2
-}
-
-\newcommand{\totalwordcount}[1]{%
-  \immediate\write18{texcount -1 -sum -merge -q #1.tex output.bbl > #1-words.sum }%
-  \input{#1-words.sum}
-}
 
 \newcommand\rurl[1]{%
   \href{http://#1}{\nolinkurl{#1}}%
