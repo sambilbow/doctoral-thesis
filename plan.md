@@ -4,13 +4,9 @@ kinect whitney
 
  [ Thesis ]
 <!--    Archiving
-        [ ]     Statement on contenta availability -> email for access
+        [x]     Statement on contenta availability -> email for access
         [ ]     Remove links to github in study chapters now that repo is at start
         [ ]     bfg scrub repo of .bib for filepath opsec
-        Citations 2h
-        [ ]     Check all citations in Zotero and in .bib
-        [x]     Decide on bibliography style
-        [x]     host bilbow et al on github.io or zenodo
         Figures 4h 
         [ ]     Find sources for all figures used so far
         [ ]     Create Figure List
@@ -28,25 +24,10 @@ kinect whitney
             [ ]     Single or double (British / American)
             [ ]     Fix to ` ' or `` ''
         [ ]     Check for double spcaes
-        Footnotes 30m
-        [ ]     Use of website links for non-citing material
-                [ ]     2 moma?
-                [ ]     5 aftershokz
-                [ ]     5 karma
-                [ ]     5 max
-                [ ]     5 winer
-                [ ]     5 espressif
-                [ ]     5 ircam
-                [ ]     5 icst add footnote keep cite
-                [ ]     5 leapmotion 2016
-                [ ]     5 leapmotion 2017
-                [ ]     5 UL 2020a
-                [ ]     5 UL 2020b
-                [ ]     5 rode
         Frontmatter 1h
         [ ]     Complete acknowledgements
                 [ ] include projects and urls from all 3 studies
-        [ ]     publications.tex add and layout
+        [x]     publications.tex add and layout
         Abstract 30m
         [ ]     Complete abstract text
         [ ]     abstract.tex layout and choose on name (summary?)
@@ -57,13 +38,33 @@ kinect whitney
         LaTeX 2h
         [ ]     Enable hbox/vbox warnings and check all
         [ ]     Chapter styling, subtitle layout
-        [ ]     Chapter Quote styling
+        [x]     Chapter Quote styling
         [ ]     Decide on clearpages and newpages and blankpages
         [ ]     CHECK ALL \autofills in doctoral-thesis.tex
+        [ ]     acronyms
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
         [ ]     Archive zenodo
+        [x] Citations 2h
+        [x]     Check all citations in Zotero and in .bib
+        [x]     Decide on bibliography style
+        [x]     host bilbow et al on github.io or zenodo
+        Footnotes 30m
+        [x]     Use of website links for non-citing material
+                [x]     2 moma?
+                [x]     5 aftershokz
+                [x]     5 karma
+                [x]     5 max
+                [x]     5 winer
+                [x]     5 espressif
+                [x]     5 ircam add foortnote keep cite
+                [x]     5 icst add footnote keep cite
+                [x]     5 leapmotion 2016
+                [x]     5 leapmotion 2017
+                [x]     5 UL 2020a
+                [x]     5 UL 2020
+                [x]     5 rode
 --->
  [Chapter 1 - Intro]
 <!--    [ ]     Add working definitions

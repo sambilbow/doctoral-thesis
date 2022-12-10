@@ -59,6 +59,8 @@
 \usepackage{wrapfig} % figures wrapped in text
 \usepackage{lineno} % Line Numbers 
 \usepackage{epigraph} % For epigraphs in front of chapters
+\setlength\epigraphwidth{.6\textwidth}
+\setlength\epigraphrule{1pt}
 \usepackage{microtype}
 
 % Provides a linked \doi{#1} that links doi:#1 to http://dx.doi.org/#1
@@ -215,6 +217,8 @@
 \newcommand\numlifter[1]{\raisebox{-3cm}[0pt][0pt]{\smash{#1}}}
 \newcommand\numindent{\kern5pt}
 \newlength\chaptertitleboxheight
+
+
 \makechapterstyle{hansen}{
   \renewcommand\printchaptername{\raggedleft}
   \renewcommand\printchapternum{%
@@ -341,9 +345,8 @@
 \setlength{\footnotemargin}{3mm}
 
 % Set page style and headers
-\renewcommand{\sectionmark}[1]{\markboth{}{\scriptsize{\thesection\ #1} } } % with number of section a
-
 \makepagestyle{custom}% Create custom page style
+\renewcommand{\sectionmark}[1]{\markboth{}{\thesection\ #1}} % with number of section a
 \makeoddhead{custom}% Adjust odd header for custom page style
 {\leftmark}% Left odd header
 {\thepage}% Center odd header

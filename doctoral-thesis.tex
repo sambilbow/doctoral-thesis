@@ -49,6 +49,8 @@
 \newcommand{\myFirstSupervisor}{Dr. Chris Kiefer\xspace}
 \newcommand{\mySecondSupervisor}{Dr. C\'ecile Chevalier\xspace}
 \newcommand{\myThirdSupervisor}{Prof. Jamie Ward\xspace}
+\newcommand{\myFirstExaminer}{Prof. Mary Krell\xspace}
+\newcommand{\mySecondExaminer}{Dr. Fr\'ed\'eric Bevilacqua\xspace}
 \newcommand{\myCenter}{Experimental Music Technologies Lab\xspace}
 \newcommand{\myDepartment}{Department of Music\xspace}
 \newcommand{\myFaculty}{School of Media, Arts and Humanities\xspace}
@@ -112,9 +114,39 @@
 % Load all settings and packages
 \input{settings}
 % \usepackage{fontspec}
-% \usepackage{lipsum}
-% \setmainfont{Inter}
+% \usepackage[Lenny]{fncychap}
+% \ChNameUpperCase
+% \ChNumVar{\fontsize{40}{42}\usefont{OT1}{ptm}{m}{n}\selectfont}
+% \ChTitleVar{\Large\sc}
 
+\usepackage{calc,color}
+\newif\ifNoChapNumber
+\newcommand\Vlines{%
+    \def\VL{\rule[-2cm]{1pt}{5cm}\hspace{1mm}\relax}
+  \VL\VL\VL\VL\VL\VL\VL}
+\makeatletter
+\setlength\midchapskip{0pt}
+\makechapterstyle{VZ43}{
+  \renewcommand\chapternamenum{}
+  \renewcommand\printchaptername{}
+  \renewcommand\printchapternum{}
+  \renewcommand\chapnumfont{\Huge\bfseries\centering}
+  \renewcommand\chaptitlefont{\Huge\bfseries\raggedright}
+  \renewcommand\printchaptertitle[1]{%
+    \Vlines\hspace*{-2em}%
+    \begin{tabular}{@{}p{1cm} p{\textwidth-3cm}}%
+      \ifNoChapNumber\relax\else%
+      \colorbox{black}{\color{white}%
+        \makebox[.8cm]{\chapnumfont\strut \thechapter}}
+      \fi
+      & \chaptitlefont ##1
+    \end{tabular}
+    \NoChapNumberfalse
+}
+  \renewcommand\printchapternonum{\NoChapNumbertrue}
+}
+\makeatother
+\chapterstyle{VZ43}
 % ---------------------------------------------------
 % BEGIN DOCUMENT
 % ---------------------------------------------------
@@ -123,11 +155,16 @@
 %\raggedbottom
 %\pagenumbering{roman}
 %\pagestyle{plain}
-\makeatletter
-\renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
-\makeatother
-\pagestyle{custom}% Set page style to custom
-\chapterstyle{hansen} % Set chapter style
+% \makeatletter
+% \renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
+% \makeatother
+% \addtopsmarks{headings}{%
+%   \nouppercaseheads % added at the beginning
+%   \makeheadrule{custom}{\textwidth}{.5pt}% Header rule width/thickness for custom page style
+% }
+% use the new settings
+\pagestyle{custom}
+\setsecnumdepth{subsubsection} % activating subsubsec numbering in doc
 % ---------------------------------------------------
 % PREAMBLE: roman page numbering i, ii, iii, ...
 % ---------------------------------------------------
