@@ -340,7 +340,6 @@
 \usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=4cm,right=2cm,headsep=10pt]{geometry}
 
 % For correct spacing throughout the document
-\usepackage[]{setspace}
 \newcommand{\linespacing}{1.5}
 \renewcommand{\baselinestretch}{\linespacing}
 \setlength{\footnotemargin}{3mm}
@@ -352,11 +351,12 @@
 {\leftmark}% Left odd header
 {\thepage}% Center odd header
 {\rightmark}% Right odd header
-\makeheadrule{custom}{\textwidth}{.5pt}% Header rule width/thickness for custom page style
+\makeheadrule{custom}{\textwidth}{.04pt}% Header rule width/thickness for custom page style
 \aliaspagestyle{chapter}{custom} % just to save some space
 \copypagestyle{chapter}{plain}
 \makeoddhead{chapter}{}{\thepage}{}
 \makeoddfoot{chapter}{}{}{}
+\makeheadrule{chapter}{\textwidth}{.04pt}% Header rule width/thickness for custom page style
 
 % ---------------------------------------------------------------------------
 % Using different fonts

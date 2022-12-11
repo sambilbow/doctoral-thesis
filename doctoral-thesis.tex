@@ -155,16 +155,17 @@
 %\raggedbottom
 %\pagenumbering{roman}
 %\pagestyle{plain}
-% \makeatletter
-% \renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
-% \makeatother
+\makeatletter
+ \renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
+\makeatother
 % \addtopsmarks{headings}{%
 %   \nouppercaseheads % added at the beginning
 %   \makeheadrule{custom}{\textwidth}{.5pt}% Header rule width/thickness for custom page style
 % }
 % use the new settings
+\nouppercaseheads
 \pagestyle{custom}
-\setsecnumdepth{subsubsection} % activating subsubsec numbering in doc
+% \setsecnumdepth{subsubsection} % activating subsubsec numbering in doc
 % ---------------------------------------------------
 % PREAMBLE: roman page numbering i, ii, iii, ...
 % ---------------------------------------------------
@@ -194,15 +195,22 @@
 % TABLE OF CONTENTS, LISTS OF TABLES & FIGURES
 % ---------------------------------------------------
 \begingroup
-  \newpage  
+  \clearpage  
   \setlength{\parskip}{0pt} % To restore distance between Chapters, sections and subsections in the table of contents
-  \pdfbookmark[0]{Contents}{contents_bookmark}
-  \pagestyle{custom}% Set page style to custom
-  \chapterstyle{hansen} % Set chapter style
-  \setcounter{tocdepth}{2}
+  \pdfbookmark[0]{Table of Contents}{contents_bookmark}
+  \pagestyle{empty}
+  \pagestyle{custom}
+  \chapterstyle{VZ43}
   \microtypesetup{protrusion=false}   % Fix uneven toc dots
   \tableofcontents* % as per in memoir class 
+  \clearpage
+  \pdfbookmark[0]{List of Figures}{figures_bookmark}
+  \listoffigures*
+  \clearpage
+  \pdfbookmark[0]{List of Tables}{tables_bookmark}
+  \listoftables*
   \microtypesetup{protrusion=true}    % Fix uneven toc dots
+  \newpage  
 \endgroup
 % ---------------------------------------------------
 % MAIN THESIS TEXT
@@ -213,7 +221,7 @@
 % Modify the header style
 % \pagestyle{scrheadings}
 \begingroup
-  \clearpage\input{content/01-chap-intro.tex} 
+  \input{content/01-chap-intro.tex} 
   \clearpage\input{content/02-chap-review.tex}
   \clearpage\input{content/03-chap-theory.tex}
   \clearpage\input{content/04-chap-method.tex}
@@ -222,6 +230,7 @@
   \clearpage\input{content/07-chap-polygons.tex}
   \clearpage\input{content/08-chap-discussion.tex}
   \clearpage\input{content/09-chap-conclusion.tex}
+  \newpage
 \endgroup
 % ---------------------------------------------------
 % APPENDICES
