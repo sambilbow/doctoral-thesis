@@ -174,8 +174,8 @@
   \clearpage\input{content/00-front-titlepage.tex}
   \clearpage\input{content/00-front-dedication.tex}
   \clearpage\input{content/00-front-acks.tex}
-  \clearpage\input{content/00-front-declaration.tex}
   \clearpage\input{content/00-front-publications.tex}
+  \clearpage\input{content/00-front-declaration.tex}
   \clearpage\input{content/00-front-acronyms.tex}
   \clearpage\input{content/00-front-abstract.tex}
   %\clearpage\input{content/00-front/colophon}
@@ -199,8 +199,10 @@
   \pdfbookmark[0]{Contents}{contents_bookmark}
   \pagestyle{custom}% Set page style to custom
   \chapterstyle{hansen} % Set chapter style
-  \setcounter{tocdepth}{1}
+  \setcounter{tocdepth}{2}
+  \microtypesetup{protrusion=false}   % Fix uneven toc dots
   \tableofcontents* % as per in memoir class 
+  \microtypesetup{protrusion=true}    % Fix uneven toc dots
 \endgroup
 % ---------------------------------------------------
 % MAIN THESIS TEXT
@@ -209,17 +211,17 @@
 \pagenumbering{arabic} %Start official numbering here
 %\setcounter{page}{90} % Manual adjustment if necessary
 % Modify the header style
-%\pagestyle{scrheadings}
+% \pagestyle{scrheadings}
 \begingroup
-  \input{content/01-chap-intro.tex} 
-  \input{content/02-chap-review.tex}
-  \input{content/03-chap-theory.tex}
-  \input{content/04-chap-method.tex}
-  \input{content/05-chap-area.tex}
-  \input{content/06-chap-polaris.tex}
-  \input{content/07-chap-polygons.tex}
-  \input{content/08-chap-discussion.tex}
-  \input{content/09-chap-conclusion.tex}
+  \clearpage\input{content/01-chap-intro.tex} 
+  \clearpage\input{content/02-chap-review.tex}
+  \clearpage\input{content/03-chap-theory.tex}
+  \clearpage\input{content/04-chap-method.tex}
+  \clearpage\input{content/05-chap-area.tex}
+  \clearpage\input{content/06-chap-polaris.tex}
+  \clearpage\input{content/07-chap-polygons.tex}
+  \clearpage\input{content/08-chap-discussion.tex}
+  \clearpage\input{content/09-chap-conclusion.tex}
 \endgroup
 % ---------------------------------------------------
 % APPENDICES

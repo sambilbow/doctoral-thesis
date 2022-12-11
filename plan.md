@@ -24,28 +24,30 @@ kinect whitney
             [ ]     Single or double (British / American)
             [ ]     Fix to ` ' or `` ''
         [ ]     Check for double spcaes
-        Frontmatter 1h
-        [ ]     Complete acknowledgements
-                [ ] include projects and urls from all 3 studies
-        [x]     publications.tex add and layout
-        Abstract 30m
-        [ ]     Complete abstract text
-        [ ]     abstract.tex layout and choose on name (summary?)
+        
         Narrative / Voice 2h
         [ ]     Read chapter beginning / ends
         [ ]     1st or 3rd person?
         [ ]     Tenses
         LaTeX 2h
         [ ]     Enable hbox/vbox warnings and check all
-        [ ]     Chapter styling, subtitle layout
-        [x]     Chapter Quote styling
+        [ ]     Long chap subtitle layout
         [ ]     Decide on clearpages and newpages and blankpages
-        [ ]     CHECK ALL \autofills in doctoral-thesis.tex
         [ ]     acronyms
+        [x]     Chapter styling, 
+        [x]     Chapter Quote styling
+        [x]     CHECK ALL \autofills in doctoral-thesis.tex
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
         [ ]     Archive zenodo
+        Abstract 30m
+        [x]     Complete abstract text
+        [x]     abstract.tex layout and choose on name (summary?)
+        Frontmatter 1h
+        [x]     Complete acknowledgements
+                [x] include projects and urls from all 3 studies
+        [x]     publications.tex add and layout
         [x] Citations 2h
         [x]     Check all citations in Zotero and in .bib
         [x]     Decide on bibliography style

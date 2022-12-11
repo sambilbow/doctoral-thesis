@@ -340,13 +340,14 @@
 \usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=4cm,right=2cm,headsep=10pt]{geometry}
 
 % For correct spacing throughout the document
+\usepackage[]{setspace}
 \newcommand{\linespacing}{1.5}
 \renewcommand{\baselinestretch}{\linespacing}
 \setlength{\footnotemargin}{3mm}
 
 % Set page style and headers
 \makepagestyle{custom}% Create custom page style
-\renewcommand{\sectionmark}[1]{\markboth{}{\thesection\ #1}} % with number of section a
+\renewcommand{\sectionmark}[1]{\markboth{}{\scriptsize{\thesection\ #1} } } % with number of section a
 \makeoddhead{custom}% Adjust odd header for custom page style
 {\leftmark}% Left odd header
 {\thepage}% Center odd header
