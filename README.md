@@ -6,7 +6,7 @@
 3. Pre-compiled .pdf can be found [here](/build/doctoral-thesis.pdf)
 
 ### Abstract
-This research explores and resituates augmented reality (AR) as a creative medium for the development of interactive and expressive works by computational artists and musicians. The research is guided primarily by the research questions: “What are AR's boundaries and affordances as a medium, are there problems it poses artists and musicians?”, and “What is the resultant experience for participants of an artistic AR experience?”. To address these questions, the thesis outlines a three-year exploration into AR’s use as a medium for multisensory musical performance and experience, and is further guided by the following aims:
+This research explores and resituates augmented reality (AR) as a creative medium for the development of interactive and expressive works by computational artists and musicians. The research is guided primarily by the research questions: ``What are AR's boundaries and affordances as a medium, are there problems it poses artists and musicians?”, and ``What is the resultant experience for participants of an artistic AR experience?”. To address these questions, the thesis outlines a three-year exploration into AR's use as a medium for multisensory musical performance and experience, and is further guided by the following aims:
 
 - To plot the contextual history of AR, its contemporary forms, trends, exceptions, and definitions.
 - To identify and develop key theoretical areas of artistic AR and its mode of engagement.

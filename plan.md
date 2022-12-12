@@ -4,12 +4,10 @@ kinect whitney
 
  [ Thesis ]
 <!--    Archiving
-        [x]     Statement on contenta availability -> email for access
         [ ]     Remove links to github in study chapters now that repo is at start
         [ ]     bfg scrub repo of .bib for filepath opsec
         Figures 4h 
         [ ]     Find sources for all figures used so far
-        [ ]     Create Figure List
         [ ]     Add new figures to all chapters
             [ ] polaris Unity / Pd
             [ ] polygons Unity / Pd
@@ -17,30 +15,37 @@ kinect whitney
         [ ]     Figure placement, stacking, hspace etc.
         [ ]     Landscape wholepage figures
         [ ]     Captions for detail, copy from text two sentences max
+        [x]     Statement on contenta availability -> email for access
+        [x]     Create Figure List
+        
         Tables 1h
+        [x]     Create Table List
         [ ]     Convert tables to LaTeX
-        Punctuation 1h
-        [ ]     Standardise quotation mark style in LaTeX
-            [ ]     Single or double (British / American)
-            [ ]     Fix to ` ' or `` ''
-        [ ]     Check for double spcaes
         
         Narrative / Voice 2h
         [ ]     Read chapter beginning / ends
         [ ]     1st or 3rd person?
         [ ]     Tenses
+        
         LaTeX 2h
         [ ]     Enable hbox/vbox warnings and check all
         [ ]     Long chap subtitle layout
-        [ ]     Decide on clearpages and newpages and blankpages
-        [ ]     acronyms
+        [ ]     Use acronyms?
+        [x]     Decide on clearpages and newpages and blankpages
         [x]     Chapter styling, 
         [x]     Chapter Quote styling
         [x]     CHECK ALL \autofills in doctoral-thesis.tex
+        
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
         [ ]     Archive zenodo
+        
+        Punctuation 1h
+        [x]     Standardise quotation mark style in LaTeX
+            [x]     Single or double (British / American)
+            [x]     Fix to ` ' or `` ''
+        [x]     Check for double spcaes
         Abstract 30m
         [x]     Complete abstract text
         [x]     abstract.tex layout and choose on name (summary?)
