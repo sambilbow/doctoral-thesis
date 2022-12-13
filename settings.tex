@@ -57,7 +57,9 @@
 \usepackage[]{graphicx} % Graphics options
 %\usepackage{multicol} % multicolumn text
 \usepackage{wrapfig} % figures wrapped in text
-\setlength\intextsep{0pt} %! added to flush wrapfigs
+\usepackage{etoolbox}
+% \BeforeBeginEnvironment{wrapfigure}{\setlength{\intextsep}{0pt}} %! fix wrap fig  alignment
+% \AtEndEnvironment{wrapfigure}{\setlength{\intextsep}{5pt}}
 \usepackage{lineno} % Line Numbers 
 \usepackage{epigraph} % For epigraphs in front of chapters
 \setlength\epigraphwidth{.6\textwidth}

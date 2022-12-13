@@ -2,43 +2,54 @@ games in context
 pokemon ar
 kinect whitney
 
+CENTER
+
 \begin{figure}[ht]
-    \centering
-    \includegraphics[width=.75\linewidth]
-    \captionsetup{justification=centering,margin=1.5cm}
-    \caption{x \citep[x][]{}}
-\end{figure}\label{fig: x}
+        \centering
+        \includegraphics[width=.75\linewidth]
+        \captionsetup{justification=centering,margin=1.5cm}
+        \caption{x \citep[x][]{}}\label{fig: x}
+\end{figure}
 
 \vspace{-\intextsep}
 
-\begin{wrapfigure}{r}{0.45\textwidth}
-    \raggedleft
-    \includegraphics[width=0.4\textwidth]
-    \captionsetup{justification=raggedleft,margin=1.5cm}
-    \caption{x \citep[x][]{}}
-\end{wrapfigure}\label{fig: x}
 
 RIGHT
 
 \begin{wrapfigure}{r}{0.45\textwidth}
-    \hfill
-    \begin{minipage}{0.95\linewidth}
-        \includegraphics[width=\linewidth]
-        \captionsetup{justification=justified}
-        \caption{x \citep[x][]{}}
-    \end{minipage}
+        \vspace{-\intextsep}
+        \hfill
+        \begin{minipage}{0.95\linewidth}
+                \includegraphics[width=\linewidth]
+                \captionsetup{justification=justified}
+                \caption{x \citep[x][]{}}\label{fig: x}
+        \end{minipage}
 \end{wrapfigure}
 
 LEFT
 
 \begin{wrapfigure}{l}{0.45\textwidth}
+        \vspace{-\intextsep}
     \begin{minipage}{0.95\linewidth}
-        \includegraphics[width=\linewidth]
-        \captionsetup{justification=justified}
-        \caption{x \citep[x][]{}}
-    \end{minipage}
-    \hfill
+                \includegraphics[width=\linewidth]
+                \captionsetup{justification=justified}
+                \caption{x \citep[x][]{}}\label{fig: x}
+        \end{minipage}
+        \hfill
 \end{wrapfigure}
+
+tripel
+
+\begin{figure}
+    \centering
+    \captionsetup{justification=centering}
+    \subcaptionbox{x \citep[x][]{x}}[.3\linewidth]{\includegraphics[height=2.5cm]{}}\label{fig: x}
+    \hfill
+    \subcaptionbox{x \citep[x][]{x}}[.3\linewidth]{\includegraphics[height=2.5cm]{}}\label{fig: x}
+    \hfill
+    \subcaptionbox{x \citep[x][]{x}}[.3\linewidth]{\includegraphics[height=2.5cm]{}}\label{fig: x}
+    \caption{x}\label{x}
+\end{figure}
 
 
  [ Thesis ]

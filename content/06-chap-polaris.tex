@@ -39,7 +39,7 @@
    
 % --------------------------------------------------------------------------- %
 \section{Summary}\label{sec: polaris-summary}
-This chapter outlines the development and evaluation of the \textit{polaris\textasciitilde{}} experience. \textit{polaris\textasciitilde{}} is built using a set of open-source hardware and software components that can be used to create privacy-respecting and cost-effective audiovisual AR experiences. Its wearable component is comprised of the open-source Project North Star AR headset and a pair of bone conduction headphones, providing simultaneous real and virtual visual and auditory elements. These elements are spatially aligned using Unity and PureData to the real space that they appear in and can be gesturally interacted with in a way that fosters artistic and musical expression. In order to evaluate the \textit{polaris\textasciitilde{}}, 10 participants were recruited, who spent approximately 30 minutes each in the AR scene and were interviewed about their experience. Using grounded theory, the author extracted coded remarks from the transcriptions of these studies, that were then sorted into the categories of Sentiment, Learning, Adoption, Expression, and Immersion. In evaluating \textit{polaris\textasciitilde{}} it was found that the experience engaged participants fruitfully, with many noting their ability to express themselves audiovisually in creative ways. The experience and the framework the author used to create it is available in a \href{https://github.com/sambilbow/polaris}{Github respository}.
+This chapter outlines the development and evaluation of the \textit{polaris\textasciitilde{}} experience. \textit{polaris\textasciitilde{}} is built using a set of open-source hardware and software components that can be used to create privacy-respecting and cost-effective audiovisual AR experiences. Its wearable component is comprised of the open-source Project North Star AR headset and a pair of bone conduction headphones, providing simultaneous real and virtual visual and auditory elements. These elements are spatially aligned using Unity and PureData to the real space that they appear in and can be gesturally interacted with in a way that fosters artistic and musical expression. In order to evaluate the \textit{polaris\textasciitilde{}}, 10 participants were recruited, who spent approximately 30 minutes each in the AR scene and were interviewed about their experience. Using grounded theory, the author extracted coded remarks from the transcriptions of these studies, that were then sorted into the categories of Sentiment, Learning, Adoption, Expression, and Immersion. In evaluating \textit{polaris\textasciitilde{}} it was found that the experience engaged participants fruitfully, with many noting their ability to express themselves audiovisually in creative ways.
 
 The objective of this chapter is to evaluate \textit{polaris\textasciitilde{}} as an AR experience for its ability to provide a space for gestural audiovisual expression, primarily through a user study, and later using the grounded theory method to extract relevant themes from participant interactions. The outcome of this research has contributed thoroughly to the design patterns in \autoref{sec: discussion-patterns}.
 
@@ -47,17 +47,16 @@ The objective of this chapter is to evaluate \textit{polaris\textasciitilde{}} a
 
 % --------------------------------------------------------------------------- %
 \section{Designing \textit{polaris\textasciitilde{}}}\label{sec: polaris-framework}
-The \textit{polaris\textasciitilde{}} experience itself is built using mostly open-source hardware and software. As well as creating the experience, I was interested in keeping a log of its framework in order to ensure its reproducibility and to facilitate further creation of a wide variety of audiovisual AR experiences. Any `artist-developer' \footnote{By using the term artist-developer, I refer to the media artist, creative coder, digital musician, or indeed any of the other many terms used to describe the category of artist who uses code and/or technology as their medium of artistic expression.} wanting to work on similar experiences should have the ability, when following this framework, to rapidly create and prototype low-cost and privacy-respecting sound ARt experiences, and instruments. This section details the framework, but additional information can be found on \href{https://github.com/sambilbow/polaris}{Github} and \href{https://sambilbow.github.io}{my website}.
+The \textit{polaris\textasciitilde{}} experience itself is built using mostly open-source hardware and software. As well as creating the experience, I was interested in keeping a log of its framework in order to ensure its reproducibility and to facilitate further creation of a wide variety of audiovisual AR experiences. Any `artist-developer' \footnote{By using the term artist-developer, I refer to the media artist, creative coder, digital musician, or indeed any of the other many terms used to describe the category of artist who uses code and/or technology as their medium of artistic expression.} wanting to work on similar experiences should have the ability, when following this framework, to rapidly create and prototype low-cost and privacy-respecting sound ARt experiences, and instruments..
 
 \subsection{\textit{polaris\textasciitilde{}} Hardware}\label{sec: polaris-framework-hardware}
 \subsubsection{Project North Star}\label{sec: polaris-framework-hardware-pns}
 
-%*[ ]   fix figure
 \begin{figure}
     \centering
-    \subcaptionbox{Playing a virtual piano\label{fig: polaris-framework-hardware-pns-1}}{\includegraphics[height=5cm]{figures/06-polaris/polaris-framework-hardware-pns-1.png}}
-    
-    \subcaptionbox{Resizing and moving virtual objects\label{fig: polaris-framework-hardware-pns-2}}{\includegraphics[height=5cm]{figures/06-polaris/polaris-framework-hardware-pns-2.png}}
+    \subcaptionbox{Playing a virtual piano\label{fig: polaris-framework-hardware-pns-1}}{\includegraphics[height=3.5cm]{figures/06-polaris/polaris-framework-hardware-pns-1.png}}
+    \hspace*{0.75cm}
+    \subcaptionbox{Resizing and moving virtual objects\label{fig: polaris-framework-hardware-pns-2}}{\includegraphics[height=3.5cm]{figures/06-polaris/polaris-framework-hardware-pns-2.png}}
     \caption{Project North Star in use}
 \end{figure}
 
@@ -67,14 +66,18 @@ However, the time needed to build one and understand its workings well enough to
 
 Despite these drawbacks, my own experience of the headset has led to the rapid creation of many audiovisual AR prototypes. The fact that it requires no account to use, no developer's license to work with, and no data to be sent away to corporate servers has only added to my comfortability of using it as a creative tool.
 
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \vspace{-\intextsep}
+    \hfill
+    \begin{minipage}{0.95\linewidth}
+            \includegraphics[width=\linewidth]{figures/06-polaris/polaris-framework-hardware-bc.jpg}
+            \captionsetup{justification=justified}
+            \caption{Project North Star worn with the addition of bone-conduction headphones}\label{fig: polaris-framework-hardware-bc}
+    \end{minipage}
+\end{wrapfigure}
 \subsubsection{Bone Conduction}\label{sec: polaris-framework-hardware-bc}
 The secondary piece of hardware in the system is a pair of bone-conduction headphones, seen in \autoref{fig: polaris-framework-hardware-bc}. These have been used as a method of auditory display in several other AR projects \citep{lindeman2008,barde2016,chevalier2018}, typically for their ability to deliver audio in an unobtrusive fashion, as well as their comfortability and cleanliness in installation settings. They do not obscure the wearer's hearing of their real environment, making them suitable for emphasising the intertwined nature of virtual and real components of an AR experience.
-\begin{figure}
-    \centering
-    \includegraphics[height=5cm]{figures/06-polaris/polaris-framework-hardware-bc.jpg}
-    \caption{Project North Star worn with the addition of bone-conduction headphones}
-    \label{fig: polaris-framework-hardware-bc}
-\end{figure}
+
 
 \subsection{\textit{polaris\textasciitilde{}} Software}\label{sec: polaris-framework-software}
 \subsubsection{Unity}\label{sec: polaris-framework-software-unity}
@@ -164,7 +167,18 @@ Included in this category are emotions elicited by the experience, the majority 
 
 One participant felt fixated by the experience: \textit{`I am quite obsessed by this button'} (P9), whilst another felt satisfaction: \textit{`Like a fascination, wonder, it was quite satisfying as well'} (P3).
 
-All participants made ample use of simile and metaphor, likening visual elements to liquid, snow, fire, fireworks, magic, and confetti. The sound design was said to be \textit{`ocean-like'} (P7) or \textit{`wind-like'} (P1), and participants expressed similarities in their experience to `being in' movies such as \textit{Minority Report, Enter the Void, and Star Wars}.
+All participants made ample use of simile and metaphor, likening visual elements to liquid, snow, fire, fireworks, magic, and confetti. The sound design was said to be \textit{`ocean-like'} (P7) or \textit{`wind-like'} (P1), and participants expressed similarities in their experience to `being in' movies such as \textit{Star Wars, Minority Report, and Enter the Void} - \autoref{fig: films}.
+
+\begin{figure}
+    \centering
+    \captionsetup{justification=centering, margin=1.5cm}
+    \subcaptionbox{`The Force' \citep[in][]{kershner1980}}[.3\linewidth]{\includegraphics*[height=2.75cm]{06-polaris/kershner1980.png}}\label{fig: kershner1980}
+    \hfill
+    \subcaptionbox{Mid-Air Displays \citep[in][]{spielberg2002}}[.3\linewidth]{\includegraphics[height=2.75cm]{06-polaris/spielberg2002.png}}\label{fig: spielberg2002}
+    \hfill
+    \subcaptionbox{Psychedelic Visuals \citep[in][]{noe2009}}[.3\linewidth]{\includegraphics[height=2.75cm]{06-polaris/noe2009.png}}\label{fig: noe2009}
+    \caption{Participants likened the experience of polaris\textasciitilde{} to `being in' Star Wars, Minority Report, and Enter the Void}\label{fig: films}
+\end{figure}
 
 \subsection{Learning}\label{sec: polaris-feedback-learning}
 From this category of codes, is clear that the experience involved an element of learning different functions and abilities. One participant remarked: \textit{`I was unsure, and I didn't know what would lead to a change in what I did, but after a point I understood'} (P6). Another linked learning as resulting in immersion: \textit{`Each step that you learn something new about what you can do in that environment, that's when you become more and more immersed'} (P9).
