@@ -2,6 +2,45 @@ games in context
 pokemon ar
 kinect whitney
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{x \citep[x][]{}}
+\end{figure}\label{fig: x}
+
+\vspace{-\intextsep}
+
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \raggedleft
+    \includegraphics[width=0.4\textwidth]
+    \captionsetup{justification=raggedleft,margin=1.5cm}
+    \caption{x \citep[x][]{}}
+\end{wrapfigure}\label{fig: x}
+
+RIGHT
+
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \hfill
+    \begin{minipage}{0.95\linewidth}
+        \includegraphics[width=\linewidth]
+        \captionsetup{justification=justified}
+        \caption{x \citep[x][]{}}
+    \end{minipage}
+\end{wrapfigure}
+
+LEFT
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+    \begin{minipage}{0.95\linewidth}
+        \includegraphics[width=\linewidth]
+        \captionsetup{justification=justified}
+        \caption{x \citep[x][]{}}
+    \end{minipage}
+    \hfill
+\end{wrapfigure}
+
+
  [ Thesis ]
 <!--    Archiving
         [ ]     Remove links to github in study chapters now that repo is at start

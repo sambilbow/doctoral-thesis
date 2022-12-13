@@ -16,6 +16,14 @@
 \label{sec: review}
 %\markboth{}{Augmented Reality - Histories, Origins, Trends, and Problems}
 \epigraph{\emph{}}{}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{02-review/chapter-fig.png}
+    \captionsetup{labelformat=empty}
+    \caption[\autoref{sec: review}: We AR in MoMA (from \citeauthor{veenhof2010}, \citeyear{veenhof2010}), Microsoft Hololens 2 in use by the U.S. Army (from \citeauthor{microsoft2021}, \citeyear{microsoft2021}), Project North Star (own photograph)]{}
+\end{figure}
+
 \clearpage
 % --------------------------------------------------------------------------- %
 \section{Summary}\label{sec: review-summary}
@@ -25,35 +33,39 @@ This review takes a retrospective view at the history of augmented reality techn
 
 % --------------------------------------------------------------------------- %
 \section{History of AR}\label{sec: ar-history}
-The earliest conceptions of what we would today call AR began their development in 1965 with Ivan Sutherland's `Ultimate Display' \citeyearpar{sutherland1968}. Sutherland's project, which was funded by the U.S. Department of Defence's `Advanced Research Projects Agency' (ARPA, now DARPA) involved hypothesising and developing a computer interface that could serve `as many senses as possible'. He speculated that this interface could `serve as a looking-glass into the mathematical wonderland constructed in computer memory'. By 1968, Sutherland had constructed what he called a `head-mounted three dimensional display', with a which was affixed to the ceiling of his lab with mechanical tracking arm that measured the position and orientation of the display in the room, called `The Sword of Damocles'. The head-mounted display provided per-eye visual displays via mini-CRT monitors, whose content was updated in real-time, dependent on the tracked pose of the head. This resulted in the three-dimensional (visual) perception of a hybridised real and virtual space, see \autoref{fig: sutherlandsword}.
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \hfill
+    \begin{minipage}{0.95\linewidth}
+        \includegraphics[width=\linewidth]{02-review/sutherland68_2.png}
+        \captionsetup{justification=justified}
+        \caption{`Head-mounted three dimensional display' with `The Sword of Damocles' ceiling mounted head tracking device \citep[in][]{sutherland1968}}\label{fig: sutherlandsword}
+    \end{minipage}
+\end{wrapfigure}
+The earliest conceptions of what we would today call AR began their development in 1965 with Ivan Sutherland's `Ultimate Display' \citeyearpar{sutherland1965}. Sutherland's project, which was funded by the U.S. Department of Defence's `Advanced Research Projects Agency' (ARPA, now DARPA) involved hypothesising and developing a computer interface that could serve `as many senses as possible'. He speculated that this interface could `serve as a looking-glass into the mathematical wonderland constructed in computer memory'. By \citeyear{sutherland1968}, Sutherland had constructed what he called a `head-mounted three dimensional display', with a which was affixed to the ceiling of his lab with mechanical tracking arm that measured the position and orientation of the display in the room, called `The Sword of Damocles' (see \autoref{fig: sutherlandsword}). The head-mounted display provided per-eye visual displays via mini-CRT monitors, whose content was updated in real-time, dependent on the tracked pose of the head. This resulted in the three-dimensional (visual) perception of a hybridised real and virtual space.
 
-\begin{figure}[bth]
-    \myfloatalign
-    {\includegraphics[width=.45\linewidth]{02-review/sutherland68_2.png}}
-    \caption[Sutherland's `Ultimate Display']{Sutherland's `Ultimate Display'}\label{fig: sutherlandsword}
+Over the course of the proceeding thirty years, most display (visual, audio and haptic) technologies gained higher resolutions, whilst becoming ever more miniaturised, propelled by the general movement towards ubiquitous and wearable computing. In 1992, augmented reality (AR) was officially defined by Boeing engineers Thomas Caudell and David Mizell, as a technology that could be used to `augment the visual field of the user with information' \citeyearpar{caudell1992}. Their prototype device featured display and tracking technologies that built on the work of Sutherland. The purpose of the Caudell and Mizell's device was to increase manufacture workers' efficiency through overlay of graphical wire-frame instructions. Their device operated by tracking elements of the users environment and body, processing these in real-time, and then overlaying these instructions via a PrivateEye \footnote{\url{https://billbuxton.com/Private_Eye_Brochure.pdf}} in the appropriate places dependent on the manufacturing process, through a HUDset. The HUDset, commonly referred to today as a head-mounted display (HMD) operated by updating the displays output in real-time dependent on the position and orientation (pose) of the participant. This had the effect of the graphical overlay seeming `fixed', or what is referred to now as `registered' or `aligned', on top of a specific point in the real world. For Caudell and Mizell, this display and tracking solution is what leads to the `technology' of AR being possible, and for them, it is what enables the context-aware instructional overlay of their application.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{02-review/caudell92_1.png}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{A `HUDset' using the PrivateEye \citep[in][]{caudell1992}}\label{fig: caudellprivateeye}
 \end{figure}
 
-Over the course of the proceeding thirty years, most display (visual, audio and haptic) technologies gained higher resolutions, whilst becoming ever more miniaturised, propelled by the general movement towards ubiquitous and wearable computing. In 1992, augmented reality (AR) was officially defined by Boeing engineers Thomas Caudell and David Mizell, as a technology that could be used to `augment the visual field of the user with information' \citeyearpar{caudell1992}. Their prototype device featured display and tracking technologies built on the work of Sutherland. The purpose of the Caudell and Mizell's device was to increase manufacture workers' efficiency through overlay of graphical wire-frame instructions. Their device operated by tracking elements of the users environment and body, processing these in real-time, and then overlaying these instructions in the appropriate places dependent on the manufacturing process through a HUDset. The HUDset, commonly referred to today as a head-mounted display (HMD) operated by updating the displays output in real-time dependent on the position and orientation (pose) of the participant. This had the effect of the graphical overlay seeming `fixed', or what is referred to now as `registered' or `aligned', on top of a specific point in the real world. For Caudell and Mizell, this display and tracking solution is what leads to the `technology' of AR being possible, and for them, it is what enables the context-aware instructional overlay of their application.
+Shortly after this original definition, Milgram and Kishino conceptualised the `Reality-Virtuality Continuum \citeyearpar{milgram1994}, which aimed to consolidate similar efforts across disciplines that were aiming to augment or virtualise `reality'. The continuum (see \autoref{fig: milgramcontinuum}) defines two outer bounds of `Real Environments' on the left (which exist as physical and tangible matter), and `Virtual Environments' on the right (that exist solely as digital bits), and everything within was to be classed as `Mixed Reality' (MR). Within MR, use-cases closer to the `Real' were regarded as `Augmented Reality' (AR), and use-cases closer to the `Virtual', were regarded as `Augmented Virtuality' (AV). In separating these MR use-cases from the tele-robotics field of Virtual Reality / Virtual Environments (VR / VE), they proposed a clear framework for classifying works. Since both AR and AV make use of augmenting `by means of real objects' in today's use cases, (e.g. by tracking and parametrising hand gestures, or tracking and generating spatial maps of the real environment), the difference between AR and AV in this definition, problematically, becomes the `primary world' in which objects are are doing the augmenting. Indeed, Milgram and Kishino make note of the possibility of this in their paper: 
 
-\begin{figure}[bth]
-    \myfloatalign
-    {\includegraphics[width=0.75\linewidth]{02-review/caudell92_1.png}}
-    \caption[Caudell and Mizell's device]{Caudell and Mizell's device}\label{fig: caudellprivateeye}
-\end{figure}
-
-Shortly after this original definition, Milgram and Kishino conceptualised the `Reality-Virtuality Continuum \citeyearpar{milgram1994}, which aimed to consolidate similar efforts across disciplines that were aiming to augment or virtualise `reality'. The continuum (\autoref{fig: milgramcontinuum}) defines two outer bounds of `Real Environments' on the left (which exist as physical and tangible matter), and `Virtual Environments' on the right (that exist solely as digital bits), and everything within was to be classed as `Mixed Reality' (MR). Within MR, use-cases closer to the `Real' were regarded as `Augmented Reality' (AR), and use-cases closer to the `Virtual', were regarded as `Augmented Virtuality' (AV). In separating these MR use-cases from the tele-robotics field of Virtual Reality / Virtual Environments (VR / VE), they proposed a clear framework for classifying works. Since both AR and AV make use of augmenting `by means of real objects' in today's use cases, (e.g. by tracking and parametrising hand gestures, or tracking and generating spatial maps of the real environment), the difference between AR and AV in this definition, problematically, becomes the `primary world' in which objects are are doing the augmenting. Indeed, Milgram and Kishino make note of the possibility of this in their paper: 
-
-\begin{figure}[bth]
-    \myfloatalign
-    {\includegraphics[width=0.75\linewidth]{02-review/milgram94_1.png}}
-    \caption[`Reality - Virtuality Continuum']{`Reality - Virtuality Continuum'}\label{fig: milgramcontinuum}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{02-review/tremosa2022.png}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Adaptation of the `Reality - Virtuality Continuum' by \citeauthor{milgram1994} \citep[in][]{tremosa2022}}\label{fig: milgramcontinuum}
 \end{figure}
 
 `Of course, as technology progresses, it may eventually become less straightforward to perceive whether the primary world being experienced is in fact predominantly `real' or predominantly `virtual', which may ultimately weaken the case for use of both AR and AV terms'
 
 They further specify that, despite this is the case, it should not affect the validity of the more general [Mixed Reality] term to cover the `grey area' in the centre of the virtuality continuum, and also offer the term `Hybrid Reality' for displays that blend AR and AV compositely. Today, term `Mixed Reality' is seen seldom apart from its use within Microsoft's toolkit, and `Hybrid Reality' even less so. Therefore, as previously mentioned, due to the rapid evolution of these technologies, the present thesis makes no distinction between Mixed, Hybrid, and Augmented Reality.
 
-In 1997, Azuma et al. proposed a specification for the definition of an AR system, and surveyed the five years of AR research since Caudell and Mizell's original definition. In order to avoid limiting AR to specific technologies, they define AR as a `system' that follows three characteristics: 
+In \citeyear{azuma1997}, Azuma et al. proposed a specification for the definition of an AR system, and surveyed the five years of AR research since Caudell and Mizell's original definition. In order to avoid limiting AR to specific technologies, they define AR as a `system' that follows three characteristics: 
 
 \begin{itemize}
     \item Combines real and virtual
@@ -65,8 +77,7 @@ In this project, also funded by DARPA, Azuma distinguishes between optical and v
 
 These early definitions and conceptions of AR were typically built upon with applications involving display and tracking technology that resulted in the \textbf{visual overlay and alignment} of \textbf{virtual graphics} onto our \textbf{real world environment}. Whilst this view of AR is followed by the overwhelming majority of historical and contemporary uses of AR, it only makes up a small subset of the potential myriad interactions afforded by the technologies that enable AR. Sutherland, who arguably catalysed early practical research in this field, viewed this AR as a `window' interface, that could serve `as many senses as possible'. Louis Rosenberg, a researcher at the U.S. Air Force Research Lab, another early proponent of AR, developed the concept of `Virtual Fixtures' (overlaid sensory information) as a method of reducing the `tax' on our senses induced by an overload of information through the visual sense \citep{rosenberg1993}. Milgram and Kishino, in outlining their taxonomy, recognise that it could serve to alleviate `analogous issues associated with other display modalities`, and cite work from Cohen, who at the time was developing realistic acoustic environment rendering in AR \citeyearpar{cohen1993}. They also note the concurrent work in haptic (the various senses of touch) displays for augmented reality. 
 
-At odds with the typical overlay approach, Steve Mann coined `Mediated Reality' \citeyearpar{mann1994} as more of a method to computationally mediate our own perception, rather than just focusing on overlaying. His later work terms `All Reality (*R)' which broadens the taxonomy of AR with concepts such as as surveillance and privacy \citeyearpar{mann2018}. Azuma et al., also acknowledge that AR is not just limited to visual perception or overlaying processes: `AR can potentially apply to all senses, including hearing, touch, and smell. Certain AR applications also require removing real objects from the perceived environment, in addition to adding virtual objects'. With this in mind, what does the landscape of more contemporary AR design look and feel like today?
-% \sectionmark{\sectionname}
+At odds with the typical overlay approach, wearable computing pioneer Steve Mann coined `Mediated Reality' \citeyearpar{mann1994} as descriptor of a methods used to computationally mediate our own perception, rather than focusing on the overlaying paradigm. His later work terms `All Reality (*R)' which broadens the taxonomy of AR with concepts such as as surveillance and privacy \citeyearpar{mann2018}. Azuma et al., also acknowledge that AR is not just limited to visual perception or overlaying processes: `AR can potentially apply to all senses, including hearing, touch, and smell. Certain AR applications also require removing real objects from the perceived environment, in addition to adding virtual objects'. With this in mind, what does the landscape of more contemporary AR design look and feel like today?
 
 
 
@@ -76,12 +87,13 @@ At odds with the typical overlay approach, Steve Mann coined `Mediated Reality' 
 \subsection{Head-mounted}\label{sec: ar-forms-hmd}
 \begin{figure}
     \centering
-    \subcaptionbox{Sutherlands `Ultimate Display'\label{fig: historicalHMDs-sutherland}}[.3\linewidth]{\includegraphics[height=2.5cm]{02-review/sutherland68_1.png}}
+    \captionsetup{justification=centering}
+    \subcaptionbox{`Head-mounted three dimensional display' \citep[in][]{sutherland1968}\label{fig: historicalHMDs-sutherland}}[.3\linewidth]{\includegraphics[height=2.5cm]{02-review/sutherland68_1.png}}
     \hfill
-    \subcaptionbox{Caudell and Mizell's `HUDset'\label{fig: historicalHMDs-caudell}}[.3\linewidth]{\includegraphics[height=2.5cm]{02-review/caudell92_2.jpeg}}
+    \subcaptionbox{`HUDset' \citep[in][]{caudell1992}\label{fig: historicalHMDs-caudell}}[.3\linewidth]{\includegraphics[height=2.5cm]{02-review/caudell92_2.jpeg}}
     \hfill
-    \subcaptionbox{Feiner's `KARMA' System\label{fig: historicalHMDs-feiner}}[.3\linewidth]{\includegraphics[height=2.5cm]{02-review/feiner93_1.png}}%
-    \caption{Historical AR HMDs}
+    \subcaptionbox{`KARMA System' \citep[in][]{feiner1993}\label{fig: historicalHMDs-feiner}}[.3\linewidth]{\includegraphics[height=2.5cm]{02-review/feiner93_1.png}}%
+    \caption{Augmented Reality Head Mounted Displays in the 20th Century}
     \label{fig: historicalHMDs}
 \end{figure}
 
@@ -90,14 +102,15 @@ Successors of AR head-mounted displays (HMDs) devised by Sutherland \citeyearpar
 %*[ ]   fix figure
 \begin{figure}
     \centering
-    \subcaptionbox{Microsoft Hololens 2\label{fig: contemporaryHMDs-microsoft}}{\includegraphics[width=0.45\linewidth]{02-review/hololens.jpg}}\quad
+    \captionsetup{justification=centering}
+    \subcaptionbox{Microsoft Hololens 2 \citep[from][]{microsoft2022}\label{fig: contemporaryHMDs-microsoft}}{\includegraphics[width=0.45\linewidth]{02-review/hololens.jpg}}\quad
     \hfill
-    \subcaptionbox{Magic Leap ML-1\label{fig: contemporaryHMDs-magicleap}}{\includegraphics[width=0.45\linewidth]{02-review/magicleap.png}}\\
+    \subcaptionbox{Magic Leap ML-1 \citep[from][]{att2019}\label{fig: contemporaryHMDs-magicleap}}{\includegraphics[width=0.45\linewidth]{02-review/magicleap.png}}\\
     \vspace{0.5cm}
-    \subcaptionbox{nReal Light\label{fig: contemporaryHMDs-nreal}}{\includegraphics[width=0.45\linewidth]{02-review/nreal.png}}\quad
+    \subcaptionbox{nReal Light \citep[from][]{nreal2020}\label{fig: contemporaryHMDs-nreal}}{\includegraphics[width=0.45\linewidth]{02-review/nreal.png}}\quad
     \hfill
-    \subcaptionbox{Leap Motion Project North Star\label{fig: contemporaryHMDs-northstar}}{\includegraphics[width=0.45\linewidth]{02-review/northstar.png}}\\
-    \caption{Contemporary AR HMDs}
+    \subcaptionbox{Leap Motion Project North Star \citep[in][]{bilbow2022}\label{fig: contemporaryHMDs-northstar}}{\includegraphics[width=0.45\linewidth]{02-review/northstar.png}}\\
+    \caption{Augmented Reality Head Mounted Displays in the 21st Century}
     \label{fig: contemporaryHMDs}
 \end{figure}
 
@@ -147,7 +160,7 @@ Whereas auditory and haptic sensations have been developed in AR, the chemical s
 \section{Processes in AR}\label{sec: ar-process}
 Additive layering of virtual content onto our real environment is by far the most typical of processes experienced in AR. However, it is only one of the potential methods of interaction between virtual and real components. In navigating this issue, the present thesis aligns its conception of AR closely with the definition of AR by Chevalier and Kiefer \citeyearpar{chevalier2020}: `real-time computationally mediated perception', which fulfils Azuma's three characteristics of AR systems, but is not as exclusionary as Caudell and Mizell's original definition: a technology used to  `augment the visual field of the user with information'. Investigating the existing relationships between real and virtual components of AR systems, Schraffenberger outlines at least five `relationships' and five `subforms' of AR (see \autoref{table:schraffenbergertaxonomy}). This taxonomy \citeyearpar[pp. 80-130]{schraffenberger2018} provides an ideal starting point for those designing AR systems interested in creating embodied experiences that challenge the typicality of basic visual-overlay AR. Furthermore, Mann expands the `Reality - Virtuality Continuum' \citep{milgram1994} into the `All Reality Continuum', integrating further dimensions such as `Metaveillance', `Kineveillance' and `Phenomenality', such a standpoint not only `anticipates the need for an ethically aligned reality' \citeyearpar{mann2018}, but demonstrates the multifaceted nature of augmented reality to afford experiences of ourselves, others, and environments computationally mediated by more than just additive informational overlays.
 
-\begin{table}
+\begin{table}[ht]
     \centering
     \begin{tabular}{ l l }
         \toprule
@@ -169,28 +182,32 @@ Additive layering of virtual content onto our real environment is by far the mos
         Extended Perception & Translating the Inperceptible     \\
         \bottomrule
     \end{tabular}
-    \caption{Schraffenberger's taxonomy of relationships and emergent AR subforms}\label{table:schraffenbergertaxonomy}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Taxonomy of relationships and emergent AR subforms \citep[in][]{schraffenberger2018}}\label{table:schraffenbergertaxonomy}
 \end{table}
 
 In particular, `diminished reality', aims to \textit{remove} real objects in our environment. When explored in the visual sense, this approach uses computer vision and content-aware substitution to remove a section or object of the real-world environment through camera sensors. Noise cancelling potentially offers an auditory diminished reality, but due to the fact that sound is propagated via mechanical waves, our sense of sound is closely intertwined with physically feelings of vibration, which are much harder to remove \citep{mori2017}. Further examples of sound-driven but cross-modal techniques are outlined in \citep{walther-hansen2020}.
 
 `Altered reality' has the potential to provide new and otherwise inaccessible sensory and perceptual experience Schraffenberger describes that this is possible through virtual components altering the perception of real components in an AR system. Mann outlines a myriad examples of altered visual percepts \citeyearpar{mann1994}, from giants eyes, to `slow' glasses. More recently, Nishida et al. have experimented with `egocentric smaller-person experience' through use of a video see-through AR headset, in which unlike typical AR, the cameras are mounted at waist height, rather than on the HMD \citeyearpar{nishida2019}. This afforded participants a difference in real-time visual perception, and resulted in them generally feeling smaller and behaving more like a child. In tandem with this altered visual perception, they propose a modified robotic glove `HandMorph' \citeyearpar{nishida2020} that alters sensations of touch through reduced finger and overall grip size. 
 
-\begin{figure}[bth]
-    \myfloatalign
-    {\includegraphics[width=.45\linewidth]{02-review/nishida20_1.jpg}}
-    \caption[Nishida's `HandMorph']{Nishida's `HandMorph'}\label{fig: handmorph}
-\end{figure}
+\begin{wrapfigure}{l}{0.45\textwidth}
+    \begin{minipage}{0.95\linewidth}
+        \includegraphics[width=\linewidth]{02-review/nishida20_1.jpg}
+        \captionsetup{justification=justified}
+        \caption{`HandMorph' offers altered touch perception by reducing hand affordances \citep[in][]{nishida2020}}\label{fig: handmorph}
+    \end{minipage}
+    \hfill
+\end{wrapfigure}
 
-In a similar vein, `extended perception' revolves around the potential to provide \textit{more} senses, or the sensing of stimuli outside of the range of our sensory systems. Bees for example have a visual system that extends far further into the ultraviolet range of EM radiation than our own eyes allow us; dogs hear much higher frequencies our ears allow us (thank goodness); and sharks can smell one part blood in a million parts water. These fun facts demonstrate vast differences in sensory acuity between species; but did you know that some shark have a constellation of pores \footnote{\url{https://www.sharktrust.org/shark-senses}} along the lateral side of their bodies that allows them to perceive minute pressure changes in water? This enables them to create a `pressure map' of their surroundings through active body movement. Modern technology could endow us with similar and myriad extended perceptions of our environment and its stimuli; Mann has experimented with making representations of radio waves translated down to the sensory range of our own eyes \citeyearpar{mann2018a}
+In a similar vein, `extended perception' revolves around the potential to provide \textit{more} senses, or the sensing of stimuli outside of the range of our sensory systems. Bees for example have a visual system that extends far further into the ultraviolet range of EM radiation than our own eyes allow us; dogs hear much higher frequencies our ears allow us (thank goodness); and sharks can smell one part blood in a million parts water. These fun facts demonstrate vast differences in sensory acuity between species; but did you know that some shark have a constellation of pores \footnote{\url{https://www.sharktrust.org/shark-senses}} along the lateral side of their bodies that allows them to perceive minute pressure changes in water? This enables them to create a `pressure map' of their surroundings through active body movement. Modern technology could endow us with similar and myriad extended perceptions of our environment and its stimuli; Mann has experimented with making representations of radio waves translated down to the sensory range of our own eyes \citeyearpar{mann2018a}.
+\begin{wrapfigure}{R}{0.45\textwidth}
+    \raggedleft
+    \includegraphics[width=.40\textwidth]{02-review/mann18_1.png}
+    \captionsetup{justification=raggedleft}
+    \caption{`Sequential Wave Imprinting Machine' allows visualisation of radio waves in AR \citep[in][]{mann2018a}}\label{fig: mann_swim}
+\end{wrapfigure}
 
-\begin{figure}[bth]
-    \myfloatalign
-    {\includegraphics[width=.45\linewidth]{02-review/mann18_1.png}}
-    \caption[Mann's `Sequential Wave Imprinting Machine']{Mann's `Sequential Wave Imprinting Machine'}\label{fig: mann_swim}
-\end{figure}
-
- This section demonstrates the multitude of potential experiences that AR affords beyond mere visual information layering, next, I will examine the usage of AR in the arts, as a medium or tool for creating immersive aesthetic experiences, and demonstrate how this contributes towards a more holistic understanding of AR as a technology. 
+This section demonstrates the multitude of potential experiences that AR affords beyond mere visual information layering, next, I will examine the usage of AR in the arts, as a medium or tool for creating immersive aesthetic experiences, and demonstrate how this contributes towards a more holistic understanding of AR as a technology. 
 
 
 
@@ -222,10 +239,11 @@ Among other creative fields, computational art has already seen some nascent imp
 \subsection{Sensory Engagement}\label{sec: ar-arts-sensory}
 Computational art has seen the use of AR as a medium since the early 2000's: in 2008, Grasset et al. presented case studies of AR art exhibitions, with the conclusion that for effective design of artworks, specific importance should be placed on the relationship \textit{between} real and virtual components \citeyearpar{grasset2008}. These relationships have come to describe a matrix of possibilities between senses and mediating processes, i.e. altered hearing, extended smell, diminished sight. Papagiannis has drawn attention to this broader multisensory view of AR in attempting to understand an aesthetic for AR applications, `AR is beginning to expand in new ways, beyond visual frames and into the full human sensorium' \citeyearpar{papagiannis2014}. In 2015, the Tate Sensorium multisensory art exhibition used novel mid-air haptic devices to augment visual art \citep{vi2017a}. The results of the included study found that more congruent multisensory experiences lead to audiences finding artwork more emotionally engaging. If more congruent multisensory experiences of art lead to more emotional engagement, and AR has the potential to mediate multiple senses in rich and provocative ways, surely this makes it an ideal medium for such works. 
 
-\begin{figure}[bth]
-    \myfloatalign
-    {\includegraphics[width=.75\linewidth]{02-review/vi17_1.png}}
-    \caption[Tate Sensorium Multisensory Art]{Tate Sensorium Multisensory Art}\label{fig: tate}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{02-review/vi17_1.png}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Tate Sensorium multisensory ARt providing audio and haptic augmentation \citep[in][]{vi2017a}}\label{fig: tate}
 \end{figure}
 
 \subsection{Aesthetic Experience}\label{sec: ar-arts-aesthetics}
@@ -233,23 +251,25 @@ Chevalier and Kiefer highlight the nascent use of newer AR technologies by artis
 
 The installation `Concrete Storm'\footnote{\url{https://www.studiodrift.com/concrete-storm-microsoft}} by artists Gordijn and Nauta demonstrates the ability for AR to afford novel experiences of seemingly immutable and rigid physical objects (short concrete pillars), through the extension and animation of the concrete into larger, shifting and breaking structures. In describing the design of the work, they outline one of the main impetuses of creating the work: `Gordijn says the duo was interested in beginning to investigate the point at which viewers `might let go of trying to distinguish between what is real, what is not' and accept this new mixed world as simply another version of reality' \citep{gottschalk2017}. 
 
-\begin{figure}[bth]
-    \myfloatalign
-    {\includegraphics[width=.75\linewidth]{02-review/studiodrift.png}}
-    \caption[Concrete Storm]{Concrete Storm}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{02-review/studiodrift.png}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Composite AR view of Concrete Storm \citep[from][]{gordijn2017}}
 \end{figure}\label{fig: concretestorm}
 
 \subsection{Collaborative Expression}\label{sec: ar-arts-collaboration}
 Another key aspect of the use of AR as a medium in computational artworks is its ability to enable collaborative expression and construct shared perceptual spaces. For example, Listening Mirrors\footnote{\url{http://listeningmirrors.net/}}, an artwork by Chevalier and Kiefer, \citeyearpar{chevalier2018} is an AR installation that engenders a collaborative and performative AR sound environment. This environment is hybrid in nature; split between physical and virtual space. In the installation space, participants can interact with a audio augmented parabolic acoustic mirror. Their interactions are intertwined with a computationally mediated virtual sonic environment that they experience through bone conduction headphones. Additionally their vocalisations are mediated by a wearable microphone through the mirror. This invites collaborative expression through exploration of the shared sonic world.
 
-Similarly, Eno and Chilvers explore collaborative ambient audiovisual composition in their AR adaptation of the popular app `Bloom', `Bloom: Space' \footnote{\url{https://inculture.microsoft.com/musicxtech/bloom-open-space/}}. In this installation, participants wear a Microsoft Hololens and use hand gestures to activate and manipulate generative audiovisual elements. These elements can be experienced by other participants and thus create a shared perceptual and actionable space.
+Similarly, Eno and Chilvers explore collaborative ambient audiovisual composition in their AR adaptation of the popular app `Bloom', `Bloom: Space' \citep{eno2018}. In this installation, participants wear a Microsoft Hololens and use hand gestures to activate and manipulate generative audiovisual elements. These elements can be experienced by other participants and thus create a shared perceptual and actionable space.
 
 %*[ ]   fix figure
-\begin{figure}
+\begin{figure}[ht]
     \centering
-    \subcaptionbox{Listening Mirrors\label{fig: collaborativeARt-listeningmirrors}}{\includegraphics[width=0.45\linewidth]{02-review/chevalier18_1.png}}
+    \captionsetup{justification=centering}
+    \subcaptionbox{A participant interacting with the acoustic parabolic mirror in Listening Mirrors \citep[from][]{chevalier2019}\label{fig: collaborativeARt-listeningmirrors}}{\includegraphics[width=0.45\linewidth]{02-review/chevalier18_1.png}}
     \hfill
-    \subcaptionbox{Bloom: Space\label{fig: collaborativeARt-bloom}}{\includegraphics[width=0.45\linewidth]{02-review/bloom.png}}
+    \subcaptionbox{Three immersed participants, creating sonic ARt in the Bloom: Space experience \citep[from][]{ray2018}\label{fig: collaborativeARt-bloom}}{\includegraphics[width=0.45\linewidth]{02-review/bloom.png}}
     \caption{Collaborative Expression in AR}
     \label{fig: collaborativeARt}
 \end{figure}
@@ -257,16 +277,18 @@ Similarly, Eno and Chilvers explore collaborative ambient audiovisual compositio
 \subsection{Activism and Agency}\label{sec: ar-arts-activism}
 Due to its ability to be an effective tool for collaborative expression, or perhaps because it creates a liminal hybridity that `questions the possession and control of a physical space' \citep{thiel2018}, AR art has seen use in activism and collaborative political expression. Early pioneers such as the Manifest.AR group were able to create convincing and socially immersive AR art using visual layering \citep{veenhof2010}. They did this through aligning the collaborative potential of AR with political expression. By creating an app that overlaid visual art within the Museum of Modern Art (MoMA) through GPS, they allowed participants to visit an exhibition in the museum that had not been organised by MoMA themselves (\autoref{fig: activismARt-moma}). AR thereby afforded these artists the ability to embed virtual art within an area considered private property, and also promote collective AR agency, raising very early questions about `virtual trespass' with AR. In a similar vein, `\#arOCCUPYWALLSTREET' (\#arOWS) was an arm of the Occupy Wall Street protests of 2011. Some 25 artists succeeded in overlaying the Wall Street area with `over 400 protest related augments', including audio overlays of protesters who were forbidden by police to enter the area. In this way, `AR was able to overcome their surveillance, barricades, horses, and excessive police numbers' \citeyearpar{skwarek2018} and more easily provide the means to action to people unable to physically mobilise.
 
-As well as its liminality between real and virtual space promoting otherwise dangerous collaborative expression, AR has the power of rendering the invisible as seen, and due to this, it is a tool that has be used to shine light on social, economic, political and environmental injustices. Through its ability to change our perception of the real world through sensory augmentation, diminishment, hybridisation and extension, it has been used as a medium within the arts to `uncover' underlying mechanisms in our society. For example, Thiel and PATTU's (artists Cem Kozar and Işıl Ünal) 2011 work `Invisible Istanbul' aims to render visible the unseen urban dynamics of Istanbul, through GPS positioning smartphone visual overlay. They write: `Viewers become as photographers: the act of viewing or making a screenshot of the objects at a specific site and time reifies the virtual objects into artworks, revealing hidden forces within the city not visible to the naked eye.' \citeyearpar{thiel2011}. In PATTU's work, an augmented reality walking tour, different parts of the city are overlaid with symbolic information of past, present, and future uses of each area, highlighting tensions from military and commercial uses, and the effects this has on `contemporary urban space and the lives of its inhabitants' \citeyearpar{thiel2018}.
-
-%*[ ]   fix figure
 \begin{figure}
     \centering
-    \subcaptionbox{Manifest.AR MoMA Invasion\label{fig: activismARt-moma}}{\includegraphics[width=0.45\linewidth]{02-review/moma.jpg}}
-    \subcaptionbox{Invisible Istanbul\label{fig: activismARt-istanbul}}{\includegraphics[width=0.45\linewidth]{02-review/thiel.jpg}}
+    \captionsetup{justification=centering}
+    \subcaptionbox{Manifest.AR MoMA Invasion \citep[from][]{veenhof2010}\label{fig: activismARt-moma}}{\includegraphics[width=0.45\linewidth]{02-review/moma.jpg}}
+    \hfill
+    \subcaptionbox{Invisible Istanbul \citep[from][]{thiel2011}\label{fig: activismARt-istanbul}}{\includegraphics[width=0.45\linewidth]{02-review/thiel.jpg}}
     \caption{Activism through Interventionist ARt}
     \label{fig: activismARt}
 \end{figure}
+
+As well as its liminality between real and virtual space promoting otherwise dangerous collaborative expression, AR has the power of rendering the invisible as seen, and due to this, it is a tool that has be used to shine light on social, economic, political and environmental injustices. Through its ability to change our perception of the real world through sensory augmentation, diminishment, hybridisation and extension, it has been used as a medium within the arts to `uncover' underlying mechanisms in our society. For example, Thiel and PATTU's (artists Cem Kozar and Işıl Ünal) 2011 work `Invisible Istanbul' aims to render visible the unseen urban dynamics of Istanbul, through GPS positioning smartphone visual overlay. They write: `Viewers become as photographers: the act of viewing or making a screenshot of the objects at a specific site and time reifies the virtual objects into artworks, revealing hidden forces within the city not visible to the naked eye.' \citeyearpar{thiel2011}. In PATTU's work, an augmented reality walking tour, different parts of the city are overlaid with symbolic information of past, present, and future uses of each area, highlighting tensions from military and commercial uses, and the effects this has on `contemporary urban space and the lives of its inhabitants' \citeyearpar{thiel2018}.
+
 
 
 As summarised by Manifest.AR member Martin Skwarek puts it: `Alice has stepped through the looking glass [...] It is the job all future artists and activists to use this technology for the better, to bring people together, and uproot social injustice.' \citeyearpar{skwarek2018}

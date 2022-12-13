@@ -57,6 +57,7 @@
 \usepackage[]{graphicx} % Graphics options
 %\usepackage{multicol} % multicolumn text
 \usepackage{wrapfig} % figures wrapped in text
+\setlength\intextsep{0pt} %! added to flush wrapfigs
 \usepackage{lineno} % Line Numbers 
 \usepackage{epigraph} % For epigraphs in front of chapters
 \setlength\epigraphwidth{.6\textwidth}
@@ -350,7 +351,7 @@
 \makeoddhead{custom}% Adjust odd header for custom page style
 {\leftmark}% Left odd header
 {\thepage}% Center odd header
-{\rightmark}% Right odd header
+{\scriptsize{\rightmark}}% Right odd header
 \makeheadrule{custom}{\textwidth}{.04pt}% Header rule width/thickness for custom page style
 \aliaspagestyle{chapter}{custom} % just to save some space
 \copypagestyle{chapter}{plain}
@@ -371,7 +372,7 @@
 %\usepackage[urw-garamond]{mathdesign} <-- no osf support :-(
 
 \usepackage{wrapfig}
-\usepackage{subcaption}
+\usepackage[list=on]{subcaption}
 \usepackage{caption}
 \usepackage{lipsum}
 % ---------------------------------------------------------------------------
