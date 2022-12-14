@@ -54,17 +54,15 @@ The \textit{polaris\textasciitilde{}} experience itself is built using mostly op
 
 \begin{figure}
     \centering
-    \subcaptionbox{Playing a virtual piano\label{fig: polaris-framework-hardware-pns-1}}{\includegraphics[height=3.5cm]{figures/06-polaris/polaris-framework-hardware-pns-1.png}}
-    \hspace*{0.75cm}
-    \subcaptionbox{Resizing and moving virtual objects\label{fig: polaris-framework-hardware-pns-2}}{\includegraphics[height=3.5cm]{figures/06-polaris/polaris-framework-hardware-pns-2.png}}
+    \subcaptionbox{Playing a virtual piano\label{fig: polaris-framework-hardware-pns-1}}{\includegraphics[height=4.5cm]{figures/06-polaris/polaris-framework-hardware-pns-1.png}}
+    \hfill
+    \subcaptionbox{Resizing and moving virtual objects\label{fig: polaris-framework-hardware-pns-2}}{\includegraphics[height=4.5cm]{figures/06-polaris/polaris-framework-hardware-pns-2.png}}
     \caption{Project North Star in use}
 \end{figure}
 
 The primary section of wearable hardware is the Project North Star (NS) AR headset, as open-sourced by LeapMotion (now Ultraleap) in 2018. It has a 3D-printable assembly, and its circuit boards, cables, and screens are available to buy \href{https://docs.projectnorthstar.org}{online}; my North Star cost about £500 in total to build - 5 to 6 times less expensive than the commercial AR headsets mentioned, while maintaining industry-leading hand-tracking and 6DoF (6 degrees of freedom) depth tracking.
 
 However, the time needed to build one and understand its workings well enough to trouble\-shoot any issues one faces may be a barrier to entry \footnote{I have found it a surprisingly integral part of the way I make sense of my creative practice, and fortunately there is a Project North Star Discord server with over 2400 helpful members that I have relied on heavily!}. Additionally, the finish material is not as polished as commercial headsets, and the overall size is larger and clunkier. It also needs to be tethered by USB and DisplayPort cable to a host computer or mobile compute pack.
-
-Despite these drawbacks, my own experience of the headset has led to the rapid creation of many audiovisual AR prototypes. The fact that it requires no account to use, no developer's license to work with, and no data to be sent away to corporate servers has only added to my comfortability of using it as a creative tool.
 
 \begin{wrapfigure}{r}{0.45\textwidth}
     \vspace{-\intextsep}
@@ -75,6 +73,8 @@ Despite these drawbacks, my own experience of the headset has led to the rapid c
             \caption{Project North Star worn with the addition of bone-conduction headphones}\label{fig: polaris-framework-hardware-bc}
     \end{minipage}
 \end{wrapfigure}
+Despite these drawbacks, my own experience of the headset has led to the rapid creation of many audiovisual AR prototypes. The fact that it requires no account to use, no developer's license to work with, and no data to be sent away to corporate servers has only added to my comfortability of using it as a creative tool.
+
 \subsubsection{Bone Conduction}\label{sec: polaris-framework-hardware-bc}
 The secondary piece of hardware in the system is a pair of bone-conduction headphones, seen in \autoref{fig: polaris-framework-hardware-bc}. These have been used as a method of auditory display in several other AR projects \citep{lindeman2008,barde2016,chevalier2018}, typically for their ability to deliver audio in an unobtrusive fashion, as well as their comfortability and cleanliness in installation settings. They do not obscure the wearer's hearing of their real environment, making them suitable for emphasising the intertwined nature of virtual and real components of an AR experience.
 
@@ -118,28 +118,53 @@ Once the participant was wearing the headset and headphones, confirmed they were
 
 The experience involved nine floating iridescent `orbs', scattered at different distances from the starting position. The orbs would individually emit a repeating tone, whose pitch and tempo varied from orb to orb. Upon emitting a sound, the orb would eject a shower of white particles.
 
-[iframe element]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{06-polaris/polaris-clip_1}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Through-lens footage of the floating orbs in the polaris\textasciitilde{} AR scene \citep[from][\href{https://youtu.be/lCBgMs8ULj0?t=19}{at 00:19}]{bilbow2022c}}\label{fig: polaris-clip_1}
+\end{figure}
 
 Participants were invited to explore the space at their own pace. They could, of course, view the orbs from different angles, and hear their tones get louder and quieter as well as panning from ear to ear as they walked around them.
 I then prompted them to direct their gaze towards their hands, which were outlined, and when turning the left hand to face them, a menu appeared to the right of their palm. The menu contained two buttons, one labelled `Change Hand Colour', the other `Toggle Interactions'. I prompted them to tap the top button, which upon depressing slightly and providing an auditory `click', changed the colour of their hand's outline.
 
-[iframe element]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{06-polaris/polaris-clip_2}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Through-lens footage of the hand outline, menu, and button activation in the polaris\textasciitilde{} AR scene \citep[from][\href{https://youtu.be/lCBgMs8ULj0?t=140}{at 2:20}]{bilbow2022c}}\label{fig: polaris-clip_2}
+\end{figure}
 
 Upon toggling the second button on, constant streams of particles started emitting from the centre of their palms. These particles persisted for approximately five seconds to conserve computational power. While the button was toggled on, and the streams were emitting, each hand also produced a continuous noise.
 
 In addition to these interactions, a total of five further interactions existed in the experience. The first two concerned the position, orientation, and gesture of the hands, relative to the participant. Firstly, they could modulate the depth of a vibrato effect on the sound of the particle stream by gradually turning their palms towards their face. Secondly, they could affect the sound's filter cut-off frequency by pinching their fingers together into a point, resulting in a hissing sound; paired with the visual feedback of narrowing the particle stream.
 
-[iframe element]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{06-polaris/polaris-clip_3}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Through-lens footage of the pinch gesture’s effect on the particle streams in the polaris\textasciitilde{} AR scene \citep[from][\href{https://youtu.be/lCBgMs8ULj0?t=476}{at 7:56}]{bilbow2022c}}\label{fig: polaris-clip_3}
+\end{figure}
 
 On pointing their palms in the direction of an orb, the particles would gravitate towards the orb, and begin to slow down, orbit, and rotate it. Depending on which palm was pointing towards the orb, there would be an additional effect that increased in intensity as the participant persisted in pointing towards the orb. When pointing their left palm, over the course of 20 seconds, the orb's tone and white particle burst increased in tempo. When pointing their right palm towards an orb, over the course of 5 seconds, the depth of a tremolo effect on that orb's tone increased, with the paths of the white particles emitted from the orb becoming more erratic and corkscrew-like.
 
-[iframe element]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{06-polaris/polaris-clip_4}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Through-lens footage of the orb’s gravitational effect on the hand particles in the polaris\textasciitilde{} AR scene \citep[from][\href{https://youtu.be/lCBgMs8ULj0?t=495}{at 8:14}]{bilbow2022c}}\label{fig: polaris-clip_4}
+\end{figure}
 
 Exploration of the scene differed between participants, but once they had either found or been shown the interaction methods in the scene and had either explored their variety or asked if there was anything else that they could do, I would ask them to try some experimental interactions.
 
 Taking advantage of the vast number of parameters available to edit in Unity, I then changed elements of the visual   experience \footnote{Since the 11 PureData patches (9 for the orbs, and 1 each for the hands) were compiled at run-time they could not be edited on the fly} in real-time, asking for participant feedback on elements they preferred, and why. These elements of visual experience involved the orbs size, shape, gravity strength, and range; particle size, speed, lifetime, and colour.
 
-[iframe element]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{06-polaris/polaris-clip_5}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Artificial composite 3rd and 1st person views of a polaris\textasciitilde{} participant drawing in mid air during the experimental section, note the scene gravity being turned on.  \citep[from][\href{https://youtu.be/72JLG1fGboY}{clip URL}]{bilbow2022}}\label{fig: polaris-clip_5}
+\end{figure}
 
 \subsection{Interview}\label{sec: polaris-study-interview}
 The next step of the study was a 10-minute interview, in which I asked participants about the positive and negative aspects of the experience, and anything they could suggest that would improve the experience. Questions were left deliberately broad due to the use of grounded theory to draw out themes for later analysis. I used a topic guide (see Appendix 1) to keep follow-on questions for replies related to the experience. This was in the form of a set of questions from the validated questionnaire titled `User Experience in Immersive Virtual Environments' by Katy Tcha-Tokey et al. \citeyearpar{tcha-tokey2016a}, which I adapted to suit AR.
@@ -205,7 +230,12 @@ On the topic of safety, one participant expressed that despite \textit{`[feeling
 \subsection{Expression}\label{sec: polaris-feedback-expression}
 Participants expressed themselves in various ways during the AR experience, and most described the ability to create visual and sonic components with their hands as the most compelling aspect of this expression. For example, one participant appreciated the variety of visual and sonic patterns that they could create: \textit{`when your hands are together, it made one style of shape, and when your hands were away it would make different styles that affected the music'} (P7), another emphasised variety as well as exploration: \textit{`[The experience] let me explore by using my hands [and] doing different gestures'} (P6).
 
-[iframe element]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{06-polaris/polaris-clip_6}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Artificial composite 3rd and 1st person views of a polaris\textasciitilde{} participant using their hands to interact with the floating orbs \citep[from][\href{https://youtu.be/T7CAjPk2Zs0}{clip URL}]{bilbow2022}}\label{fig: polaris-clip_6}
+\end{figure}
 
 Accordingly, several participants expressed their ability to act in the scene as \textit{`control'} or \textit{`power'}. One participant, almost sounding guilty, said: \textit{`I mean, it sounds weird, but I felt, like, very powerful'} (P10). Another, remarked similarly: \textit{`I think once I realised that I had the power to add things, I didn't let go of that'} (P3).
 
@@ -247,11 +277,14 @@ From the codes relating to self-expression and control, participants appreciated
 
 Immersion tended to stem from the fact that the elements of the experience: sights, sounds, and actions were spatialised in three dimensions. Participants enjoyed and felt immersed by the movement and colour of the visual elements and were able to discern and localise the source of different sounds in the experience; several noting that this element was the most immersive factor for them, whilst others preferred the visual elements. Others still, noted that the actions that they employed, gestural and movement-based are what immersed them in the experience most, and for some, this led to the virtual content of the scene feeling physical at times.
 
-[iframe element]
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.75\linewidth]{06-polaris/polaris-clip_7}
+    \captionsetup{justification=centering,margin=1.5cm}
+    \caption{Artificial composite 3rd and 1st person views of a polaris\textasciitilde{} participant expressing themselves in the scene, and viewing their creation from different angles \citep[from][\href{https://youtu.be/H8d3n7eNKAg}{clip URL}]{bilbow2022}}\label{fig: polaris-clip_7}
+\end{figure}
 
 While the above analysis is not, on its own, sufficient to draw conclusive guidelines for design, it does shed light on several connections between elements of this specific experience: learning, comfort, safety, spatial perception, visual-, sonic-, and action-led immersion, and physicality of virtual content. In \autoref{sec: discussion-medium} this is expanded upon, and this has lead to the iteration of parts of the design patterns found in \autoref{sec: discussion-patterns}.
-
-[iframe element]
 
 To improve on the comfortability of the experience, the first changes I made were to design an alternate headgear section for the headset. Over the course of a day, I collaborated with another NS community member on \href{https://github.com/AheadIO/Deck-X/tree/main/Deck_X/STL_files/Headgear/Welding_Headgear_Adaptor}{3D printable designs} that would allow the quick and easy substitution of the main headgear piece for a smaller one that was more accommodating of smaller head sizes.
 

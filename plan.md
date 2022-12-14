@@ -79,7 +79,7 @@ tripel
         
         LaTeX 2h
         [ ]     Enable hbox/vbox warnings and check all
-        [ ]     Long chap subtitle layout
+        [x]     Long chap subtitle layout
         [ ]     Use acronyms?
         [x]     Decide on clearpages and newpages and blankpages
         [x]     Chapter styling, 
@@ -89,7 +89,7 @@ tripel
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
-        [ ]     Archive zenodo
+        [x]     Archive zenodo
         
         Punctuation 1h
         [x]     Standardise quotation mark style in LaTeX

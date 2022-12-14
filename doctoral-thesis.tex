@@ -38,6 +38,7 @@
 %                BCOR=5mm,paper=a4,fontsize=11pt,
 %                english,%
 %                ]{scrreprt}
+\PassOptionsToPackage{hyperfootnotes=false}{hyperref} %! remove footnote hyperlinks as they go to the titlepage :(
 \documentclass[a4paper,11pt,oneside,oldfontcommands]{memoir} %! oneside for e-reading, two-side for paper printing
 
 \newcommand{\myTitle}{Material, Embodied, and Spatial Relations in Augmented Reality\xspace}
@@ -113,12 +114,8 @@
 }
 % Load all settings and packages
 \input{settings}
-% \usepackage{fontspec}
-% \usepackage[Lenny]{fncychap}
-% \ChNameUpperCase
-% \ChNumVar{\fontsize{40}{42}\usefont{OT1}{ptm}{m}{n}\selectfont}
-% \ChTitleVar{\Large\sc}
 
+% Custom chapter style
 \usepackage{calc,color}
 \newif\ifNoChapNumber
 \newcommand\Vlines{%
