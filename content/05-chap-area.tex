@@ -62,9 +62,9 @@ The \textit{\textit{area\textasciitilde{}}} system, which stands loosely for `au
 \subsection{Hardware Implementation}\label{sec: area-system-hardware}
 \begin{figure}
     \centering
-    \subcaptionbox*{}[.45\textwidth]{\includegraphics[height=4.5cm]{figures/05-area/areatechnical_hardware.png}}
+    \subcaptionbox{}[.45\textwidth]{\includegraphics[height=4.5cm]{figures/05-area/areatechnical_hardware.png}}
     \hfill
-    \subcaptionbox*{}[.45\textwidth]{\includegraphics[height=4.5cm]{figures/05-area/areatechnical_pcb.png}}%
+    \subcaptionbox{}[.45\textwidth]{\includegraphics[height=4.5cm]{figures/05-area/areatechnical_pcb.png}}%
     \caption{\textit{area\textasciitilde{}} hardware and PCB}
     \label{fig: areatechnical}
 \end{figure}
@@ -83,7 +83,7 @@ The only hardware that needs to be accessible for the person composing with \tex
 \begin{figure}
     \centering
     \includegraphics[angle=90,height=0.95\textheight]{figures/05-area/areatechnical_max.png}
-    \caption{\textit{area\textasciitilde{}} Max MSP patch}
+    \caption{\textit{area\textasciitilde{}} Max MSP patch (\href{https://github.com/sambilbow/area/tree/main/maxmsp}{code})}
     \label{fig: areatechnicalmax}
 \end{figure}
 The patch (\autoref{fig: areatechnicalmax}) uses the audio plugin \footnote{\url{https://www.rode.com/soundfieldplugin}} shown in \autoref{fig: areatechnicalrode} to encode the A-Format ambisonics microphone input into B-Format (a three-dimensional sound field), or what I will refer to as the \textit{ambisonic palette}. This \textit{ambisonic palette} is not heard by the composer; instead, they can sculpt from it, forming their own audible \textit{(B-Format) virtual audio environment} through hand gestures. I have defined these gestures in Max MSP with help from the IRCAM Leap Motion library \citeyearpar{ircam2014} \footnote{\url{https://github.com/JulesFrancoise/leapmotion-for-max}}, and they occur over three stages of interaction: \textit{\textbf{record, manipulate, spatialise}}. 
