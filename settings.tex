@@ -49,7 +49,7 @@
 %\usepackage{scrhack} % fix warnings when using KOMA with listings package
 \usepackage{xspace} % to get the spacing after macros right  
 \usepackage{mparhack} % get marginpar right
-\PassOptionsToPackage{printonlyused,smaller,withpage}{acronym}
+\PassOptionsToPackage{printonlyused,withpage}{acronym}
 \usepackage[printonlyused, withpage]{acronym} % nice macros for handling all acronyms in the thesis
 
 %*! Removed titlesec for nameref fix
@@ -71,8 +71,8 @@
 \usepackage{doi}  
 
 % Provides a linked \url{#1} that doesn't require escape characters
-% \usepackage{xurl} %! potentially fix url overflowing hbox in bib
-% \def\UrlBreaks{\do\/\do-} %! fixes breaks?
+\usepackage{xurl} 
+\def\UrlBreaks{\do\/\do-}%! fix footnote url break
 \renewcommand{\UrlFont}{\normalsize}
 % For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
 % (uncomment to typeset the e\-/mail address in typewriter font;

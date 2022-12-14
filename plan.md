@@ -84,7 +84,7 @@
 --->
  [Chapter 9 - Conclusion]
 <!--    
-        [ ]     Chapter Quote
+        [ ]
 --->
  [ Appendices ]
 <!--    LaTeX
