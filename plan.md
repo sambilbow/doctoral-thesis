@@ -1,96 +1,119 @@
-games in context
-pokemon ar
-kinect whitney
+# Doctoral Thesis Todo
 
-CENTER
-
-\begin{figure}[ht]
-        \centering
-        \includegraphics[width=.75\linewidth]
-        \captionsetup{justification=centering,margin=1.5cm}
-        \caption{x \citep[x][]{}}\label{fig: x}
-\end{figure}
-
-\vspace{-\intextsep}
-
-
-RIGHT
-
-\begin{wrapfigure}{r}{0.45\textwidth}
-        \vspace{-\intextsep}
-        \hfill
-        \begin{minipage}{0.95\linewidth}
-                \includegraphics[width=\linewidth]
-                \captionsetup{justification=justified}
-                \caption{x \citep[x][]{}}\label{fig: x}
-        \end{minipage}
-\end{wrapfigure}
-
-LEFT
-
-\begin{wrapfigure}{l}{0.45\textwidth}
-        \vspace{-\intextsep}
-    \begin{minipage}{0.95\linewidth}
-                \includegraphics[width=\linewidth]
-                \captionsetup{justification=justified}
-                \caption{x \citep[x][]{}}\label{fig: x}
-        \end{minipage}
-        \hfill
-\end{wrapfigure}
-
-tripel
-
-\begin{figure}
-    \centering
-    \captionsetup{justification=centering}
-    \subcaptionbox{x \citep[x][]{x}}[.3\linewidth]{\includegraphics[height=2.5cm]{}}\label{fig: x}
-    \hfill
-    \subcaptionbox{x \citep[x][]{x}}[.3\linewidth]{\includegraphics[height=2.5cm]{}}\label{fig: x}
-    \hfill
-    \subcaptionbox{x \citep[x][]{x}}[.3\linewidth]{\includegraphics[height=2.5cm]{}}\label{fig: x}
-    \caption{x}\label{x}
-\end{figure}
-
-
- [ Thesis ]
+[ Thesis ]
 <!--    Archiving
-        [ ]     Remove links to github in study chapters now that repo is at start
         [ ]     bfg scrub repo of .bib for filepath opsec
         Figures 4h 
-        [ ]     Find sources for all figures used so far
-        [ ]     Add new figures to all chapters
-            [ ] polaris Unity / Pd
-            [ ] polygons Unity / Pd
-            [ ] Discussion xrtspace new website
-        [ ]     Figure placement, stacking, hspace etc.
-        [ ]     Landscape wholepage figures
-        [ ]     Captions for detail, copy from text two sentences max
-        [x]     Statement on contenta availability -> email for access
-        [x]     Create Figure List
-        
+        [ ] polaris Unity / Pd
+        [ ] polygons Unity / Pd
+        chris comments
+        [ ] games in context
+        [ ] pokemon ar
+        [ ] kinect whitney
         Tables 1h
-        [x]     Create Table List
         [ ]     Convert tables to LaTeX
-        
         Narrative / Voice 2h
         [ ]     Read chapter beginning / ends
         [ ]     1st or 3rd person?
         [ ]     Tenses
-        
-        LaTeX 2h
+        Before submitting 2h
         [ ]     Enable hbox/vbox warnings and check all
-        [x]     Long chap subtitle layout
-        [ ]     Use acronyms?
-        [x]     Decide on clearpages and newpages and blankpages
-        [x]     Chapter styling, 
-        [x]     Chapter Quote styling
-        [x]     CHECK ALL \autofills in doctoral-thesis.tex
         
         Vocabulary 1h
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
-        [x]     Archive zenodo
+        [ ]     Use acronyms?
+
+--->
+ [Chapter 1 - Intro]
+<!--    [ ]     Add working definitions
+        [ ]     Re-draft
         
+--->
+ [Chapter 2 - Review]
+<!--    
+        Include
+        [ ]     Tanaka
+        [ ]     Shaw
+        [ ]     turchet hamilton and camci 2021
+        [ ]     More context
+--->
+ [Chapter 3 - Theory]
+<!--    [ ]     Trim quotes
+        
+--->
+ [Chapter 4 - Method]
+<!--    
+        [ ]     Look back at Miro diagram
+        Ethics Statement
+        [ ]     Integrate?
+--->
+ [Chapter 5 - area]
+<!--    
+        Other
+        [ ]     Re-draft
+        [ ]     Link to theory
+        [ ]     Link to design patterns
+--->
+ [Chapter 6 - polaris]
+<!--    
+        Other
+        [ ]     Re-draft
+        [ ]     Link to theory
+        [ ]     Link to design patterns
+        [x]     iframes -> explain and do screenshots
+--->
+ [Chapter 7 - polygons]
+<!--    Documentation
+        [ ]     Tidy .cs scripts
+        [ ]     Link fig: to github scripts and pd patches
+        [ ]     Add Vincs <- dance and visuals but not music
+        [ ]     Add Amy Brandon <- ar headset performances and preprint, as well as 2018a
+        [x]     Chapter Quote
+--->
+ [Chapter 8 - Discussion]
+<!--    Other
+        [ ]     Re-Draft design patterns
+        [ ]     EXPLAIN OOD
+        [ ]     Consequences dp?
+        [ ]     Include Ali Heston's framework for designing XR
+
+        [ ]     ADD STUDY EVIDENCE TO THIS CHAPTER NOW
+        [ ]     Move patterns to new chapter
+        [x]     Chapter Quote
+--->
+ [Chapter 9 - Conclusion]
+<!--    
+        [ ]     Chapter Quote
+--->
+ [ Appendices ]
+<!--    LaTeX
+        [ ]     Link chapters here now!
+        
+--->
+--------
+graveyard
+
+ [ Thesis ]
+<!--    Archiving
+        [x]     Remove links to github in study chapters now that repo is at start
+        [x]     Statement on contenta availability -> email for access
+        
+        Figures 4h 
+        [x]     Create Figure List
+        [x]     Find sources for all figures used so far
+        [x]     Add new figures to all chapters
+            [x] Discussion xrtspace new website
+        [x]     Figure placement, stacking, hspace etc.
+        [x]     Landscape wholepage figures
+        [x]     Captions for detail, copy from text two sentences max
+        
+        Latex
+        [x]     Long chap subtitle layout
+        [x]     Decide on clearpages and newpages and blankpages
+        [x]     Chapter styling, 
+        [x]     Chapter Quote styling
+        [x]     CHECK ALL \autofills in doctoral-thesis.tex
         Punctuation 1h
         [x]     Standardise quotation mark style in LaTeX
             [x]     Single or double (British / American)
@@ -122,80 +145,18 @@ tripel
                 [x]     5 UL 2020a
                 [x]     5 UL 2020
                 [x]     5 rode
---->
- [Chapter 1 - Intro]
-<!--    [ ]     Add working definitions
-        [ ]     Re-draft
-        [x]     Chapter Quote
---->
- [Chapter 2 - Review]
-<!--    [ ]     Chapter Quote
-        Include
-        [ ]     Tanaka
-        [ ]     Shaw
-        [ ]     turchet hamilton and camci 2021
-        [ ]     More context
---->
- [Chapter 3 - Theory]
-<!--    [ ]     Trim quotes
-        [x]     Chapter Quote
---->
- [Chapter 4 - Method]
-<!--    [ ]     Chapter Quote
-        [ ]     Look back at Miro diagram
---->
- [Chapter 5 - area]
-<!--    [ ]     Chapter Quote
-        Documentation
-        [ ]     Include study blog, repo, and wiki links.
-        Other
-        [ ]     Re-draft
-        [ ]     Link to theory
-        [ ]     Link to design patterns
---->
- [Chapter 6 - polaris]
-<!--    [ ]     Chapter Quote
-        Documentation
-        [ ]     Include study blog, repo, and wiki links.
-        Other
-        [ ]     Re-draft
-        [ ]     Link to theory
-        [ ]     Link to design patterns
-        [ ]     iframes -> explain and do screenshots
-        Ethics Statement
-        [ ]     Pull what you want and move rest to appendix?
---->
- [Chapter 7 - polygons]
-<!--    Documentation
-        [ ]     Include study blog, repo, and wiki links.
-        Other
-        [ ]     Tidy Pd patches - rename click+-
-        [ ]     Tidy .cs scripts
-        [ ]     Link fig: to github scripts and pd patches
-        [ ]     Add Vincs <- dance and visuals but not music
-        [ ]     Add Amy Brandon <- ar headset performances and preprint, as well as 2018a
-        [x]     Chapter Quote
---->
- [Chapter 8 - Discussion]
-<!--    Other
-        [ ]     Re-Draft design patterns
-        [ ]     EXPLAIN OOD
-        [ ]     Consequences dp?
-        [ ]     Include Ali Heston's framework for designing XR
 
-        [ ]     ADD STUDY EVIDENCE TO THIS CHAPTER NOW
-        [ ]     Move patterns to new chapter
-        [x]     Chapter Quote
---->
- [Chapter 9 - Conclusion]
-<!--    
-        [ ]     Chapter Quote
---->
- [ Appendices ]
-<!--    LaTeX
-        [ ]     Add labels, back-link
-        polaris
-        [ ]     Redraft Ethics statement >> move to 4
+
+[Chapter 6 - polaris]
+<!--    [x]     Chapter Quote
+        Documentation
+        [x]     Include study blog, repo, and wiki links.
+[Chapter 7 - polygons]
+<!--    Documentation
+        [x]     Include study blog, repo, and wiki links.
+        Other
+        [x]     Tidy Pd patches - rename click+-
+[ Appendices ]
         Create GitHub wikis
         [x]     area
         [x]     polaris
@@ -215,6 +176,7 @@ tripel
         [x]     Link to blog, repository, wiki
         [x]     Code
         polaris
+        [x]     Redraft Ethics statement >> move to 4
         [x]     Guide
         [x]     Blog
         [x]     List of videos
@@ -228,34 +190,6 @@ tripel
         [x]     Link to blog, repository, wiki
         [x]     Code
 --->
---------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Doctoral Thesis Structure
 | Chapter                                                                       | Purpose - what does it need to do?                                                                               | What to change?                                |

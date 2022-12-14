@@ -57,7 +57,7 @@ The \textit{polaris\textasciitilde{}} experience itself is built using mostly op
     \subcaptionbox{Playing a virtual piano\label{fig: polaris-framework-hardware-pns-1}}{\includegraphics[height=4.5cm]{figures/06-polaris/polaris-framework-hardware-pns-1.png}}
     \hfill
     \subcaptionbox{Resizing and moving virtual objects\label{fig: polaris-framework-hardware-pns-2}}{\includegraphics[height=4.5cm]{figures/06-polaris/polaris-framework-hardware-pns-2.png}}
-    \caption{Project North Star in use}
+    \caption{Project North Star in use during the prototyping phase of \textit{polaris\textasciitilde{}}}
 \end{figure}
 
 The primary section of wearable hardware is the Project North Star (NS) AR headset, as open-sourced by LeapMotion (now Ultraleap) in 2018. It has a 3D-printable assembly, and its circuit boards, cables, and screens are available to buy \href{https://docs.projectnorthstar.org}{online}; my North Star cost about £500 in total to build - 5 to 6 times less expensive than the commercial AR headsets mentioned, while maintaining industry-leading hand-tracking and 6DoF (6 degrees of freedom) depth tracking.
@@ -86,7 +86,7 @@ The secondary piece of hardware in the system is a pair of bone-conduction headp
 Thanks to Unity's in-built audio spatialisation, any audio sample attached to an object in the Unity scene is, by default, spatialised in 3D and output via the bone-conduction headphones.
 
 \subsubsection{PureData}\label{sec: polaris-framework-software-puredata}
-In my own research, the desire to implement more than just sample-based audio interactions led me to experiment with many different options for implementing real-time audio synthesis. I ranked each option I found by its ability to fulfil the below criteria: (a write-up can be found on \href{https://sambilbow.github.io/projects/polaris/software.html}{my website})
+In my own research, the desire to implement more than just sample-based audio interactions led me to experiment with many different options for implementing real-time audio synthesis. I ranked each option I found by its ability to fulfil the below criteria: (a write-up can be found on \href{https://sambilbow.github.io/projects/polaris/software.html}{my website}, or see \autoref{sec: appendix-b-blog-musical})
 
 \begin{enumerate}
     \item Uses Unity's in-built audio spatialisation.
@@ -286,7 +286,7 @@ Immersion tended to stem from the fact that the elements of the experience: sigh
 
 While the above analysis is not, on its own, sufficient to draw conclusive guidelines for design, it does shed light on several connections between elements of this specific experience: learning, comfort, safety, spatial perception, visual-, sonic-, and action-led immersion, and physicality of virtual content. In \autoref{sec: discussion-medium} this is expanded upon, and this has lead to the iteration of parts of the design patterns found in \autoref{sec: discussion-patterns}.
 
-To improve on the comfortability of the experience, the first changes I made were to design an alternate headgear section for the headset. Over the course of a day, I collaborated with another NS community member on \href{https://github.com/AheadIO/Deck-X/tree/main/Deck_X/STL_files/Headgear/Welding_Headgear_Adaptor}{3D printable designs} that would allow the quick and easy substitution of the main headgear piece for a smaller one that was more accommodating of smaller head sizes.
+To improve on the comfortability of the experience, the first changes I made were to design an alternate headgear section for the headset. Over the course of a day, I collaborated with another NS community member on \href{https://github.com/AheadIO/Deck-X/tree/main/Deck_X/STL_files/Headgear/Welding_Headgear_Adaptor}{3D printable designs}, which were merged into the main repository, and that would allow the quick and easy substitution of the main headgear piece for a smaller one that was more accommodating of smaller head sizes.
 
 I would also like to make the gestures and feedback for the orb-based sound effects more intuitive, reachable, and musical, as most participants relied on my showing them before they understood that it was a possibility in the scene. This could be done by conducting a trial with musician participants with which to iteratively develop these new interactions. 
 
