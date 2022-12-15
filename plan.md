@@ -23,11 +23,13 @@
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
         [ ]     Use acronyms?
+        [ ]     finalise rq and replace macro entries
 
 --->
  [Chapter 1 - Intro]
 <!--    [ ]     Add working definitions
         [ ]     Re-draft
+        [ ]     follow up on glossary promise
         
 --->
  [Chapter 2 - Review]
@@ -73,8 +75,9 @@
 --->
  [Chapter 8 - Discussion]
 <!--    Other
+        [ ]     revisiting theory name
         [ ]     Re-Draft design patterns
-        [ ]     EXPLAIN OOD
+        [ ]     EXPLAIN OOD and remove FN
         [ ]     Consequences dp?
         [ ]     Include Ali Heston's framework for designing XR
 

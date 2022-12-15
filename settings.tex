@@ -49,8 +49,29 @@
 %\usepackage{scrhack} % fix warnings when using KOMA with listings package
 \usepackage{xspace} % to get the spacing after macros right  
 \usepackage{mparhack} % get marginpar right
-\PassOptionsToPackage{printonlyused,withpage}{acronym}
-\usepackage[printonlyused, withpage]{acronym} % nice macros for handling all acronyms in the thesis
+% \PassOptionsToPackage{printonlyused,nohyperlinks,withpage}{acronym}
+\usepackage[printonlyused,withpage]{acronym} % nice macros for handling all acronyms in the thesis
+% for posessive acronyms
+\makeatletter
+\newcommand{\acposs}[1]{%
+ \expandafter\ifx\csname AC@#1\endcsname\AC@used
+   \acs{#1}'s%
+ \else
+   \acs{#1}'s%
+ \fi
+}
+\makeatother
+
+\makeatletter
+\AtBeginDocument{%
+  \renewcommand*{\AC@hyperlink}[2]{%
+    \begingroup
+      \hypersetup{hidelinks}%
+      \hyperlink{#1}{#2}%
+    \endgroup
+  }%
+}
+\makeatother
 
 %*! Removed titlesec for nameref fix
 \usepackage{ color, calc, blindtext}

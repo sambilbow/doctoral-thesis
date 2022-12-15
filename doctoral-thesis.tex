@@ -170,11 +170,10 @@
   \frontmatter
   \pagenumbering{roman}
   \clearpage\input{content/00-front-titlepage.tex}
+  \clearpage\input{content/00-front-declaration.tex}
   \clearpage\input{content/00-front-dedication.tex}
   \clearpage\input{content/00-front-acks.tex}
   \clearpage\input{content/00-front-publications.tex}
-  \clearpage\input{content/00-front-declaration.tex}
-  \clearpage\input{content/00-front-acronyms.tex}
   \clearpage\input{content/00-front-abstract.tex}
   %\clearpage\input{content/00-front/colophon}
 \endgroup
@@ -201,13 +200,15 @@
   \microtypesetup{protrusion=false}   % Fix uneven toc dots
   \tableofcontents* % as per in memoir class 
   \clearpage
+  \pdfbookmark[0]{List of Tables}{tables_bookmark}
+  \listoftables*
+  \clearpage
   \pdfbookmark[0]{List of Figures}{figures_bookmark}
   \setcounter{lofdepth}{2}
   \listoffigures*
-  \clearpage
-  \pdfbookmark[0]{List of Tables}{tables_bookmark}
-  \listoftables*
   \microtypesetup{protrusion=true}    % Fix uneven toc dots
+  \newpage
+  \input{content/00-front-acronyms.tex}
   \newpage  
 \endgroup
 % ---------------------------------------------------
