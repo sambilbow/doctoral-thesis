@@ -24,6 +24,10 @@
         [ ]     Another but I forgot
         [ ]     Use acronyms?
         [ ]     finalise rq and replace macro entries
+        acknowledge
+        [ ]     xrmi
+        [ ]     arimi
+        [ ]     mrmi
 
 --->
  [Chapter 1 - Intro]
