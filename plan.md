@@ -1,7 +1,15 @@
 # Doctoral Thesis Todo
 
+<!--
+        After viva
+        [ ]     paper version options
+        [ ]     appendix imagemagick sort A
+--->
+
 [ Thesis ]
-<!--    Archiving
+<!--    [ ]     check all vscode inline td and !
+        [ ]     add pdf instructions and accessibility note <  >, link types etc
+        Archiving
         [ ]     bfg scrub repo of .bib for filepath opsec
         Figures 4h 
         [ ] polaris Unity / Pd
@@ -20,9 +28,9 @@
         [ ]     Enable hbox/vbox warnings and check all
         
         Vocabulary 1h
+        [x]     Use acronyms?
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
-        [ ]     Use acronyms?
         [ ]     finalise rq and replace macro entries
         acknowledge
         [ ]     xrmi

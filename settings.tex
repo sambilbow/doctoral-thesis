@@ -16,6 +16,29 @@
 \setboolean{enable-backrefs}{false} % true false
 
 % ---------------------------------------------------------------------------
+% PDFLaTeX, hyperrefs and citation backrefs, %! moved here to fix gls hyperref
+% ---------------------------------------------------------------------------
+\PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels}{hyperref}
+\usepackage{hyperref}  % backref linktocpage pagebackref
+
+\pdfcompresslevel=9
+%\pdfadjustspacing=1 
+\PassOptionsToPackage{pdftex}{graphicx}
+\usepackage{graphicx} % for inserting figures
+% ESO-PIC for figure placement on titlepage
+\usepackage{eso-pic}
+\newcommand\AtPageUpperRight[1]{\AtPageUpperLeft{%
+   \makebox[\paperwidth][r]{#1}}}
+% Support transparent figures
+\usepackage{transparent}
+
+% Setup the bibliography
+%\PassOptionsToPackage{round,semicolon,authoryear}{natbib} % for natbib
+\usepackage{natbib}				
+\renewcommand{\harvardurl}{Available at: \url} % fix for url/doi`'
+\bibliographystyle{styles/agsm} % fix for deprecated \bf command
+
+% ---------------------------------------------------------------------------
 % ---------------------------------------------------------------------------
 % Setup, finetuning, and useful commands
 % ---------------------------------------------------------------------------
@@ -30,41 +53,26 @@
 % ---------------------------------------------------------------------------
 % Loading some handy packages
 % ---------------------------------------------------------------------------
-%\PassOptionsToPackage{utf8}{inputenc}	% latin9 (ISO-8859-9) = latin1+"Euro sign"
-%\usepackage{inputenc}				
+		
 \usepackage[british]{babel}
-
 \PassOptionsToPackage{fleqn}{amsmath}		% math environments and more by the AMS 
- \usepackage{amsmath}
- \usepackage[mathletters]{ucs}
-
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
 % Print UTF8 key
 %http://tex.stackexchange.com/questions/83440/inputenc-error-unicode-char-u8-not-set-up-for-use-with-latex
 %\usepackage{stringenc}
 \usepackage{pdfescape}
-
-%\PassOptionsToPackage{T1}{fontenc} % T2A for cyrillics
-%\usepackage{fontenc}     
 \usepackage{textcomp} % fix warning with missing font shapes
-%\usepackage{scrhack} % fix warnings when using KOMA with listings package
 \usepackage{xspace} % to get the spacing after macros right  
 \usepackage{mparhack} % get marginpar right
-% \PassOptionsToPackage{printonlyused,nohyperlinks,withpage}{acronym}
-\usepackage[printonlyused,withpage]{acronym} % nice macros for handling all acronyms in the thesis
-% for posessive acronyms
-\makeatletter
-\newcommand{\acposs}[1]{%
- \expandafter\ifx\csname AC@#1\endcsname\AC@used
-   \acs{#1}'s%
- \else
-   \acs{#1}'s%
- \fi
-}
-\makeatother
 
-\makeatletter
+
+% ---------------------------------------------------------------------------
+% GLOSSARIES!
+% ---------------------------------------------------------------------------
+\makeatletter                                    % hide gls links
 \AtBeginDocument{%
-  \renewcommand*{\AC@hyperlink}[2]{%
+  \renewcommand*{\@glslink}[2]{%
     \begingroup
       \hypersetup{hidelinks}%
       \hyperlink{#1}{#2}%
@@ -72,6 +80,61 @@
   }%
 }
 \makeatother
+\usepackage[noredefwarn,indexonlyfirst]{glossaries}
+\usepackage[record,indexonlyfirst]{glossaries-extra} 
+
+
+\makeatletter
+\newcommand \Dotfill {\leavevmode \cleaders \hb@xt@ 0.775em{\hss .\hss}\hfill \kern \z@}    %* dots for description
+\makeatother
+
+% \makeatletter
+% \renewcommand*{\glshyperlink}[2][\gls{\@glo@label}]{%   %* create command for no-link
+% \def\@glo@label{#2}%
+% \@glslink{glo:#2}{#1}}
+% \makeatother
+
+
+\newcolumntype{R}[1]{>{\raggedleft}p{#1}}       %? page number align
+% \makeglossaries                               %? not used because of bib2gls
+\newglossarystyle{doctoral-thesis}{%            %* custom glossary style
+  \setglossarystyle{long3col}                   %* build on template
+  \renewenvironment{theglossary}{%
+    \settowidth{\dimen0}{\bfseries F/LOSS}%     %* size of largest abbrv.
+    \settowidth{\dimen1}{250}%                  %* size of largest pg. no.
+    \glsdescwidth=\dimexpr\linewidth-\dimen0-\dimen1-3\tabcolsep\relax          %* fix size of central column to relative
+    \begin{longtable}{@{}lp{\glsdescwidth}@{}R{\dimen1}@{}}}{\end{longtable}}%  %* create term table
+  \renewcommand*{\glossaryheader}{%             %* empty the headers
+    %   \bfseries ~ 
+    % & \bfseries ~
+    % & \bfseries ~\tabularnewline%
+    \endhead}%
+  \renewcommand*{\glsgroupheading}[1]{}%
+  \renewcommand{\glossentry}[2]{%
+    \glsentryitem{##1}\glstarget{##1}{\textsc{\textbf{\glsentrytext{##1}}}} &   %* style the abbrv and enter it  
+    \textsc{\textbf{\glsentrytitlecase{##1}{long}}}\Dotfill\par\glossentrydesc{##1} & ##2\tabularnewline}% %* add long dots \n, desc, pg no.
+  \renewcommand{\subglossentry}[3]{\glossentry{##2}{##3}}%
+  \renewcommand*{\glsgroupskip}{}%
+}
+
+\setabbreviationstyle{short-long}                 %* needed for sort?
+\GlsXtrLoadResources[
+  src={content/00-front-terms},                   %* load .bib for terms
+  sort-field={text}                               %* sort by acronym, not long name
+]
+\setglossarystyle{doctoral-thesis}
+
+% \newcommand{\newdualentry}[4]{                  %? define entry format disabled for bib2gls
+%   \newglossaryentry{#1}{
+%       text={#2},
+%       long={#3},
+%       first={#3 (#2)},
+%       name={#3 (#2)},
+%       description={#4}
+%   }
+% }
+
+% \loadglsentries{content/00-front-acronyms.tex}  %? load entries disabled for bib2gls
 
 %*! Removed titlesec for nameref fix
 \usepackage{ color, calc, blindtext}
@@ -79,8 +142,6 @@
 %\usepackage{multicol} % multicolumn text
 \usepackage{wrapfig} % figures wrapped in text
 \usepackage{etoolbox}
-% \BeforeBeginEnvironment{wrapfigure}{\setlength{\intextsep}{0pt}} %! fix wrap fig  alignment
-% \AtEndEnvironment{wrapfigure}{\setlength{\intextsep}{5pt}}
 \usepackage{lineno} % Line Numbers 
 \usepackage{epigraph} % For epigraphs in front of chapters
 \setlength\epigraphwidth{.6\textwidth}
@@ -93,7 +154,7 @@
 
 % Provides a linked \url{#1} that doesn't require escape characters
 \usepackage{xurl} 
-\def\UrlBreaks{\do\/\do-}%! fix footnote url break
+\def\UrlBreaks{\do\/\do-}               %* fix footnote url break
 \renewcommand{\UrlFont}{\normalsize}
 % For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
 % (uncomment to typeset the e\-/mail address in typewriter font;
@@ -114,6 +175,19 @@
 \PassOptionsToPackage{dvipsnames}{xcolor}
 	\RequirePackage{xcolor} % [dvipsnames] 
 \usepackage{xcolor}
+
+
+\def\cvd#1#2#3{%                    %* https://colorbrewer2.org/#type=qualitative&scheme=Dark2&n=3
+  \definecolor{Hy#1color}{#2}{#3}%
+  \hypersetup{#1color=Hy#1color}}
+\cvd{link}{HTML}{D95F02}%{EDF8B1}
+\cvd{cite}{HTML}{1B9E77}%{7FCDBB}
+\cvd{url}{HTML}{7570B3}%{2C7FB8}
+% \cvd{file}{HTML}{131877}
+% \cvd{menu}{HTML}{727500}
+% \cvd{run} {HTML}{137776}
+
+
 \definecolor{halfgray}{gray}{0.55} % chapter numbers will be semi transparent .5 .55 .6 .0
 \definecolor{webgreen}{rgb}{0,.5,0}
 \definecolor{webbrown}{rgb}{.6,0,0}
@@ -167,28 +241,6 @@
     belowcaptionskip=.75\baselineskip
     %frame=L
 } 
-% ---------------------------------------------------------------------------
-% PDFLaTeX, hyperreferences and citation backreferences
-% ---------------------------------------------------------------------------
-\PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels}{hyperref}
-\usepackage{hyperref}  % backref linktocpage pagebackref
-
-\pdfcompresslevel=9
-%\pdfadjustspacing=1 
-\PassOptionsToPackage{pdftex}{graphicx}
-\usepackage{graphicx} % for inserting figures
-% ESO-PIC for figure placement on titlepage
-\usepackage{eso-pic}
-\newcommand\AtPageUpperRight[1]{\AtPageUpperLeft{%
-   \makebox[\paperwidth][r]{#1}}}
-% Support transparent figures
-\usepackage{transparent}
-
-% Setup the bibliography
-%\PassOptionsToPackage{round,semicolon,authoryear}{natbib} % for natbib
-\usepackage{natbib}				
-\renewcommand{\harvardurl}{Available at: \url} % fix for url/doi`'
-\bibliographystyle{styles/agsm} % fix for deprecated \bf command
 
 % ---------------------------------------------------------------------------
 % Setup the style of the backrefs from the bibliography
@@ -223,7 +275,7 @@
     breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
     plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
     hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,%
-    urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, %pagecolor=RoyalBlue,%
+    % urlcolor=Hyurlcolor, linkcolor=RoyalBlue, citecolor=webgreen, pagecolor=RoyalBlue,%
     %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
     pdftitle={\myTitle: \mySubtitle},%
     pdfauthor={\textcopyright\ \myName, \myCenter, \myDepartment, \myUni},%
@@ -314,16 +366,16 @@
 					\renewcommand*{\subsectionautorefname}{Section}%
 					\renewcommand*{\subsubsectionautorefname}{Section}% 	
 				}%
-       \addto\extrasngerman{% 
-					\renewcommand*{\paragraphautorefname}{Absatz}%
-					\renewcommand*{\subparagraphautorefname}{Unterabsatz}%
-					\renewcommand*{\footnoteautorefname}{Fu\"snote}%
-					\renewcommand*{\FancyVerbLineautorefname}{Zeile}%
-					\renewcommand*{\theoremautorefname}{Theorem}%
-					\renewcommand*{\appendixautorefname}{Anhang}%
-					\renewcommand*{\equationautorefname}{Gleichung}%        
-					\renewcommand*{\itemautorefname}{Punkt}%
-				}%	
+      %  \addto\extrasngerman{% 
+			% 		\renewcommand*{\paragraphautorefname}{Absatz}%
+			% 		\renewcommand*{\subparagraphautorefname}{Unterabsatz}%
+			% 		\renewcommand*{\footnoteautorefname}{Fu\"snote}%
+			% 		\renewcommand*{\FancyVerbLineautorefname}{Zeile}%
+			% 		\renewcommand*{\theoremautorefname}{Theorem}%
+			% 		\renewcommand*{\appendixautorefname}{Anhang}%
+			% 		\renewcommand*{\equationautorefname}{Gleichung}%        
+			% 		\renewcommand*{\itemautorefname}{Punkt}%
+			% 	}% %? disabled for because i thought babel was breaking hyperref
 			% Fix to getting autorefs for subfigures right (thanks to Belinda Vogt for changing the definition)
 			\providecommand{\subfigureautorefname}{\figureautorefname}%  			
     }{\relax}

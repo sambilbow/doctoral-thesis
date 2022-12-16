@@ -21,6 +21,7 @@
 # *.eps
 citations.bib
 /build/doctoral-thesis.pdf
+/build/content
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -37,11 +38,13 @@ citations.bib
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
-
+*.glg
+*.glsdefs
+*.glstex
+*.glo
+*.ist
 
 ## Custom
-*.fls
-*.fdb_latexmk
-*.code-workspace
-.vscode/*
 .DS_Store
+
+

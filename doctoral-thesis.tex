@@ -167,8 +167,8 @@
 % PREAMBLE: roman page numbering i, ii, iii, ...
 % ---------------------------------------------------
 \begingroup
-  \frontmatter
-  \pagenumbering{roman}
+\frontmatter
+\pagenumbering{roman}
   \clearpage\input{content/00-front-titlepage.tex}
   \clearpage\input{content/00-front-declaration.tex}
   \clearpage\input{content/00-front-dedication.tex}
@@ -193,22 +193,29 @@
 \begingroup
   \clearpage  
   \setlength{\parskip}{0pt} % To restore distance between Chapters, sections and subsections in the table of contents
-  \pdfbookmark[0]{Table of Contents}{contents_bookmark}
+  \renewcommand{\contentsname}{Contents}
   \pagestyle{empty}
   \pagestyle{custom}
   \chapterstyle{VZ43}
-  \microtypesetup{protrusion=false}   % Fix uneven toc dots
+  \microtypesetup{protrusion=false}   % Fix uneven toc,lof,lot dots
+  \phantomsection
+  \addcontentsline{toc}{section}{Contents}
   \tableofcontents* % as per in memoir class 
   \clearpage
-  \pdfbookmark[0]{List of Tables}{tables_bookmark}
+  \renewcommand{\listtablename}{Tables}
+  \phantomsection
+  \addcontentsline{toc}{section}{Tables}
   \listoftables*
   \clearpage
-  \pdfbookmark[0]{List of Figures}{figures_bookmark}
   \setcounter{lofdepth}{2}
+  \renewcommand{\listfigurename}{Figures}
+  \addcontentsline{toc}{section}{Figures}
   \listoffigures*
-  \microtypesetup{protrusion=true}    % Fix uneven toc dots
   \newpage
-  \input{content/00-front-acronyms.tex}
+  \phantomsection
+  \addcontentsline{toc}{section}{Terms}
+	\printunsrtglossary[title={Terms}]
+  \microtypesetup{protrusion=true}    % Fix uneven toc,lof,lot dots
   \newpage  
 \endgroup
 % ---------------------------------------------------
@@ -216,7 +223,7 @@
 % ---------------------------------------------------
 \mainmatter
 \pagenumbering{arabic} %Start official numbering here
-%\setcounter{page}{90} % Manual adjustment if necessary
+\setcounter{page}{1} % Manual adjustment if necessary
 % Modify the header style
 % \pagestyle{scrheadings}
 \begingroup
