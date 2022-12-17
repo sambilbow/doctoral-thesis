@@ -43,8 +43,7 @@ citations.bib
 *.glstex
 *.glo
 *.ist
+*.brf
 
 ## Custom
 .DS_Store
-
-

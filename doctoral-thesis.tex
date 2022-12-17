@@ -199,21 +199,22 @@
   \chapterstyle{VZ43}
   \microtypesetup{protrusion=false}   % Fix uneven toc,lof,lot dots
   \phantomsection
-  \addcontentsline{toc}{section}{Contents}
+  \addcontentsline{toc}{chapter}{Contents}
   \tableofcontents* % as per in memoir class 
   \clearpage
   \renewcommand{\listtablename}{Tables}
   \phantomsection
-  \addcontentsline{toc}{section}{Tables}
+  \addcontentsline{toc}{chapter}{Tables}
   \listoftables*
   \clearpage
   \setcounter{lofdepth}{2}
   \renewcommand{\listfigurename}{Figures}
-  \addcontentsline{toc}{section}{Figures}
+  \phantomsection
+  \addcontentsline{toc}{chapter}{Figures}
   \listoffigures*
   \newpage
   \phantomsection
-  \addcontentsline{toc}{section}{Terms}
+  \addcontentsline{toc}{chapter}{Terms}
 	\printunsrtglossary[title={Terms}]
   \microtypesetup{protrusion=true}    % Fix uneven toc,lof,lot dots
   \newpage  
@@ -221,41 +222,65 @@
 % ---------------------------------------------------
 % MAIN THESIS TEXT
 % ---------------------------------------------------
+
 \mainmatter
-\pagenumbering{arabic} %Start official numbering here
-\setcounter{page}{1} % Manual adjustment if necessary
-% Modify the header style
-% \pagestyle{scrheadings}
+\pagenumbering{arabic}
+\setcounter{page}{1} 
 \begingroup
-  \input{content/01-chap-intro.tex} 
+  \newpage
+  \phantomsection
+  \addcontentsline{toc}{part}{Part I: History \& Practice} %* custom names and no numbering for correct hyperlink anchor
+  \part*{Part I\\\textsc{History \& Practice}}\label{sec: history-practice}
+  \clearpage\input{content/01-chap-intro.tex} 
   \clearpage\input{content/02-chap-review.tex}
   \clearpage\input{content/03-chap-theory.tex}
+  \newpage
+  \phantomsection
+  \addcontentsline{toc}{part}{Part II: Augmented Interventions}
+  \part*{Part II\\\textsc{Augmented Interventions}}\label{sec: augmented-interventions}
   \clearpage\input{content/04-chap-method.tex}
   \clearpage\input{content/05-chap-area.tex}
   \clearpage\input{content/06-chap-polaris.tex}
   \clearpage\input{content/07-chap-polygons.tex}
+  \newpage
+  \phantomsection
+  \addcontentsline{toc}{part}{Part III: Discussion and Resynthesis}
+  \part*{Part III\\\textsc{Discussion and Resynthesis}}\label{sec: discussion-and-synthesis}
   \clearpage\input{content/08-chap-discussion.tex}
   \clearpage\input{content/09-chap-conclusion.tex}
   \newpage
 \endgroup
+
+% ---------------------------------------------------
+% RESET COUNTERS
+% ---------------------------------------------------
+\setcounter{chapter}{0}
+
 % ---------------------------------------------------
 % APPENDICES
 % ---------------------------------------------------
-%TC:ignore
-\appendix
+%TC:ignore %* ignore words for texcount
 \begingroup
-  \input{content/10-appendix-a.tex}
-  \input{content/10-appendix-b.tex}
-  \input{content/10-appendix-c.tex}
+  \phantomsection
+  \addcontentsline{toc}{part}{\nameref*{sec: appendices}}
+  \part*{\textsc{Appendices}}\label{sec: appendices}
+  \newpage
+  \appendix
+  \clearpage\input{content/10-appendix-a.tex}
+  \clearpage\input{content/10-appendix-b.tex}
+  \clearpage\input{content/10-appendix-c.tex}
 \endgroup
-\backmatter
 %TC:endignore
 % ---------------------------------------------------
 % BIBLIOGRAPHY
 % ---------------------------------------------------
-\clearpage
+
 \phantomsection
+\addcontentsline{toc}{part}{\nameref*{sec: references}}
+\part*{\textsc{References}}\label{sec: references}
+\newpage
 \bibliography{citations.bib}
+
 % ---------------------------------------------------
 % END DOCUMENT
 % ---------------------------------------------------

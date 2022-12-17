@@ -20,6 +20,18 @@
 % ---------------------------------------------------------------------------
 \PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels}{hyperref}
 \usepackage{hyperref}  % backref linktocpage pagebackref
+\hypersetup{%
+    colorlinks=true, linktocpage=true, pdfstartpage=1, pdfstartview=FitV,%
+    breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
+    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=0,%
+    hypertexnames=true, pdfhighlight=/O,
+    pdftitle={\myTitle: \mySubtitle},%
+    pdfauthor={\textcopyright\ \myName, \myCenter, \myDepartment, \myUni},%
+    pdfsubject={\myDegree, \myCourse},%
+    pdfkeywords={\myKeywords},%
+    pdfcreator={pdfLaTeX},%
+    pdfproducer={LaTeX}%
+}   
 
 \pdfcompresslevel=9
 %\pdfadjustspacing=1 
@@ -28,9 +40,26 @@
 % ESO-PIC for figure placement on titlepage
 \usepackage{eso-pic}
 \newcommand\AtPageUpperRight[1]{\AtPageUpperLeft{%
-   \makebox[\paperwidth][r]{#1}}}
+\makebox[\paperwidth][r]{#1}}}
 % Support transparent figures
 \usepackage{transparent}
+
+\usepackage{bookmark}
+\bookmarksetup{startatroot}%  %* make chapters at root not be included in parts
+
+%* customise parts in toc
+\usepackage{tocloft}          %* rename table of contents part/chap/app names
+\cftpagenumbersoff{part}      %* turn off toc page numbers for part
+\renewcommand\thepart{\Roman{part}} %* capital roman numerals
+\renewcommand\cftpartpresnum{Part~} %* prepend "Part " before 
+\newlength\partlen                  %* fix lengths
+\settowidth\partlen{\bfseries\cftpartpresnum\cftpartaftersnum}
+\addtolength\cftpartnumwidth{\partlen}
+% \renewcommand\thechapter{\arabic{chapter}} %* capital roman numerals
+% \renewcommand\cftchapteraftersnum{:} %* prepend "Part "
+% \newlength\chapterlen                  %* fix lengths
+% \settowidth\chapterlen{\bfseries\cftchapterpresnum\cftchapteraftersnum}
+% \addtolength\cftchapternumwidth{\chapterlen}
 
 % Setup the bibliography
 %\PassOptionsToPackage{round,semicolon,authoryear}{natbib} % for natbib
@@ -164,7 +193,7 @@
 \providecommand*\email[1]{\href{mailto:#1}{\emaillink{#1}}}
 
 % Counter for toc and caption 
-\setcounter{tocdepth}{3} % Depth of sections to include in the table of contents - currently up to subsections 
+\setcounter{tocdepth}{1} % Depth of sections to include in the table of contents - currently up to subsections 
 \setsecnumdepth{subsection}% % Depth of sections to number in the text itself - currently up to subsections
 \captionnamefont{\footnotesize} % Size of caption text
 \captiontitlefont{\footnotesize} % Size of caption title
@@ -266,24 +295,6 @@
 		      \fi}%
 }{\relax}    
 
-% Hyperreferences
-\hypersetup{%
-    %draft,	% = no hyperlinking at all (useful in b/w printouts)
-    colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,%
-    % uncomment the following line if you want to have black links (e.g., for printing)
-    % colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=3, pdfstartview=FitV,% 
-    breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
-    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
-    hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,%
-    % urlcolor=Hyurlcolor, linkcolor=RoyalBlue, citecolor=webgreen, pagecolor=RoyalBlue,%
-    %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
-    pdftitle={\myTitle: \mySubtitle},%
-    pdfauthor={\textcopyright\ \myName, \myCenter, \myDepartment, \myUni},%
-    pdfsubject={\myDegree, \myCourse},%
-    pdfkeywords={\myKeywords},%
-    pdfcreator={pdfLaTeX},%
-    pdfproducer={LaTeX}%
-}   
 
 % ---------------------------------------------------------------------------
 % MEMOIR CLASS SETTINGS AND CHAPTER HEADER/STYLE
@@ -433,6 +444,11 @@
 \makeoddhead{chapter}{}{\thepage}{}
 \makeoddfoot{chapter}{}{}{}
 \makeheadrule{chapter}{\textwidth}{.04pt}% Header rule width/thickness for custom page style
+\aliaspagestyle{part}{custom} %
+\copypagestyle{part}{plain}
+\makeoddhead{part}{}{\thepage}{}
+\makeoddfoot{part}{}{}{}
+\makeheadrule{part}{\textwidth}{0pt}% 
 
 % ---------------------------------------------------------------------------
 % Using different fonts

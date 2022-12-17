@@ -8,16 +8,18 @@
 
 [ Thesis ]
 <!--    [ ]     check all vscode inline td and !
-        [ ]     add pdf instructions and accessibility note <  >, link types etc
+        [ ]     add pdf instructions and accessibility note <  >, acrobat settings, link types, cvd
+        [ ]     rename intro
+        [ ]     parts?
         Archiving
-        [ ]     bfg scrub repo of .bib for filepath opsec
+        [ ]     bfg scrub repo of .bib for filepath op-sec
         Figures 4h 
         [ ] polaris Unity / Pd
         [ ] polygons Unity / Pd
         chris comments
         [ ] games in context
         [ ] pokemon ar
-        [ ] kinect whitney
+        [ ] Kinect whitney
         Tables 1h
         [ ]     Convert tables to LaTeX
         Narrative / Voice 2h
@@ -25,7 +27,7 @@
         [ ]     1st or 3rd person?
         [ ]     Tenses
         Before submitting 2h
-        [ ]     Enable hbox/vbox warnings and check all
+        [ ]     Enable h-box/vbox warnings and check all
         
         Vocabulary 1h
         [x]     Use acronyms?
@@ -33,15 +35,15 @@
         [ ]     Another but I forgot
         [ ]     finalise rq and replace macro entries
         acknowledge
-        [ ]     xrmi
-        [ ]     arimi
-        [ ]     mrmi
+        [ ]     XRMI
+        [ ]     ARIMI
+        [ ]     MRMI
 
 --->
  [Chapter 1 - Intro]
 <!--    [ ]     Add working definitions
         [ ]     Re-draft
-        [ ]     follow up on glossary promise
+        [ ]     follow up on xr/mr glossary promise
         
 --->
  [Chapter 2 - Review]
@@ -49,7 +51,7 @@
         Include
         [ ]     Tanaka
         [ ]     Shaw
-        [ ]     turchet hamilton and camci 2021
+        [ ]     Turchet hamilton and Camci 2021
         [ ]     More context
 --->
  [Chapter 3 - Theory]
@@ -75,6 +77,8 @@
         [ ]     Re-draft
         [ ]     Link to theory
         [ ]     Link to design patterns
+        [ ]     add list of sub-categories to appendix
+        [ ]     6.3.4 appendix + study docs
         [x]     iframes -> explain and do screenshots
 --->
  [Chapter 7 - polygons]
@@ -112,51 +116,51 @@ graveyard
  [ Thesis ]
 <!--    Archiving
         [x]     Remove links to github in study chapters now that repo is at start
-        [x]     Statement on contenta availability -> email for access
+        [x]     Statement on contents availability -> email for access
         
         Figures 4h 
         [x]     Create Figure List
         [x]     Find sources for all figures used so far
         [x]     Add new figures to all chapters
-            [x] Discussion xrtspace new website
-        [x]     Figure placement, stacking, hspace etc.
-        [x]     Landscape wholepage figures
+            [x] Discussion the-xrt-space new website
+        [x]     Figure placement, stacking, h-space etc.
+        [x]     Landscape whole-page figures
         [x]     Captions for detail, copy from text two sentences max
         
         Latex
         [x]     Long chap subtitle layout
-        [x]     Decide on clearpages and newpages and blankpages
+        [x]     Decide on clear-pages and new-pages and blank-pages
         [x]     Chapter styling, 
         [x]     Chapter Quote styling
-        [x]     CHECK ALL \autofills in doctoral-thesis.tex
+        [x]     CHECK ALL \auto-fills in doctoral-thesis.tex
         Punctuation 1h
         [x]     Standardise quotation mark style in LaTeX
             [x]     Single or double (British / American)
             [x]     Fix to ` ' or `` ''
-        [x]     Check for double spcaes
+        [x]     Check for double spaces
         Abstract 30m
         [x]     Complete abstract text
         [x]     abstract.tex layout and choose on name (summary?)
-        Frontmatter 1h
+        Front-matter 1h
         [x]     Complete acknowledgements
                 [x] include projects and urls from all 3 studies
         [x]     publications.tex add and layout
         [x] Citations 2h
         [x]     Check all citations in Zotero and in .bib
         [x]     Decide on bibliography style
-        [x]     host bilbow et al on github.io or zenodo
+        [x]     host Bilbow et al on github.io or Zenodo
         Footnotes 30m
         [x]     Use of website links for non-citing material
-                [x]     2 moma?
-                [x]     5 aftershokz
+                [x]     2 MoMA?
+                [x]     5 Aftershokz
                 [x]     5 karma
                 [x]     5 max
-                [x]     5 winer
-                [x]     5 espressif
-                [x]     5 ircam add foortnote keep cite
+                [x]     5 Winer
+                [x]     5 Espressif
+                [x]     5 ircam add footnote keep cite
                 [x]     5 icst add footnote keep cite
-                [x]     5 leapmotion 2016
-                [x]     5 leapmotion 2017
+                [x]     5 Leap Motion 2016
+                [x]     5 Leap Motion 2017
                 [x]     5 UL 2020a
                 [x]     5 UL 2020
                 [x]     5 rode
@@ -222,4 +226,4 @@ graveyard
 | Evaluating polaris~                                                           | Audiovisual AR installation — user evaluation of experience - deploy OSHW within a mock-installation context     | align with method, clear up start/ends         |
 | Performing polygons~                                                          | Audiovisual AR performance — self reflection - develop AR performance practice                                   | align with method, clear up start/ends         |
 | Discussion                                                                    | Review of methodology, results of studies, (a)MES, design patterns                                               | add recap, critique method, mAES, DPs          |
-| Conclusions                                                                   | Wider implications, future work, summary                                                                         | implications xdiscip, future work, summary     |
+| Conclusions                                                                   | Wider implications, future work, summary                                                                         | implications cross-disciplinary, future work, summary     |
