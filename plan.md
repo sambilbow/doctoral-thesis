@@ -6,6 +6,11 @@
                 [ ] colours for links?
                 [ ] page numbers 
                 [ ] left/right pages
+                [ ] fancy colour names
+                        [ ] lilac
+                        [ ] clementine
+                        [ ] teal
+                [ ] fancy fonts!
         [ ]     imagemagick to sort out Appendix A: building hardware
 --->
 
