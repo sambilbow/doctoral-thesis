@@ -194,7 +194,6 @@
   \clearpage  
   \setlength{\parskip}{0pt} % To restore distance between Chapters, sections and subsections in the table of contents
   \renewcommand{\contentsname}{Contents}
-  \pagestyle{empty}
   \pagestyle{custom}
   \chapterstyle{VZ43}
   \microtypesetup{protrusion=false}   % Fix uneven toc,lof,lot dots
@@ -213,9 +212,7 @@
   \addcontentsline{toc}{chapter}{Figures}
   \listoffigures*
   \newpage
-  \phantomsection
-  \addcontentsline{toc}{chapter}{Terms}
-	\printunsrtglossary[title={Terms}]
+	\printunsrtglossary[title={Working Definitions},type={main}]
   \microtypesetup{protrusion=true}    % Fix uneven toc,lof,lot dots
   \newpage  
 \endgroup
@@ -229,14 +226,14 @@
 \begingroup
   \newpage
   \phantomsection
-  \addcontentsline{toc}{part}{Part I: History \& Practice} %* custom names and no numbering for correct hyperlink anchor
+  \addcontentsline{toc}{part}{\textsc{Part I: History \& Practice}} %* custom names and no numbering for correct hyperlink anchor
   \part*{Part I\\\textsc{History \& Practice}}\label{sec: history-practice}
   \clearpage\input{content/01-chap-intro.tex} 
   \clearpage\input{content/02-chap-review.tex}
   \clearpage\input{content/03-chap-theory.tex}
   \newpage
   \phantomsection
-  \addcontentsline{toc}{part}{Part II: Augmented Interventions}
+  \addcontentsline{toc}{part}{\textsc{Part II: Augmented Interventions}}
   \part*{Part II\\\textsc{Augmented Interventions}}\label{sec: augmented-interventions}
   \clearpage\input{content/04-chap-method.tex}
   \clearpage\input{content/05-chap-area.tex}
@@ -244,7 +241,7 @@
   \clearpage\input{content/07-chap-polygons.tex}
   \newpage
   \phantomsection
-  \addcontentsline{toc}{part}{Part III: Discussion and Resynthesis}
+  \addcontentsline{toc}{part}{\textsc{Part III: Discussion and Resynthesis}}
   \part*{Part III\\\textsc{Discussion and Resynthesis}}\label{sec: discussion-and-synthesis}
   \clearpage\input{content/08-chap-discussion.tex}
   \clearpage\input{content/09-chap-conclusion.tex}

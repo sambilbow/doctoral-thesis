@@ -33,6 +33,8 @@
     pdfproducer={LaTeX}%
 }   
 
+\usepackage{fontawesome}
+
 \pdfcompresslevel=9
 %\pdfadjustspacing=1 
 \PassOptionsToPackage{pdftex}{graphicx}
@@ -64,6 +66,7 @@
 % Setup the bibliography
 %\PassOptionsToPackage{round,semicolon,authoryear}{natbib} % for natbib
 \usepackage{natbib}				
+\defcitealias{bilbow2022}{Green} %* for reading instructions
 \renewcommand{\harvardurl}{Available at: \url} % fix for url/doi`'
 \bibliographystyle{styles/agsm} % fix for deprecated \bf command
 
@@ -94,48 +97,41 @@
 \usepackage{textcomp} % fix warning with missing font shapes
 \usepackage{xspace} % to get the spacing after macros right  
 \usepackage{mparhack} % get marginpar right
-
+\usepackage{hologo}
 
 % ---------------------------------------------------------------------------
 % GLOSSARIES!
 % ---------------------------------------------------------------------------
-\makeatletter                                    % hide gls links
-\AtBeginDocument{%
-  \renewcommand*{\@glslink}[2]{%
-    \begingroup
-      \hypersetup{hidelinks}%
-      \hyperlink{#1}{#2}%
-    \endgroup
-  }%
-}
-\makeatother
-\usepackage[noredefwarn,indexonlyfirst]{glossaries}
-\usepackage[record,indexonlyfirst]{glossaries-extra} 
 
+% \usepackage[noredefwarn,indexonlyfirst,toc]{glossaries}
+\usepackage[record,indexonlyfirst,numberedsection=autolabel]{glossaries-extra} 
 
-\makeatletter
-\newcommand \Dotfill {\leavevmode \cleaders \hb@xt@ 0.775em{\hss .\hss}\hfill \kern \z@}    %* dots for description
+\makeatletter                                    %* hide gls links
+  \AtBeginDocument{%
+    \renewcommand*{\@glslink}[2]{%
+      \begingroup
+        \hypersetup{hidelinks}%
+        \hyperlink{#1}{#2}%
+      \endgroup
+    }%
+  }
+  \newcommand \Dotfill {\leavevmode \cleaders \hb@xt@ 0.775em{\hss .\hss}\hfill \kern \z@}    %* dots for description
 \makeatother
 
-% \makeatletter
-% \renewcommand*{\glshyperlink}[2][\gls{\@glo@label}]{%   %* create command for no-link
-% \def\@glo@label{#2}%
-% \@glslink{glo:#2}{#1}}
-% \makeatother
+\usepackage{amssymb}
+% \renewcommand*{\glstextformat}[1]{#1}                                %* redefine link colour
 
-
-\newcolumntype{R}[1]{>{\raggedleft}p{#1}}       %? page number align
-% \makeglossaries                               %? not used because of bib2gls
-\newglossarystyle{doctoral-thesis}{%            %* custom glossary style
-  \setglossarystyle{long3col}                   %* build on template
+\newcolumntype{R}[1]{>{\raggedleft}p{#1}}                                     %* page number align
+\newglossarystyle{doctoral-thesis}{%                                          %* custom glossary style
+  \setglossarystyle{long3col}                                                 %* build on template
   \renewenvironment{theglossary}{%
-    \settowidth{\dimen0}{\bfseries F/LOSS}%     %* size of largest abbrv.
-    \settowidth{\dimen1}{250}%                  %* size of largest pg. no.
-    \glsdescwidth=\dimexpr\linewidth-\dimen0-\dimen1-3\tabcolsep\relax          %* fix size of central column to relative
-    \begin{longtable}{@{}lp{\glsdescwidth}@{}R{\dimen1}@{}}}{\end{longtable}}%  %* create term table
-  \renewcommand*{\glossaryheader}{%             %* empty the headers
-    %   \bfseries ~ 
-    % & \bfseries ~
+    \settowidth{\dimen0}{\bfseries F/LOSS}%                                   %* size of largest abbrv.
+    \settowidth{\dimen1}{250}%                                                %* size of largest pg. no.
+    \glsdescwidth=\dimexpr\linewidth-\dimen0-\dimen1-4\tabcolsep\relax        %* fix size of central column to relative
+    \begin{longtable}{@{}lp{\glsdescwidth}R{\dimen1}@{}}}{\end{longtable}}%   %* create term table
+  \renewcommand*{\glossaryheader}{%                                           %* empty the headers
+    %   \bfseries Abbrv. 
+    % & \bfseries Working Definition
     % & \bfseries ~\tabularnewline%
     \endhead}%
   \renewcommand*{\glsgroupheading}[1]{}%
@@ -146,24 +142,19 @@
   \renewcommand*{\glsgroupskip}{}%
 }
 
+\makeatletter                                     %* remove left side glossary header
+\renewcommand{\glsglossarymark}[1]
+  {\@mkboth{}{\scriptsize{#1}}}
+\makeatother
+
+
 \setabbreviationstyle{short-long}                 %* needed for sort?
 \GlsXtrLoadResources[
   src={content/00-front-terms},                   %* load .bib for terms
-  sort-field={text}                               %* sort by acronym, not long name
+  sort-field={name},                              %* sort by acronym, not long name
+  selection={all}
 ]
 \setglossarystyle{doctoral-thesis}
-
-% \newcommand{\newdualentry}[4]{                  %? define entry format disabled for bib2gls
-%   \newglossaryentry{#1}{
-%       text={#2},
-%       long={#3},
-%       first={#3 (#2)},
-%       name={#3 (#2)},
-%       description={#4}
-%   }
-% }
-
-% \loadglsentries{content/00-front-acronyms.tex}  %? load entries disabled for bib2gls
 
 %*! Removed titlesec for nameref fix
 \usepackage{ color, calc, blindtext}
@@ -448,7 +439,6 @@
 \copypagestyle{part}{plain}
 \makeoddhead{part}{}{\thepage}{}
 \makeoddfoot{part}{}{}{}
-\makeheadrule{part}{\textwidth}{0pt}% 
 
 % ---------------------------------------------------------------------------
 % Using different fonts
@@ -484,6 +474,8 @@
 \newcommand\rurl[1]{%
   \href{https://#1}{\nolinkurl{#1}}%
 }
+
+\usepackage{nccmath} %* for align in 5,6,7 links
 
 % \vbadness 10001
 % \hbadness 10001

@@ -2,24 +2,25 @@
 
 <!--
         After viva
-        [ ]     paper version options
-        [ ]     appendix imagemagick sort A
+        [ ]     paper version options 
+                [ ] colours for links?
+                [ ] page numbers 
+                [ ] left/right pages
+        [ ]     imagemagick to sort out Appendix A: building hardware
 --->
 
 [ Thesis ]
-<!--    [ ]     check all vscode inline td and !
-        [ ]     add pdf instructions and accessibility note <  >, acrobat settings, link types, cvd
+<!--    [ ]     check all vscode inline [ ] and %!
+
         [ ]     rename intro
-        [ ]     parts?
+        [ ]     
+        [x]     add pdf instructions and accessibility note <  >, acrobat settings, link types, cvd
+        [x]     parts?
         Archiving
         [ ]     bfg scrub repo of .bib for filepath op-sec
         Figures 4h 
         [ ] polaris Unity / Pd
         [ ] polygons Unity / Pd
-        chris comments
-        [ ] games in context
-        [ ] pokemon ar
-        [ ] Kinect whitney
         Tables 1h
         [ ]     Convert tables to LaTeX
         Narrative / Voice 2h
@@ -27,13 +28,16 @@
         [ ]     1st or 3rd person?
         [ ]     Tenses
         Before submitting 2h
-        [ ]     Enable h-box/vbox warnings and check all
-        
+        [ ]     Enable h-box/vbox warnings and check all 
         Vocabulary 1h
         [x]     Use acronyms?
         [ ]     User, performer, immersant.
         [ ]     Another but I forgot
         [ ]     finalise rq and replace macro entries
+        chris comments
+        [ ] games in context
+        [ ] pokemon ar
+        [ ] Kinect whitney
         acknowledge
         [ ]     XRMI
         [ ]     ARIMI
@@ -61,6 +65,7 @@
  [Chapter 4 - Method]
 <!--    
         [ ]     Look back at Miro diagram
+        [ ]     no abd?
         Ethics Statement
         [ ]     Integrate?
 --->
@@ -68,6 +73,7 @@
 <!--    
         Other
         [ ]     Re-draft
+        [ ]     more abd
         [ ]     Link to theory
         [ ]     Link to design patterns
 --->
