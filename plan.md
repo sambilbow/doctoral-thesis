@@ -63,6 +63,12 @@
 
         Krzysztof Wodiczko, Projection on South Africa House, Trafalgar Square, London (1985) (Images reproduced under creative commons)
 
+        https://thesocietypages.org/cyborgology/2011/02/24/digital-dualism-versus-augmented-reality/
+
+        https://thenewinquiry.com/the-myth-of-cyberspace/
+
+        https://www.sociologylens.net/article-types/opinion/towards-theorizing-an-augmented-reality/4444
+
 
 --->
  [Chapter 3 - Theory]
