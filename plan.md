@@ -5,12 +5,7 @@
         [ ]     paper version options 
                 [ ] colours for links?
                 [ ] page numbers 
-                [ ] left/right pages
-                [ ] fancy colour names
-                        [ ] lilac
-                        [ ] clementine
-                        [ ] teal
-                [ ] fancy fonts!
+                [ ] left/right page
         [ ]     imagemagick to sort out Appendix A: building hardware
 --->
 
@@ -19,6 +14,8 @@
 
         [ ]     rename intro
         [ ]     
+        [ ] fancy fonts!
+        [ ] chap figs
         [x]     add pdf instructions and accessibility note <  >, acrobat settings, link types, cvd
         [x]     parts?
         Archiving

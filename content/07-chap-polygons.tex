@@ -52,11 +52,11 @@ The following chapter outlines my exploration of a a fifteen-minute experimental
 Drawing from the categories extracted from \nameref{sec: polaris}: \nameref{sec: polaris-feedback}, I pursued the design of a system with physically moveable elements, audio-reactivity, and enough room to be able to learn and explore the scene both spatially and in terms of interaction and sonic palette. Thus, as an \gls{ar} performance ecosystem, \textit{polygons\textasciitilde{}} delivers this by describing the improvisational and performative relationship between a performers actions via body, hand, and head movement, feedback from the audience, and three real-time \gls{ar} musical instruments: \textit{ambi}, \textit{click}, and \textit{hands}. 
 
 %*[ ]   add unity image of ambi w/ particles
-\textit{ambi}, a red wire-frame icosahedron, serves as a dual-oscillator drone synthesiser that the performer can call on my taking and bringing it closer to them with their hands. Its voice is contingent eleven real-time parameters, which are sent to the PureData patch attached to it. At specified distance two particle systems are activated from the palms of the performers hands, and the drone from \textit{ambi} is activated. The particles are drawn to the centre of \textit{ambi}, their paths guided by an unseen particle forcefield - the same behaviour as in \textit{polaris\textasciitilde{}}. Real-time hand `collision' in three dimensions with \textit{ambi} is constantly reported per hand, resulting in two sets of $x,y,z$ coordinates that form part of the data that is mapped to parameters in PureData (see \autoref{fig: polygons-ambi-mapping}).
+\textit{ambi}, a red wire-frame icosahedron, serves as a dual-oscillator drone synthesiser that the performer can call on my taking and bringing it closer to them with their hands. Its voice is contingent eleven real-time parameters, which are sent to the \gls{pd} patch attached to it. At specified distance two particle systems are activated from the palms of the performers hands, and the drone from \textit{ambi} is activated. The particles are drawn to the centre of \textit{ambi}, their paths guided by an unseen particle forcefield - the same behaviour as in \textit{polaris\textasciitilde{}}. Real-time hand `collision' in three dimensions with \textit{ambi} is constantly reported per hand, resulting in two sets of $x,y,z$ coordinates that form part of the data that is mapped to parameters in \gls{pd} (see \autoref{fig: polygons-ambi-mapping}).
 \begin{table}
     \centering
     \begin{tabular}{ l|l l }
-        \textbf{Unity Scene Attribute}  & \multicolumn{2}{ l }{\textbf{PureData Parameter}}   \\
+        \textbf{Unity Scene Attribute}  & \multicolumn{2}{ l }{\textbf{\gls{pd} Parameter}}   \\
         \hline
         \textbf{Hand}                   & \textbf{via Left Hand}& \textbf{via Right Hand}       \\
         \hline
@@ -77,7 +77,7 @@ Drawing from the categories extracted from \nameref{sec: polaris}: \nameref{sec:
 \begin{figure}
     \centering
     \includegraphics[angle=90,height=0.9\textheight]{07-polygons/polygons-ambi-pd.png}
-    \caption{The PureData patch for \textit{ambi}}
+    \caption{The Pure Data patch for \textit{ambi}}
     \label{fig: polygons-ambi-pd}
 \end{figure}
 
@@ -86,7 +86,7 @@ Drawing from the categories extracted from \nameref{sec: polaris}: \nameref{sec:
 \begin{table}
     \centering
     \begin{tabular}{ l|l }
-        \textbf{Unity Scene Attribute}         & \textbf{PureData Parameter}   \\
+        \textbf{Unity Scene Attribute}         & \textbf{\gls{pd} Parameter}   \\
         \hline      
         \textit{click+-} Distance              & Impulse 1 Frequency           \\
         \textit{click-} Collision X            & Impulse 2 Frequency           \\
@@ -100,7 +100,7 @@ Drawing from the categories extracted from \nameref{sec: polaris}: \nameref{sec:
 \begin{figure}
     \centering
     \includegraphics[angle=90,height=0.9\textheight]{07-polygons/polygons-click-pd.png}
-    \caption{The PureData patch for \textit{click}}
+    \caption{The Pure Data patch for \textit{click}}
     \label{fig: polygons-click-pd}
 \end{figure}
 
@@ -109,7 +109,7 @@ Drawing from the categories extracted from \nameref{sec: polaris}: \nameref{sec:
 \begin{table}
     \centering
     \begin{tabular}{ l|l }
-        \textbf{Unity Scene Attribute}         & \textbf{PureData Parameter}    \\
+        \textbf{Unity Scene Attribute}         & \textbf{\gls{pd} Parameter}    \\
         \hline      
         \textit{hand} to Head Distance         & Filter Cutoff                  \\
         \textit{hand} to Stage Angle           & Filter Resonance               \\
@@ -121,7 +121,7 @@ Drawing from the categories extracted from \nameref{sec: polaris}: \nameref{sec:
 \begin{figure}
     \centering
     \includegraphics[angle=90,height=0.9\textheight]{07-polygons/polygons-hands-pd.png}
-    \caption{The PureData patch for \textit{hands}}
+    \caption{The Pure Data patch for \textit{hands}}
     \label{fig: polygons-hands-pd}
 \end{figure}
 
@@ -143,7 +143,7 @@ Together, and separately, \textit{ambi}, \textit{click+-}, and \textit{hands} pr
 % --------------------------------------------------------------------------- %
 \section{The Performance of \textit{polygons\textasciitilde{}}}\label{sec: polygons-performances}
 \subsection{\textit{polygons\textasciitilde{}}Technical Setup}\label{sec: polygons-performances-setup}
-From a system design perspective, as with any instrument, the importance of the performer's aesthetic experience as described the the previous section is indubitable; most of the software and hardware I had used in the development of \textit{polaris\textasciitilde{}} was readily transferable to the context of performance. There was no need to change from the combination of PureData, LibPdIntegration, and Unity. However, when considering the design of an \gls{ar} experience \textit{as} performance, there began to surface new design considerations that needed answers:
+From a system design perspective, as with any instrument, the importance of the performer's aesthetic experience as described the the previous section is indubitable; most of the software and hardware I had used in the development of \textit{polaris\textasciitilde{}} was readily transferable to the context of performance. There was no need to change from the combination of \gls{pd}, LibPdIntegration, and Unity. However, when considering the design of an \gls{ar} experience \textit{as} performance, there began to surface new design considerations that needed answers:
 \begin{itemize}
     \item \textit{By what means could I invite an audience into the hybrid space I was creating with \textit{polygons\textasciitilde{}}?} 
     \item \textit{What elements of my experience would / could be shared with an audience?} 
@@ -157,7 +157,7 @@ Due to time constraints, the performance system I decided on was fairly simple. 
 One issue I hadn't anticipated was strobe caused by feedback between the visuals behind me and the sensor cameras in the headset when I stood in the throw of projector. This combined with the otherwise darkness of the room lead to a few moments where the sensors on the headset momentarily lost calibration, moving the Unity scene contents slightly. Whilst I (and study participants) had experienced this during \hyperref[sec: polaris-feedback-adoption-alignment]{\textit{polaris\textasciitilde{}}}, due to the confines of the stage, and the wall behind me, this did present slightly more of a problem and limited my performance space somewhat. For example, when \textit{click-} moved behind the wall, forcing me to stand flush with the wall and try very hard to take it out (\href{https://youtu.be/9IErsDvhXjM?t=210}{03:30}). This wrangling between the virtual and physical space presented itself as a comedic moment for the audience, and was a moment of where the mechanics of the hybrid space became obvious, and relatable despite the distance between the audience and my own understanding and experience of \gls{ar}. Overall though, the performance, despite its hitches was received extremely well, with members of the audience afterwards exclaiming that they'd never seen any such kind of performance. 
 
 \subsection{Showcase at the ACCA - June 2022}\label{sec: polygons-performances-acca}
-\textit{polygons\textasciitilde{}} was performed three months later at an end-of-year departmental showcase at the Attenborough Centre for the Creative Arts (see \autoref{fig: polygons-acca}). The space here was much larger, allowing me more space to explore (although still limited by the length of the headset cable - 2.5 metres), it reduced the chance of the aforementioned strobe, which made the sensor alignment more stable.
+\textit{polygons\textasciitilde{}} was performed three months later at an end-of-year departmental showcase at the \gls{acca} (see \autoref{fig: polygons-acca}). The space here was much larger, allowing me more space to explore (although still limited by the length of the headset cable - 2.5 metres), it reduced the chance of the aforementioned strobe, which made the sensor alignment more stable.
 
 \begin{figure}
     \centering
@@ -167,7 +167,7 @@ One issue I hadn't anticipated was strobe caused by feedback between the visuals
 \end{figure}
 
 \subsection{Demonstrations - May \& June 2022}\label{sec: polygons-performances-demos}
-For furthering understanding of \gls{ar} as a medium for artistic and musical practice, as well as for providing novel experiences to those who hadn't experienced \gls{ar} yet, \textit{polygons\textasciitilde{}} was made open for students and faculty to perform and experience as part of the first MAH Doctoral Conference. It was also open for experience as part of the SHL Make \& Create day, on the 25th of May, and 9th of June 2022 respectively.
+For furthering understanding of \gls{ar} as a medium for artistic and musical practice, as well as for providing novel experiences to those who hadn't experienced \gls{ar} yet, \textit{polygons\textasciitilde{}} was made open for students and faculty to perform and experience as part of the first MAH Doctoral Conference. It was also open for experience as part of the \gls{shl} Make \& Create day, on the 25th of May, and 9th of June 2022 respectively.
 
 These sessions provided a chance to glean some face-to-face informal feedback on the design, rationale, and sound-world of \textit{polygons\textasciitilde{}}. Not to mention, it was an exercise in seeing second hand the amount of embodied knowledge, and skilful \gls{ar} know-how I had accumulated with the system I had used for 18 months by this point. Those experiencing \gls{xr} for the first time definitely struggled more with the gestures needed to move, resize, and interact with the three instruments.
 
@@ -179,7 +179,7 @@ From the performance of \textit{polygons\textasciitilde{}}, it became clear to m
 
  With the exception of the incredible work by Amy Brandon using the METAVision headset \citeyearpar{brandon2018}, I have been hard-pressed to find other live \gls{av} performances that specifically appropriate \gls{ar} \textit{headsets} as their actual medium of performance. Despite there being an array of cutting edge performances that use \gls{ar} technologies in their execution, it is extremely new as a research area, with a lot of exploration and research to be done. Like in most aspects, due to the amount of funding and earlier research focus, \gls{vr} has been an area where artistic and musical performance has flourished in the last 20 years, with early pioneers \citep{davies2004} paving the way for the consideration of the body in immersive 3D space. \textit{polygons\textasciitilde{}} could be closely linked to contemporary \gls{vr} visual art making practices, where artists sculpt, paint, and draw in 3D in an infinite world canvas \citep{summers2019}. \gls{ar} musical performance however, is beginning to gain traction, with participatory installations \citep{chevalier2018},  projection-based performances \citep{quay2016,berthaut2016,robinson2020}, tangible \gls{ar} projects \citep{zamborlin2018}, and real-time notation techniques \citep{santini2020,santini2022}. 
 
-As found in the field of spatial acousmatic performance \citep{sharma2015}, a clear vocabulary ought be developed here due to the wide disciplinary scope of the technologies, aesthetics, and modes of performance explored. Indeed, the public perception of `\gls{ar} performances' has typically come to describe the use of \gls{ar} as the \textit{medium of playback} -- replacing the 2D screen with an immersive 3D viewing/listening of a live or pre-recorded musical experience -- rather than the \textit{medium of performance}.
+As found in the field of spatial acousmatic performance \citep{sharma2015}, a clear vocabulary ought be developed here due to the wide disciplinary scope of the technologies, aesthetics, and modes of performance explored. Indeed, the public perception of `\gls{ar} performances' has typically come to describe the use of \gls{ar} as the \textit{medium of playback} -- replacing the 2D screen with an immersive 3D viewing / listening of a live or pre-recorded musical experience -- rather than the \textit{medium of performance}.
 
 \textit{polygons\textasciitilde{}}, like any prototype instrument or performance, has therefore asked more questions that it has answered. Concerning the future of \gls{ar} musical performance, the present thesis proposes the following questions as potential research avenues:
 \begin{itemize}
