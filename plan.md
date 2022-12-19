@@ -12,7 +12,7 @@
 [ Thesis ]
 <!--    [ ]     check all vscode inline [ ] and %!
 
-        [ ]     rename intro
+        [ ] rename intro
         [ ]     
         [ ] fancy fonts!
         [ ] chap figs
@@ -47,18 +47,23 @@
 
 --->
  [Chapter 1 - Intro]
-<!--    [ ]     Add working definitions
+<!--    [x]     Add working definitions
+        [x]     follow up on xr/mr glossary promise
         [ ]     Re-draft
-        [ ]     follow up on xr/mr glossary promise
         
 --->
  [Chapter 2 - Review]
-<!--    
+<!--    [ ] quote
         Include
         [ ]     Tanaka
         [ ]     Shaw
         [ ]     Turchet hamilton and Camci 2021
         [ ]     More context
+        Fig. 1.5 Mark Skwarek and Joseph Hocking, the leak in your hometown, Augmented BP logo (2010) (Images reproduced courtesy of the artist)
+
+        Krzysztof Wodiczko, Projection on South Africa House, Trafalgar Square, London (1985) (Images reproduced under creative commons)
+
+
 --->
  [Chapter 3 - Theory]
 <!--    [ ]     Trim quotes
@@ -68,8 +73,7 @@
 <!--    
         [ ]     Look back at Miro diagram
         [ ]     no abd?
-        Ethics Statement
-        [ ]     Integrate?
+        [ ]     Integrate ethics Statement?
 --->
  [Chapter 5 - area]
 <!--    
@@ -85,6 +89,7 @@
         [ ]     Re-draft
         [ ]     Link to theory
         [ ]     Link to design patterns
+        [ ]     Link fig: to github scripts and pd patches
         [ ]     add list of sub-categories to appendix
         [ ]     6.3.4 appendix + study docs
         [x]     iframes -> explain and do screenshots
@@ -93,8 +98,13 @@
 <!--    Documentation
         [ ]     Tidy .cs scripts
         [ ]     Link fig: to github scripts and pd patches
-        [ ]     Add Vincs <- dance and visuals but not music
+        
         [ ]     Add Amy Brandon <- ar headset performances and preprint, as well as 2018a
+
+        [ ]     Add Vincs <- dance and visuals but not music
+        Digital entities in performance demand a kind of ‘collective hallucination’, to borrow William Gibson’s fictional description of a system that enables direct interface between mind and data (Rey 2012). Physical and digital ‘dancers’ must be simultaneously perceived as part of conceptual whole.
+        p205 vincs
+
         [x]     Chapter Quote
 --->
  [Chapter 8 - Discussion]
