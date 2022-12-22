@@ -105,19 +105,19 @@ The \textbf{recording or `sampling' stage} is initiated by making a left-hand gr
     \item The first effect is a \gls{bpf} which accentuates certain audio frequencies of the sample. The frequency, strength, and gain of the filter is determined by the parameter mappings detailed in \autoref{fig: areaparams1}
     \item The second effect is a semi-random granular synthesiser. This selects and copies a section of the sample and deconstructs it into several hundred grains. The section of the sample granulised, and the individual grain duration is determined by the parameter mappings detailed in \autoref{fig: areaparams2} 
 \end{itemize}
-\begin{figure}
+\begin{table}
     \centering
     \includegraphics[width=1\linewidth]{figures/05-area/areatechnical_param1.png}
     \caption{area\textasciitilde{} Max MSP patch band-pass filter parameter mappings for hand positions}
     \label{fig: areaparams1}
-\end{figure}
+\end{table}
 
-\begin{figure}
+\begin{table}
     \centering
     \includegraphics[width=1\linewidth]{figures/05-area/areatechnical_param2.png}
     \caption{area\textasciitilde{} Max MSP patch granular synthesiser parameter mappings for hand rotations}
     \label{fig: areaparams2}
-\end{figure}
+\end{table}
 When the composer decides to end manipulating the sample, they can do so by performing a grab with both hands. Once this happens, the \gls{bpf} and granular synthesis parameters are frozen for that sample.
 
 \subsubsection{Spatialise}\label{sec: area-system-software-spatialise}

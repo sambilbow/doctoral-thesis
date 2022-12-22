@@ -13,9 +13,9 @@
 <!--    [ ]     check all vscode inline [ ] and %!
 
         [ ] rename intro
-        [ ]     
         [ ] fancy fonts!
         [ ] chap figs
+        [x] publication indenting
         [x]     add pdf instructions and accessibility note <  >, acrobat settings, link types, cvd
         [x]     parts?
         Archiving
@@ -56,8 +56,8 @@
 <!--    [ ] quote
         Include
         [ ]     Tanaka
-        [ ]     Shaw
-        [ ]     Turchet hamilton and Camci 2021
+        [x]     Shaw
+        [x]     Turchet hamilton and Camci 2021
         [ ]     More context
         Fig. 1.5 Mark Skwarek and Joseph Hocking, the leak in your hometown, Augmented BP logo (2010) (Images reproduced courtesy of the artist)
 
