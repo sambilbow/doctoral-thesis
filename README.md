@@ -59,6 +59,57 @@ The following publications and texts are drawn from in parts of this thesis:
 - Bilbow, S. (2022), Evaluating polaris~ - An Audiovisual Augmented Reality Experience Built on Open-Source Hardware and Software, *in* ‘NIME 2022’, New Interfaces for Musical Expression PubPub, The University of Auckland, New Zealand. Available at: https://dx.doi.org/10.21428/92fbeb44.8abb9ce6
 ---
 ### LaTeX Compilation
-1. Correctly configure %OUTDIR% with pdftex, bibtex, bib2gls and latex-workshop (VSCode) if using. e.g. `bib2gls -d ./build doctoral-thesis`
-2. Build with pdftex -> bibtex -> bib2gls -> pdftex -> pdftex
-3. Pre-compiled .pdf can be found [here](https://github.com/sambilbow/doctoral-thesis/blob/main/build/doctoral-thesis.pdf)
+1. Install Java for `bib2gls` (e.g. via `asdf`)
+2. Correctly configure %OUTDIR% with pdftex, bibtex, bib2gls and latex-workshop (VSCode) if using.
+    ```
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "env": {},
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                                //* make pdftex use modified outdir
+                "-output-dir=%OUTDIR%",
+                "%DOC%"
+            ],
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "env": {},
+            "args": [
+                                //* make bibtex look for modified outdir
+                                //! had to change openout_any = a in \usr\local\texlive\,YEAR>\texmf-dist\web2c\texmf.cnf
+                                //* .bbl not counted by texcount currently
+                "%OUTDIR%/%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bib2gls",
+            "command": "bib2gls",
+            "args": [
+                                // *make pdftex use modified outdir
+                "-d",           // *chdir
+                "%OUTDIR%",     // *aux dir
+                "%DOCFILE%"     // *file name
+            ]
+        }
+    ]
+    ```
+3. Build with pdftex -> bibtex -> bib2gls -> pdftex -> pdftex using LaTeX Workshop
+   ```
+    {
+        "name": "pdfLaTeX -> bibTeX -> bib2gls -> pdfLaTeX x2",
+        "tools": [
+            "pdflatex",
+            "bibtex",
+            "bib2gls",
+            "pdflatex",
+            "pdflatex"
+        ]
+    }
+    ```
+4. Pre-compiled .pdf can be found [here](https://github.com/sambilbow/doctoral-thesis/blob/main/build/doctoral-thesis.pdf)
