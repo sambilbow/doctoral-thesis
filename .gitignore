@@ -17,11 +17,9 @@
 *.xdv
 *-converted-to.*
 # these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-citations.bib
-/build/doctoral-thesis.pdf
-/build/content
+*.bib
+./build/doctoral-thesis.pdf
+./build/content
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
