@@ -234,7 +234,7 @@ graveyard
         [x]     Code
 --->
 
-# Doctoral Thesis Structure
+# Doctoral Thesis Structure!
 | Chapter                                                                       | Purpose - what does it need to do?                                                                               | What to change?                                |
 |
 ----- |
