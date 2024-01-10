@@ -1,5 +1,34 @@
 # Doctoral Thesis Todo
 
+[ Viva Comments ]
+<!--
+        Literature review
+        [ ] Add a short paragraph covering some of the work from the NIME community on VR/ AR that is not currently included, whilst making clear the reason that related work in VR is not covered in any detail (this could include the work of Florent Berthaut, Stephania Serafin, Cumhur Erkut, or Pieter-Jan Maes) 
+        [ ] Consider citing a recent book that covers a large number of these systems, for example Geronazzo, M., & Serafin, S. (2023). Sonic Interactions in Virtual Environments Springer Nature. 
+        [ ] Check for any important and closely related work published in the last year.
+        [ ] Integrating theory in part II – connecting back to Part I
+        [ ] Add a few sentences indicating how the theory cited in Part I influenced your design decisions regarding the three artifacts presented in Part II – either a paragraph in Chapter 4, or a few sentences in Chapters 5, 6 and 7 with a few specific examples of decisions influenced by the theoretical lenses used.
+        
+        Design methods
+        [ ] Make clear that you used the ABD method, although in a less formal way, for the second two studies as well as the first.
+        
+        polaris~ evaluation write up
+        [ ] Include more information about the participants, to allow the evaluation results to be understood in context. If available, please include information on participants’ level of musical experience, technology experience/ comfort level and previous experience with AR.
+        
+        Section 8.1
+        [ ] Look again at the text here to remove repetition regarding polaris~ (as identified by you during the viva).
+        
+        Opening of Chapter 9
+        [x] Look again at the opening sentences to this Chapter, and consider softening the claims you make about AR, in line with the critical perspective you have taken throughout the rest of the thesis.
+        
+        Design patterns
+        [x] Change “design patterns” to “design guidelines” throughout, in line with discussions in the viva.
+        [ ] Update 9.2 to fix how we're going to refer to patterns from now.
+        [ ] Move these design guidelines to the discussion chapter, rather than keeping in the conclusion
+        
+        Discussion/ conclusion reordering
+        [ ] Move the concluding remarks from the end of the current discussion to the conclusion chapter.
+
 <!--
         After viva
         [ ]     paper version options 
@@ -235,19 +264,14 @@ graveyard
 --->
 
 # Doctoral Thesis Structure!
-| Chapter                                                                       | Purpose - what does it need to do?                                                                               | What to change?                                |
-|
------ |
----- |
----------- |
-|                                                                               |                                                                                                                  |                                                |
-| Towards Augmented Reality as Medium for Sound ARt Composition and Performance | Motivation, aims, questions, how to answer them, and what to expect in the thesis                                | not much!                                      |
-| Histories, Origins, Trends, and Problems of Augmented Reality                 | Guide through the field of AR technologies, context, trends, and problems - identify material, embodiment, space | more context! new ending                       |
-| Perspectives on Aesthetics, Interactive Music Systems, and Embodiment         | Guide through perspectives on art and the metaverse, demonstrate similar approaches in music (complexity, 4e)    | keep theory focus MUSIC, move discussion to 8  |
-|                                                                               |                                                                                                                  |                                                |
-| A DIY Approach to AR in the Arts                                              | Detail methods used to answer rqs and complete aims (how to make contributions)                                  | focus more on qs, be CLEAR about contributions |
-| Composing area~                                                               | Audio AR instrument — abd study - prototype and evaluate potential role of audio in AR                           | align with method, clear up start/ends         |
-| Evaluating polaris~                                                           | Audiovisual AR installation — user evaluation of experience - deploy OSHW within a mock-installation context     | align with method, clear up start/ends         |
-| Performing polygons~                                                          | Audiovisual AR performance — self reflection - develop AR performance practice                                   | align with method, clear up start/ends         |
-| Discussion                                                                    | Review of methodology, results of studies, (a)MES, design patterns                                               | add recap, critique method, mAES, DPs          |
-| Conclusions                                                                   | Wider implications, future work, summary                                                                         | implications cross-disciplinary, future work, summary     |
+| Chapter                                                                       | Purpose - what does it need to do?                                                                               | What to change?                                       |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Towards Augmented Reality as Medium for Sound ARt Composition and Performance | Motivation, aims, questions, how to answer them, and what to expect in the thesis                                | not much!                                             |
+| Histories, Origins, Trends, and Problems of Augmented Reality                 | Guide through the field of AR technologies, context, trends, and problems - identify material, embodiment, space | more context! new ending                              |
+| Perspectives on Aesthetics, Interactive Music Systems, and Embodiment         | Guide through perspectives on art and the metaverse, demonstrate similar approaches in music (complexity, 4e)    | keep theory focus MUSIC, move discussion to 8         |
+| A DIY Approach to AR in the Arts                                              | Detail methods used to answer rqs and complete aims (how to make contributions)                                  | focus more on qs, be CLEAR about contributions        |
+| Composing area~                                                               | Audio AR instrument — abd study - prototype and evaluate potential role of audio in AR                           | align with method, clear up start/ends                |
+| Evaluating polaris~                                                           | Audiovisual AR installation — user evaluation of experience - deploy OSHW within a mock-installation context     | align with method, clear up start/ends                |
+| Performing polygons~                                                          | Audiovisual AR performance — self reflection - develop AR performance practice                                   | align with method, clear up start/ends                |
+| Discussion                                                                    | Review of methodology, results of studies, (a)MES, design patterns                                               | add recap, critique method, mAES, DPs                 |
+| Conclusions                                                                   | Wider implications, future work, summary                                                                         | implications cross-disciplinary, future work, summary |
