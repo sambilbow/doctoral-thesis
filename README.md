@@ -82,7 +82,7 @@ The following publications and texts are drawn from in parts of this thesis:
             "env": {},
             "args": [
                                 //* make bibtex look for modified outdir
-                                //! had to change openout_any = a in \usr\local\texlive\,YEAR>\texmf-dist\web2c\texmf.cnf
+                                //! had to change to `openout_any = a` in /usr/share/texmf-dist/web2c/texmf.cnf
                                 //* .bbl not counted by texcount currently
                 "%OUTDIR%/%DOCFILE%"
             ]
