@@ -261,6 +261,45 @@ One participant reported multiple times that they could \textit{`feel'} the butt
 Another participant, upon placing their hands close to an orb remarked: \textit{`I know there's nothing there, but when I put my hand [towards the orb] I feel like I'm going towards something warm'}. This same participant expressed a keen interest during the experimental section in drawing large three-dimensional sculptures. During one of these drawings, the participant walked around their creation, and then took a moment before exclaiming: \textit{`Oh! I forgot that it wasn't a real thing, I kept trying to go [around] it, but I could just go through it!'}. Later, they noted: \textit{`I guess it's about our brains. [...] When we see it in 3D we automatically think it's more real than [if it were on a screen]'} (P8).
 
 % --------------------------------------------------------------------------- %
+\section{Ethics Statement}\label{sec: polaris-ethics}
+The thesis research followed University of Sussex ethics guidelines approved by the Social Sciences \& Arts Cross-Schools Research Ethics Committee, \textit{polaris\textasciitilde{}} with the reference code: ER/SMB44/3.
+
+\subsection{Socio-economic Fairness}\label{sec: polaris-ethics-}
+At all stages of this research, I have sought to minimise the outlay required to invest in technology needed to implement \textit{polaris\textasciitilde{}}. This has meant opting for \gls{floss} where possible: The software companion to the \gls{pns}, Project Esky \footnote{`Esky' is a colloquial term for an ice-cooler in Australia, etymologically deriving from the word `Eskimo'. I acknowledge the use of this term as being pejorative towards the indigenous populations of the Greenlandic and Canadian Inuit, Alaskan Iñupiat, and Yupik peoples; fully recognise their human and land rights, and have made the effort to redact the word within the main body of this thesis.}, \gls{pd}, and OBS. Ideally the 3D-engine used would also be \gls{floss}, e.g. Godot, but due to time constraints I have opted for Unity which I am already experienced with, and which has great documentation and free learning materials.
+
+Though the \gls{pns} headset is \gls{osh}, I have not had time to develop a \gls{diy} \gls{osh} audio solution yet, but any bluetooth bone-conduction headphones are compatible.
+
+Unfortunately, the \textit{polaris\textasciitilde{}} experience (and as such, its framework outlined in \autoref{sec: polaris-framework}) is not compatible with macOS, although it will be once Ultraleap provide their V5 drivers for hand-tracking on it.
+
+It is worth noting that, as with most smaller suppliers of technology, the current global chip shortage has made getting hold of some components quite difficult at times, and recently the developers of the display driver board had to take the time to redesign it to get around this; the headset was not available to buy new for several months during this period. I suppose that this points to an issue: \textit{`accessibility'} doesn't always correlate with \textit{`availability'}, especially when trying to circumvent expensive consumer technologies.
+
+Since beginning these studies, Intel has discontinued their T261/T265 range of products, meaning that anyone looking to build the headset today would have difficulty including movement tracking, a fairly essential component of effective \gls{ar} experiences. I am fully aware of the roadblock this puts in the way of \textit{polaris\textasciitilde{}} currently being reproducible as per its framework, but thankfully efforts are underway by developers in the community to solve this issue by migrating to Luxonis' modular and \glshyperlink[open-source]{opensource} range of tracking cameras; leaving the proprietary and closed-source hardware and software of Intel behind. If anything, their announcement has served as a reminder of the importance of FOSS/H components in community-led projects.
+
+\subsubsection{A note on the environment}\label{sec: polaris-ethics-environment}
+While it is certainly difficult to mitigate the environmental impact entirely from projects that rely on technology, I have opted for compostable PLA material for the construction of the headset used in the study to reduce e-waste in the event of breakage or updates to the hardware design.
+
+\subsection{Study Participants}\label{sec: polaris-ethics-participants}
+\subsubsection{Accessibility}\label{sec: polaris-ethics-accessibility}
+In anticipating the possibility of a diverse set of accessibility needs, I provided stepped and step-free access instructions to get to the lab, maintained clearly formatted correspondence with participants via e-mail, and observed the university's COVID-19 policy during the study. Participants wearing glasses were able to use the headset with or without their glasses, and the volume of the \gls{ar} scene was kept at a tolerable level, with the option given to participants to increase or decrease it.
+
+\subsubsection{Inclusion}\label{sec: polaris-ethics-inclusion}
+Participants were recruited via internal University undergraduate and postgraduate mailing lists and were selected to ensure a diverse cohort of individuals from differing ethnicities, genders, and ages.
+
+\subsubsection{Remuneration}\label{sec: polaris-ethics-renumeration}
+Study participants were compensated \pounds15 each for the 45 minutes - 1 hour in which they took part in the study.
+
+\subsubsection{Consent}\label{sec: polaris-ethics-consent}
+All participants provided written consent to take part in the questionnaire, experience, and interview; and also to being video and audio recorded during this time. They could at any time choose not to participate further, without being penalised or disadvantaged in any way. Their involvement in the study did not in any way impact their marks, assessments, or future studies. After analysis, their transcribed contributions were approved, and they had the opportunity to remove any anonymous, but still sensitive information.
+
+\subsubsection{Data and privacy}\label{sec: polaris-ethics-data}
+Data from the studies: video and audio recordings, transcriptions, and analysis files are secured on a separate hard drive and are password protected. All quotes and data have been anonymised in accordance with data protection legislation.
+
+
+% --------------------------------------------------------------------------- %
+
+
+
+% --------------------------------------------------------------------------- %
 \section{Conclusion}\label{sec: polaris-conclusion}
 Overall, the \gls{ar} experience engaged participants fruitfully, with many noting their ability to express themselves audiovisually in creative ways. For \textit{polaris\textasciitilde{}}, the ability to do so whilst maintaining a privacy-respecting and cost-effective focus, is a testament to the individual components of the framework used to create it, and the labour that has facilitated the development of these \glshyperlink[open-source]{opensource} solutions.
 
