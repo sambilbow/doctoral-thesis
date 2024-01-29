@@ -58,13 +58,13 @@ For example, in \textit{area\textasciitilde{}}, I have used a RØDE Soundfield N
 \section{Designing \textit{area\textasciitilde{}}}\label{sec: area-system}
 The \textit{\textit{area\textasciitilde{}}} system, which stands loosely for `augmented reality environmental audio' aims to afford its user the ability to spectromorphologically (defined by Smalley to concern spatial, temporal and textural qualities of sound \citeyearpar{smalley1997}) manipulate sounds from their environment into a \textit{virtual audio environment}. Through bone conduction headphones and head tracking, this sound field is heard in synchronicity with their actual environment. The system was created in order to explore and reveal the relationship between real and virtual environments in \gls{aar} systems.
 
-%*[ ]   fix figure
+
 \subsection{Hardware Implementation}\label{sec: area-system-hardware}
 \begin{figure}
     \centering
-    \subcaptionbox{}[.45\textwidth]{\includegraphics[height=4.5cm]{figures/05-area/areatechnical_hardware.png}}
+    \subcaptionbox*{}[.45\textwidth]{\includegraphics[height=6cm]{figures/05-area/areatechnical_hardware.png}}
     \hfill
-    \subcaptionbox{}[.45\textwidth]{\includegraphics[height=4.5cm]{figures/05-area/areatechnical_pcb.png}}%
+    \subcaptionbox*{}[.45\textwidth]{\includegraphics[height=6cm]{figures/05-area/areatechnical_pcb.png}}%
     \caption{\textit{area\textasciitilde{}} hardware and PCB}
     \label{fig: areatechnical}
 \end{figure}
@@ -79,7 +79,7 @@ The only hardware that needs to be accessible for the person composing with \tex
 
 \subsection{Software Implementation}\label{sec: area-system-software}
 
-%*[ ]   fix figure
+
 \begin{figure}
     \centering
     \includegraphics[angle=90,height=0.95\textheight]{figures/05-area/areatechnical_max.png}
@@ -88,7 +88,7 @@ The only hardware that needs to be accessible for the person composing with \tex
 \end{figure}
 The patch (\autoref{fig: areatechnicalmax}) uses the audio plugin \footnote{\href{https://www.rode.com/soundfieldplugin}{RØDE Soundfield} \href{https://archive.today/nxDnz}{(Archived \faArchive)}} shown in \autoref{fig: areatechnicalrode} to encode the A-Format ambisonics microphone input into B-Format (a three-dimensional sound field), or what I will refer to as the \textit{ambisonic palette}. This \textit{ambisonic palette} is not heard by the composer; instead, they can sculpt from it, forming their own audible \textit{(B-Format) virtual audio environment} through hand gestures. I have defined these gestures in Max MSP with help from the \gls{ircam} Leap Motion library \citeyearpar{ircam2014} \footnote{\href{https://github.com/JulesFrancoise/leapmotion-for-max}{Leap Motion Library} \href{https://archive.today/YWXYU}{(Archived \faArchive)}}, and they occur over three stages of interaction: \textit{\textbf{record, manipulate, spatialise}}. 
 
-%*[ ]   fix figure
+
 \begin{figure}
     \centering
     \includegraphics[angle=90,height=0.75\textheight]{figures/05-area/areatechnical_rode.png}
