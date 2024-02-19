@@ -12,6 +12,7 @@
 *.cb2
 .*.lb
 
+plan.md
 ## Intermediate documents:
 *.dvi
 *.xdv
